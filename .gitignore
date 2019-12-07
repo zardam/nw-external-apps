@@ -1,1 +1,5 @@
 server.pem
+*.o
+*.tar
+api/libapi.a
+apps/nofrendo/epsilon/rom.c
