@@ -1,0 +1,3 @@
+.custom-file-input:lang(fr) ~ .custom-file-label::after {
+  content: "Parcourir";
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2019 Damien Nicolet
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<html ng-app="nwas">
+<head>
+  <meta charset="utf-8">
+  <title translate="TITLE"></title>
+  <link rel="icon" type="image/png" href="images/external_icon.png">
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="libs/jquery/jquery.min.js"></script>
+  <script src="libs/angularjs/angular.min.js"></script>
+</head>
+  <body class="bg-light ng-cloak">
+    <div class="container" ng-controller="main">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="images/external_icon.png" alt="" width="52" height="52">
+        <h2 translate="TITLE"></h2>
+        <!-- <p class="lead" translate="LEAD"></p> -->
+        <p class="lead">{{ 'FIRMWARE' | translate }}<a href="#" ng-click="uploadFirmware()">{{ 'HERE' | translate }}</a></p>
+        <p class="lead">{{ 'DISCLAIM' | translate }}<a href="https://github.com/zardam/nw-external-apps">{{ 'HERE' | translate }}</a></p>
+      </div>
+
+      <div class="alert alert-danger" role="alert" ng-hide="webUSB">
+        {{ 'NO_WEB_USB' | translate }} <a href="https://www.google.com/chrome/">Google Chrome</a>
+      </div>
+
+      <div class="row" ng-hide="uploading || !webUSB">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted" translate="SELECTED_APPLICATIONS"></span>
+            <span class="badge badge-secondary badge-pill">{{selectedApps.length}}</span>
+          </h4>
+          <ul class="list-group mb-3">
+
+            <li class="list-group-item d-flex justify-content-between lh-condensed" ng-repeat="app in selectedApps">
+              <div class="my-auto">
+                <h6 class="my-0"><img ng-src="apps/{{app.name}}/icon.png" alt="" width="26" height="26" class="mr-3">{{app.name}}</h6>
+                <!-- <small class="text-muted">12 Ko</small> -->
+              </div>
+              <span><button class="btn btn-primary btn-sm" ng-click="removeApplication(app)" translate="REMOVE"></button></span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between lh-condensed" ng-repeat="file in customFiles">
+              <div class="my-auto">
+                <h6 class="my-0">{{file.name}}</h6>
+                <!-- <small class="text-muted">12 Ko</small> -->
+              </div>
+              <span><button class="btn btn-primary btn-sm" ng-click="removeFile(file)" translate="REMOVE"></button></span>
+            </li>
+
+            <!-- <li class="list-group-item d-flex justify-content-between">
+              <span>Total (ko)</span>
+              <strong>45 ko</strong>
+            </li> -->
+          </ul>
+
+          <div class="card p-2 mb-3">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" lang="{{locale}}" ng-file-select>
+              <label class="custom-file-label" translate="CUSTOM_FILE"></label>
+            </div>
+          </div>
+
+          <div class="card p-2">
+            <button class="btn btn-primary btn-lg btn-block" ng-click="upload()" translate="INSTALL"></button>
+          </div>
+        </div>
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3" translate="AVAILABLE_APPLICATIONS"></h4>
+            <div class="row pb-3">
+              <div class="col-md-12">
+
+                <div class="card mb-3" ng-repeat="app in apps">
+                  <div class="row no-gutters">
+                    <div class="col-md-2 text-center m-auto">
+                      <img ng-src="apps/{{app.name}}/icon.png" alt="" width="52" height="52">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body">
+                        <h5 class="card-title">{{app.name}}<!--<span class="text-muted float-right">{{app.size}}</span>--></h5>
+                        <p class="card-text">{{app.description[locale]}}</p>
+                        <p class="card-text" ng-show="app.link"><a ng-href="{{app.link}}">{{app.link}}</a></p>
+                        <p class="card-text"><button class="btn btn-primary btn-sm" ng-click="addApplication(app)" translate="ADD"></button></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row" ng-show="uploading">
+        <div class="col-md-12">
+          <p>{{lastAction || 'Progress'}}</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="transition: none;" ng-style="{width: progress + '%'}"></div>
+          </div>
+          <p ng-show="allDone" class="text-center mt-5"><button class="btn btn-primary" ng-click="reload()" translate="ALL_DONE"></button></p>
+          <div class="card text-white bg-danger mt-3" ng-show="error">
+            <div class="card-header" translate="ERROR"></div>
+            <div class="card-body">
+              <p class="card-text">{{error}}</p>
+              <p class="card-text" translate="PLEASE_RELOAD"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1" translate="ACKNOWLEDGMENTS"></p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://www.numworks.com/">NumWorks</a></li>
+          <li class="list-inline-item"><a href="https://github.com/devanlai/webdfu">webdfu</a></li>
+          <li class="list-inline-item"><a href="https://www.gnu.org/software/binutils/">GNU Binutils</a></li>
+          <li class="list-inline-item"><a href="https://emscripten.org/">emscripten</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="libs/binutils/objcopy.js"></script>
+    <script src="libs/binutils/ld.js"></script>
+    <script src="libs/tarballjs/tarball.js"></script>
+    <script src="libs/webdfu/dfu-util/dfu.js"></script>
+    <script src="libs/webdfu/dfu-util/dfuse.js"></script>
+    <script src="libs/angularjs/angular-sanitize.min.js"></script>
+    <script src="libs/angular-translate/angular-translate.min.js"></script>
+    <script src="index.js"></script>
+    <script src="apps/apps.js"></script>
+  </body>
+</html>
