@@ -281,7 +281,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
 }).config(function ($translateProvider) {
   $translateProvider
     .translations('en', {
-      TITLE: 'Unofficial NumWorks application repository',
+      TITLE: 'Unofficial N110 application repository',
       LEAD: 'Here you will find some installable applications for a N110 calculator.',
       FIRMWARE: 'To install a compatible firmware on your calculator, please click ',
       DISCLAIM: 'For more information (or filling an issue) please go ',
@@ -304,7 +304,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
       DFU_WROTE: "Done",
     })
     .translations('fr', {
-      TITLE: 'Dépôt d\'application NumWorks non officiel',
+      TITLE: 'Dépôt d\'application N110 non officiel',
       LEAD: 'Vous trouverez ici quelques application installables sur une calculatrice N110.',
       FIRMWARE: 'Pour installer un micrologiciel compatible, veuillez cliquer ',
       DISCLAIM: 'Pour plus d\'informations (ou soumettre un problème) veuillez vous rendre ',
