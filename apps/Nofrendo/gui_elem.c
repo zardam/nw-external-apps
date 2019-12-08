@@ -31,7 +31,7 @@
 #define  SMALL_FONT_KERN   6
 #define  SMALL_FONT_HEIGHT 6
 
-static fontchar_t small_data[] =
+static const fontchar_t small_data[] =
 {
    { { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, SMALL_FONT_KERN }, /* space */
    { { 0x20, 0x20, 0x20, 0x00, 0x20, 0x00 }, SMALL_FONT_KERN },

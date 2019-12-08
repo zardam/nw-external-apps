@@ -5,7 +5,6 @@
 
 #include <ctype.h>
 #include <string.h>
-#include <strings.h>
 #include <stdlib.h>
 #include <stdio.h>
 

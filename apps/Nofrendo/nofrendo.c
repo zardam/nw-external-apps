@@ -24,9 +24,12 @@
 ** $Id: nofrendo.c,v 1.3 2001/04/27 14:37:11 neil Exp $
 */
 
+// Needed for strdup on simulator
+#define _DEFAULT_SOURCE
+#include <string.h>
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <noftypes.h>
 #include <nofrendo.h>
 #include <event.h>
@@ -55,6 +58,15 @@ static struct
    bool quit;
 } console;
 
+/* our happy little timer ISR */
+volatile int nofrendo_ticks = 0;
+static void timer_isr(void)
+{
+   nofrendo_ticks++;
+}
+
+static void timer_isr_end(void) {} /* code marker for djgpp */
+
 static void shutdown_everything(void)
 {
    if (console.filename)
@@ -82,7 +94,7 @@ void main_eject(void)
    {
    case system_nes:
       nes_poweroff();
-      //nes_destroy(&(console.machine.nes));
+      nes_destroy(&(console.machine.nes));
       break;
 
    default:
@@ -126,6 +138,14 @@ static system_t detect_systemtype(const char *filename)
    return system_unknown;
 }
 
+static int install_timer(int hertz)
+{
+   return osd_installtimer(hertz, (void *) timer_isr,
+                           (int) timer_isr_end - (int) timer_isr,
+                           (void *) &nofrendo_ticks,
+                           sizeof(nofrendo_ticks));
+}
+
 /* This assumes there is no current context */
 static int internal_insert(const char *filename, system_t type)
 {
@@ -133,7 +153,7 @@ static int internal_insert(const char *filename, system_t type)
    if (system_autodetect == type)
       type = detect_systemtype(filename);
 
-   //console.filename = strdup(filename);
+   console.filename = strdup(filename);
    console.type = type;
 
    /* set up the event system for this system type */
@@ -144,21 +164,19 @@ static int internal_insert(const char *filename, system_t type)
    case system_nes:
       gui_setrefresh(NES_REFRESH_RATE);
 
-if(console.machine.nes == NULL) {
       console.machine.nes = nes_create();
       if (NULL == console.machine.nes)
       {
          log_printf("Failed to create NES instance.\n");
          return -1;
       }
-
       if (nes_insertcart(console.filename, console.machine.nes))
          return -1;
-} else {
-  nes_getcontextptr()->poweroff = false;
-}
 
-      vid_setmode(NES_SCREEN_WIDTH, NES_VISIBLE_HEIGHT);
+      vid_setmode(NES_SCREEN_WIDTH, 262);//NES_VISIBLE_HEIGHT);
+
+      if (install_timer(NES_REFRESH_RATE))
+         return -1;
 
       nes_emulate();
       break;
@@ -179,7 +197,7 @@ if(console.machine.nes == NULL) {
 /* This tells main_loop to load this next image */
 void main_insert(const char *filename, system_t type)
 {
-   //console.nextfilename = strdup(filename);
+   console.nextfilename = strdup(filename);
    console.nexttype = type;
 
    main_eject();
@@ -200,12 +218,7 @@ int nofrendo_main(int argc, char *argv[])
 
    event_init();
 
-   int result = osd_main(argc, argv);
-
-   main_eject();
-   shutdown_everything();
-
-   return result;
+   return osd_main(argc, argv);
 }
 
 /* This is the final leg of main() */
@@ -214,7 +227,7 @@ int main_loop(const char *filename, system_t type)
    vidinfo_t video;
 
    /* register shutdown, in case of assertions, etc. */
-   atexit(shutdown_everything);
+//   atexit(shutdown_everything);
 
    if (config.open())
       return -1;
@@ -228,8 +241,9 @@ int main_loop(const char *filename, system_t type)
    osd_getvideoinfo(&video);
    if (vid_init(video.default_width, video.default_height, video.driver))
       return -1;
+	printf("vid_init done\n");
 
-   //console.nextfilename = strdup(filename);
+   console.nextfilename = strdup(filename);
    console.nexttype = type;
 
    while (false == console.quit)

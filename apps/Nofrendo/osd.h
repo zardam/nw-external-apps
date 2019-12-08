@@ -95,6 +95,8 @@ extern void osd_getmouse(int *x, int *y, int *button);
 /* build a filename for a snapshot, return -ve for error */
 extern int osd_makesnapname(char *filename, int len);
 
+extern int osd_nofrendo_ticks(void);
+
 #endif /* !NSF_PLAYER */
 
 #endif /* _OSD_H_ */

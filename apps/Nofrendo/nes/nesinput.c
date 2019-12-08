@@ -155,7 +155,7 @@ uint8 input_get(int types)
 /* register an input type */
 void input_register(nesinput_t *input)
 {
-   if (NULL == input || active_entries > 1)
+   if (NULL == input)
       return;
 
    nes_input[active_entries] = input;

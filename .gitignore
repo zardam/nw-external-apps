@@ -3,3 +3,4 @@ server.pem
 *.tar
 api/libapi.a
 apps/nofrendo/epsilon/rom.c
+apps/KhiCAS/libgiac_simulator.a

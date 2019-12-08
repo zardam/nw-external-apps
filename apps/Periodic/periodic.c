@@ -1,6 +1,6 @@
 #include <stdbool.h>
 #include <stdio.h>
-#include "api.h"
+#include "extapp_api.h"
 
 #define LCD_WIDTH_PX 320
 #define LCD_HEIGHT_PX 222
@@ -159,22 +159,22 @@ const struct AtomDef atomsdefs[] = {
 };
 
 void draw_rectangle(int16_t x, int16_t y, uint16_t w, uint16_t h, uint16_t color) {
-  pushRectUniform(x, y + TOOLBAR_HEIGHT_PX, w, h, color);
+  extapp_pushRectUniform(x, y + TOOLBAR_HEIGHT_PX, w, h, color);
 }
 
 void stroke_rectangle(int16_t x, int16_t y, uint16_t w, uint16_t h, uint16_t color) {
-  pushRectUniform(x, y + TOOLBAR_HEIGHT_PX, w, 1, color);
-  pushRectUniform(x, y + h - 1 + TOOLBAR_HEIGHT_PX, w, 1, color);
-  pushRectUniform(x, y + TOOLBAR_HEIGHT_PX, 1, h, color);
-  pushRectUniform(x + w - 1, y + TOOLBAR_HEIGHT_PX, 1, h, color);
+  extapp_pushRectUniform(x, y + TOOLBAR_HEIGHT_PX, w, 1, color);
+  extapp_pushRectUniform(x, y + h - 1 + TOOLBAR_HEIGHT_PX, w, 1, color);
+  extapp_pushRectUniform(x, y + TOOLBAR_HEIGHT_PX, 1, h, color);
+  extapp_pushRectUniform(x + w - 1, y + TOOLBAR_HEIGHT_PX, 1, h, color);
 }
 
 void draw_string(int16_t x, int16_t y, const char *text) {
-  drawTextLarge(text, x, y + TOOLBAR_HEIGHT_PX, _BLACK, _WHITE);
+  extapp_drawTextLarge(text, x, y + TOOLBAR_HEIGHT_PX, _BLACK, _WHITE, false);
 }
 
 void draw_string_small(int16_t x, int16_t y, uint16_t fg, uint16_t bg, const char *text) {
-  drawTextSmall(text, x, y + TOOLBAR_HEIGHT_PX, fg, bg);
+  extapp_drawTextSmall(text, x, y + TOOLBAR_HEIGHT_PX, fg, bg, false);
 }
 
 int rgb24to16(int c) {
@@ -232,12 +232,12 @@ void drawAtom(uint8_t id) {
 }
 
 void copy(const char * text) {
-  clipboardStore(text);
+  extapp_clipboardStore(text);
   draw_string(130, 100, "Copie !");
-  msleep(500);
+  extapp_msleep(500);
 }
 
-void main(void) {
+void extapp_main(void) {
   char buf[128];
   bool partial_draw = false, redraw = true;
   int cursor_pos = 0;
@@ -281,20 +281,18 @@ void main(void) {
       draw_string_small(0, 180, _BLACK, _WHITE, buf);
       sprintf(buf, "khi : %f", atomsdefs[cursor_pos].electroneg);
       draw_string_small(160, 180, _BLACK, _WHITE, buf);
-
-      msleep(100);
     }
     redraw = false;
-    long key = scanKeyboard();
-    if(key & KEY_Back || key & KEY_Home) {
+    int key = extapp_getKey(true, NULL);
+    if(key == KEY_CTRL_EXIT || key == KEY_CTRL_MENU) {
       return;
-    } else if (key & KEY_Left && cursor_pos > 0) {
+    } else if (key == KEY_CTRL_LEFT && cursor_pos > 0) {
       cursor_pos--;
       redraw = partial_draw = true;
-    } else if (key & KEY_Right && cursor_pos < ATOM_NUMS - 1) {
+    } else if (key == KEY_CTRL_RIGHT && cursor_pos < ATOM_NUMS - 1) {
       cursor_pos++;
       redraw = partial_draw = true;
-    } else if (key & KEY_Up) {
+    } else if (key == KEY_CTRL_UP) {
       uint8_t curr_x = atomsdefs[cursor_pos].x;
       uint8_t curr_y = atomsdefs[cursor_pos].y;
       bool updated = false;
@@ -307,7 +305,7 @@ void main(void) {
           }
         }
       }
-    } else if (key & KEY_Down) {
+    } else if (key == KEY_CTRL_DOWN) {
       uint8_t curr_x = atomsdefs[cursor_pos].x;
       uint8_t curr_y = atomsdefs[cursor_pos].y;
       bool updated = false;
@@ -321,25 +319,27 @@ void main(void) {
           }
         }
       }
-    } else if (key & KEY_OK || key & KEY_EXE) {
+    } else if (key == KEY_CTRL_OK || key == KEY_CTRL_EXE) {
       sprintf(buf, "%s,%d,%d,%f,%f", atomsdefs[cursor_pos].name, atomsdefs[cursor_pos].num, atomsdefs[cursor_pos].neutrons + atomsdefs[cursor_pos].num, atomsdefs[cursor_pos].mass, atomsdefs[cursor_pos].electroneg);
       copy(buf);
       redraw = partial_draw = true;
-    } else if (key & KEY_LeftParenthesis) {
+    } else if (key == '(') {
       sprintf(buf, "%d", atomsdefs[cursor_pos].num);
       copy(buf);
       redraw = partial_draw = true;
-    } else if (key & KEY_Eight) {
+    } else if (key == '8') {
       sprintf(buf, "%d", atomsdefs[cursor_pos].neutrons + atomsdefs[cursor_pos].num);
       copy(buf);
       redraw = partial_draw = true;
-    } else if (key & KEY_Seven) {
+    } else if (key == '7') {
       sprintf(buf, "%f", atomsdefs[cursor_pos].mass);
       copy(buf);
       redraw = partial_draw = true;
-    } else if (key & KEY_Comma) {
+    } else if (key == ',') {
       sprintf(buf, "%f", atomsdefs[cursor_pos].electroneg);
       copy(buf);
+      redraw = partial_draw = true;
+    } else if (key == KEY_PRGM_ACON) {
       redraw = partial_draw = true;
     }
   }

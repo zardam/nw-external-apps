@@ -74,7 +74,7 @@ void gui_savesnap(void)
    if (osd_makesnapname(filename, PATH_MAX) < 0)
       return;
 
-   if (pcx_write(filename, nes->vidbuf, nes->ppu->curpal)) 
+   if (pcx_write(filename, vid_getbuffer(), nes->ppu->curpal)) 
       return;
 
    gui_sendmsg(GUI_GREEN, "Screen saved to %s", filename);
@@ -242,7 +242,7 @@ INLINE void gui_charline(char ch, int x_pos, int y_pos, uint8 color)
    }
 }
 
-static void gui_putchar(uint8 *dat, int height, int x_pos, int y_pos, uint8 color)
+static void gui_putchar(const uint8 *dat, int height, int x_pos, int y_pos, uint8 color)
 {
    while (height--)
       gui_charline(*dat++, x_pos, y_pos++, color);
@@ -593,6 +593,8 @@ void gui_sendmsg(int color, char *format, ...)
    log_print(msg.text);
    log_print("\n");
 #endif
+
+   printf("GUI: %s\n", msg.text);
 
    va_end(arg);
 

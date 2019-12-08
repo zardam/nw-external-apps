@@ -76,7 +76,8 @@ static int mem_checkguardblock(void *data, int guard_size)
    block = ((char *) data) - guard_size;
 
    /* get the size */
-   alloc_size = *((uint32 *) block)++;
+   alloc_size = *((uint32 *) block);
+   block+=4;
 
    /* check leading guard string */
    check = GUARD_STRING;
@@ -141,7 +142,8 @@ static void *mem_guardalloc(int alloc_size, int guard_size)
       *ptr++ = 0xDEADBEEF;
    
    /* store the size of the newly allocated block*/
-   *((uint32 *) block)++ = alloc_size;
+   *((uint32 *) block) = alloc_size;
+	block+=4;
 
    /* put guard string at beginning of block */
    check = GUARD_STRING;
@@ -259,6 +261,7 @@ void *_my_malloc(int size, char *file, int line)
    else
       temp = malloc(size);
 
+   printf("Malloc: %d at %s:%d\n", size, file, line);
    if (NULL == temp)
    {
       sprintf(fail, "malloc: out of memory at line %d of %s.  block size: %d\n",

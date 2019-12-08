@@ -35,7 +35,7 @@
 static bitmap_t *screen = NULL;
 
 /* primary / backbuffer surfaces */
-static bitmap_t *primary_buffer = NULL, *back_buffer = NULL;
+static bitmap_t *primary_buffer = NULL; //, *back_buffer = NULL;
 
 static viddriver_t *driver = NULL;
 
@@ -357,9 +357,9 @@ void vid_flush(void)
       vid_blitscreen(num_dirties, dirty_rects);
 
    /* Swap pointers to the main/back buffers */
-   temp = back_buffer;
-   back_buffer = primary_buffer;
-   primary_buffer = temp;
+//   temp = back_buffer;
+//   back_buffer = primary_buffer;
+//   primary_buffer = temp;
 }
 
 /* emulated machine tells us which resolution it wants */
@@ -367,23 +367,24 @@ int vid_setmode(int width, int height)
 {
    if (NULL != primary_buffer)
       bmp_destroy(&primary_buffer);
-   if (NULL != back_buffer)
-      bmp_destroy(&back_buffer);
+//   if (NULL != back_buffer)
+//      bmp_destroy(&back_buffer);
 
    primary_buffer = bmp_create(width, height, 0); /* no overdraw */
    if (NULL == primary_buffer)
       return -1;
 
    /* Create our backbuffer */
+#if 0
    back_buffer = bmp_create(width, height, 0); /* no overdraw */
    if (NULL == back_buffer)
    {
       bmp_destroy(&primary_buffer);
       return -1;
    }
-
-   bmp_clear(primary_buffer, GUI_BLACK);
    bmp_clear(back_buffer, GUI_BLACK);
+#endif
+   bmp_clear(primary_buffer, GUI_BLACK);
 
    return 0;
 }
@@ -427,6 +428,7 @@ int vid_init(int width, int height, viddriver_t *osd_driver)
                  osd_driver->name, width, height);
       return -1;
    }
+	log_printf("vid_init done\n");
 
    return 0;
 }
@@ -438,8 +440,10 @@ void vid_shutdown(void)
 
    if (NULL != primary_buffer)
       bmp_destroy(&primary_buffer);
+#if 0
    if (NULL != back_buffer)
       bmp_destroy(&back_buffer);
+#endif
 
    if (driver && driver->shutdown)
       driver->shutdown();

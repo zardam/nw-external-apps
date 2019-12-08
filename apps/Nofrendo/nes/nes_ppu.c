@@ -25,7 +25,6 @@
 
 #include <string.h>
 #include <stdlib.h>
-#include <stdint.h>
 #include <noftypes.h>
 #include <nes_ppu.h>
 #include <nes.h>

@@ -6,7 +6,7 @@ LDFLAGS=-Wl,-L$(API) -Wl,--gc-sections -Wl,--entry=entrypoint --specs=nosys.spec
 
 NES_ROM = epsilon/2048.nes
 
-CFLAGS += -I./ -Ines/ -Isndhrdw/ -Ilibsnss/ -Icpu/
+CFLAGS += -I./ -Ines/ -Isndhrdw/ -Ilibsnss/ -Icpu/ -Iepsilon/
 
 OBJS = bitmap.o \
 	config.o \
@@ -15,6 +15,7 @@ OBJS = bitmap.o \
 	event.o \
 	libsnss/libsnss.o \
 	log.o \
+	pcx.o \
 	mappers/map000.o \
 	mappers/map001.o \
 	mappers/map002.o \
@@ -41,6 +42,7 @@ OBJS = bitmap.o \
 	mappers/map064.o \
 	mappers/map065.o \
 	mappers/map066.o \
+	mappers/map069.o \
 	mappers/map070.o \
 	mappers/map073.o \
 	mappers/map075.o \
@@ -52,6 +54,7 @@ OBJS = bitmap.o \
 	mappers/map094.o \
 	mappers/map099.o \
 	mappers/map160.o \
+	mappers/map225.o \
 	mappers/map229.o \
 	mappers/map231.o \
 	mappers/mapvrc.o \
@@ -69,10 +72,13 @@ OBJS = bitmap.o \
 	sndhrdw/nes_apu.o \
 	sndhrdw/vrcvisnd.o \
 	nofrendo.o \
-	epsilon/osd_epsilon.o \
+	epsilon/lz4.o \
+	epsilon/stubs.o \
+	epsilon/osd.o \
 	epsilon/rom.o \
-	epsilon/main.o \
-	epsilon/stubs.o
+	epsilon/statefile_wrapper.o \
+	epsilon/video_audio.o \
+	epsilon/main.o
 
 app.elf: $(OBJS)
 	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)

@@ -248,10 +248,10 @@ static void build_address_handlers(nes_t *machine)
 /* raise an IRQ */
 void nes_irq(void)
 {
-// #ifdef NOFRENDO_DEBUG
-//    if (nes.scanline <= NES_SCREEN_HEIGHT)
-//       memset(nes.vidbuf->line[nes.scanline - 1], GUI_RED, NES_SCREEN_WIDTH);
-// #endif /* NOFRENDO_DEBUG */
+#ifdef NOFRENDO_DEBUG
+//   if (nes.scanline <= NES_SCREEN_HEIGHT)
+//      memset(nes.vidbuf->line[nes.scanline - 1], GUI_RED, NES_SCREEN_WIDTH);
+#endif /* NOFRENDO_DEBUG */
 
    nes6502_irq();
 }
@@ -339,16 +339,16 @@ static void system_video(bool draw)
    /* TODO: hack */
    if (false == draw)
    {
-      //gui_frame(false);
+      gui_frame(false);
       return;
    }
 
    /* blit the NES screen to our video surface */
-   // vid_blit(nes.vidbuf, 0, (NES_SCREEN_HEIGHT - NES_VISIBLE_HEIGHT) / 2,
-            // 0, 0, NES_SCREEN_WIDTH, NES_VISIBLE_HEIGHT);
+//   vid_blit(nes.vidbuf, 0, (NES_SCREEN_HEIGHT - NES_VISIBLE_HEIGHT) / 2,
+//            0, 0, NES_SCREEN_WIDTH, NES_VISIBLE_HEIGHT);
 
    /* overlay our GUI on top of it */
-   //gui_frame(true);
+   gui_frame(true);
 
    /* blit to screen */
    vid_flush();
@@ -357,31 +357,28 @@ static void system_video(bool draw)
    osd_getinput();
 }
 
-static uint32_t rounded_micros() {
-  return NES_PERIOD_US * (((uint32_t)micros()) / NES_PERIOD_US);
-}
-
 /* main emulation loop */
 void nes_emulate(void)
 {
-   uint32_t last_ticks, frames_to_render;
+   int last_ticks, frames_to_render;
 
    osd_setsound(nes.apu->process);
 
-   last_ticks = rounded_micros();
+   last_ticks = osd_nofrendo_ticks();
    frames_to_render = 0;
    nes.scanline_cycles = 0;
    nes.fiq_cycles = (int) NES_FIQ_PERIOD;
 
+
    while (false == nes.poweroff)
    {
-     uint32_t current_ticks = rounded_micros();
-     int tick_diff = (current_ticks - last_ticks) / NES_PERIOD_US;
-      if (tick_diff != 0)
+      if (osd_nofrendo_ticks() != last_ticks)
       {
+         int tick_diff = osd_nofrendo_ticks() - last_ticks;
+
          frames_to_render += tick_diff;
          gui_tick(tick_diff);
-         last_ticks = current_ticks;
+         last_ticks = osd_nofrendo_ticks();
       }
 
       if (true == nes.pause)
@@ -443,7 +440,7 @@ void nes_destroy(nes_t **machine)
       mmc_destroy(&(*machine)->mmc);
       ppu_destroy(&(*machine)->ppu);
       apu_destroy(&(*machine)->apu);
-      //bmp_destroy(&(*machine)->vidbuf);
+//      bmp_destroy(&(*machine)->vidbuf);
       if ((*machine)->cpu)
       {
          if ((*machine)->cpu->mem_page[0])
@@ -522,9 +519,9 @@ nes_t *nes_create(void)
 
    /* bitmap */
    /* 8 pixel overdraw */
-   // machine->vidbuf = bmp_create(NES_SCREEN_WIDTH, NES_SCREEN_HEIGHT, 8);
-   // if (NULL == machine->vidbuf)
-   //    goto _fail;
+//   machine->vidbuf = bmp_create(NES_SCREEN_WIDTH, NES_SCREEN_HEIGHT, 8);
+//   if (NULL == machine->vidbuf)
+//      goto _fail;
 
    machine->autoframeskip = true;
 
