@@ -12,7 +12,7 @@ rm -f "${OUTPUT}"
 POS=0
 
 while [ ! -z "$1" ]; do
-  NAME="$(basename "$1" .elf)"
+  NAME="$(basename $(dirname "$1"))"
   sed "s/\+ (0)/+ (${POS})/" apps/external.ld > temp.ld
   "${LD}" "$1" -o "${NAME}_linked.elf" -Ttemp.ld
   "${OBJCOPY}" -O binary "${NAME}_linked.elf" "${NAME}"
