@@ -256,7 +256,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
         });
         let internal = await loadFirmwareFile("firmware/" + version + ".internal.bin");
         let external = await loadFirmwareFile("firmware/" + version + ".external.bin");
-        await uploadFile(selectedDevice, "@External Flash /0x90001000/32*064Kg", external, false);
+        await uploadFile(selectedDevice, "@External Flash /0x90000000/32*064Kg", external, false);
         await uploadFile(selectedDevice, "@Internal Flash /0x08000000/04*016Kg", internal, true);
         $scope.$apply(function() {
           $scope.allDone = true;
