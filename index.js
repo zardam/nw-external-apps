@@ -188,7 +188,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
         });
         let archive = await buildArchive($scope.selectedApps, $scope.customFiles);
         console.log("Archive", archive);
-        await uploadFile(selectedDevice, "@External Flash /0x90000000/32*064Kg,64*064Kg", archive, false);
+        await uploadFile(selectedDevice, "@External Flash /0x90200000/32*064Kg,64*064Kg", archive, false);
         $scope.$apply(function() {
           $scope.allDone = true;
         });
