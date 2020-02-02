@@ -256,7 +256,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
         });
         let internal = await loadFirmwareFile("firmware/" + version + ".internal.bin");
         let external = await loadFirmwareFile("firmware/" + version + ".external.bin");
-        await uploadFile(selectedDevice, "@External Flash /0x90000000/32*064Kg", external, false);
+        await uploadFile(selectedDevice, "@External Flash /0x90000000/08*004Kg,01*032Kg,31*064Kg", external, false);
         await uploadFile(selectedDevice, "@Internal Flash /0x08000000/04*016Kg", internal, true);
         $scope.$apply(function() {
           $scope.allDone = true;
@@ -283,7 +283,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
     .translations('en', {
       TITLE: 'Unofficial N110 application repository',
       LEAD: 'Here you will find some installable applications for a N110 calculator.',
-      FIRMWARE: 'To install a compatible firmware on your calculator, please go ',
+      FIRMWARE: 'To install a compatible firmware on your calculator, please do an update on the official site, then go ',
       DISCLAIM: 'For more information (or filling an issue) please go ',
       HERE: 'here',
       NO_WEB_USB: 'Your browser does not support WebUSB, please use',
@@ -307,7 +307,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
     .translations('fr', {
       TITLE: 'Dépôt d\'application N110 non officiel',
       LEAD: 'Vous trouverez ici quelques application installables sur une calculatrice N110.',
-      FIRMWARE: 'Pour installer un micrologiciel compatible, veuillez vous rendre ',
+      FIRMWARE: 'Pour installer un micrologiciel compatible, veuillez mettre à jour votre calculatrice sur le site officiel, puis vous rendre ',
       DISCLAIM: 'Pour plus d\'informations (ou soumettre un problème) veuillez vous rendre ',
       HERE: 'ici',
       NO_WEB_USB: 'Votre navigateur ne supporte pas WebUSB, veuillez utiliser',
