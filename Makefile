@@ -1,4 +1,4 @@
-apps.tar: apps/KhiCAS/app.elf apps/Periodic/app.elf apps/Nofrendo/app.elf
+apps.tar: apps/KhiCAS/app.elf apps/Periodic/app.elf apps/Nofrendo/app.elf apps/Peanut-GB/app.elf
 	./archive $@ $^
 
 flash: apps.tar
@@ -9,6 +9,9 @@ api/libapi.a:
 
 apps/Periodic/app.elf: api/libapi.a
 	make -C apps/Periodic
+
+apps/Peanut-GB/app.elf: api/libapi.a
+	make -C apps/Peanut-GB
 
 apps/KhiCAS/app.elf: api/libapi.a
 	make -C apps/KhiCAS
@@ -22,4 +25,5 @@ clean:
 	make -C apps/Periodic clean
 	make -C apps/KhiCAS clean
 	make -C apps/Nofrendo clean
+	make -C apps/Peanut-GB clean
 

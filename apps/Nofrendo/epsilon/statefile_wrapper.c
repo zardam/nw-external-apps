@@ -5,8 +5,8 @@
 #include <extapp_api.h>
 #include "lz4.h"
 
-#define MAX_FILE_SIZE (1<<14)
-#define MAX_SCRIPTSTORE_SIZE 8192
+#define MAX_FILE_SIZE 8192
+#define MAX_SCRIPTSTORE_SIZE 4096
 
 extern bool file_exists(const char * filename);
 extern bool erase_file(const char * filename);
