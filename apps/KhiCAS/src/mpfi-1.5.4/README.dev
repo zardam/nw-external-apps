@@ -1,0 +1,40 @@
+
+to compile MPFI from the repository, type the following commands:
+$ autoreconf -i
+$ ./configure --with-gmp=/path/to/gmp --with-mpfr=/path/to/mpfr
+$ make
+$ make check
+
+
+to make a new release:
+1) create a new branch in the repository
+$ svn copy                                                      \
+   svn+ssh://username@scm.gforge.inria.fr/svn/mpfi/trunk/mpfi   \
+   svn+ssh://username@scm.gforge.inria.fr/svn/mpfi/branches/1.5 \
+   -m "Create branch 1.5"
+2) Update version number in configure.ac, in doc/mpfi.texi, and in src/mpfi.h
+   in the new branch. Update the date in doc/mpfi.texi.
+3) Update the NEWS file.
+4) Build new packages for the release version in three formats (tar.gz,
+   tar.bz2 and zip):
+$ make dist
+   or to build and check new packages
+$ make distcheck
+5) Check the release version on different machines.
+6) For the release, create a tag:
+$ svn copy                                                      \
+   svn+ssh://username@scm.gforge.inria.fr/svn/mpfi/branches/1.5 \
+   svn+ssh://username@scm.gforge.inria.fr/svn/mpfi/tags/1.5
+   -m "Tag release 1.5"
+7) Update version in the trunk.
+
+
+to build HTML pages containing the source code annotated with LOC coverage of
+  the test suite, you need the MPFI sources from the subversion repository
+  (the coverage utility is not distributed in release packages), a gcc
+  compatible compiler, and you need to install the lcov tool
+  (http://ltp.sourceforge.net/coverage/lcov.php).
+  Then type in the MPFI source directory:
+$ ./coverage .
+This will generate the coverage report and print the location of the HTML
+  pages (a /tmp subdirectory).

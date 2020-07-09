@@ -1,0 +1,55 @@
+#!/bin/bash
+# Test coverage
+#
+# An adaptation of Patrick Pellissier's script in MPFR
+
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 srcdir [package [configure_options]]"
+  exit 1;
+fi
+
+PKG_DIR="$1"
+shift
+if [ $PKG_DIR = "." ]; then
+    PKG_DIR="$PWD"
+fi
+
+PKG=${1:-$(basename $PKG_DIR)}
+shift
+
+# Use svnversion instead of "svn info" due to mixed revisions.
+# You may need to do a "svn update" first (see Subversion FAQ
+# and/or "svnversion --help" output for more information).
+if [ -z "$TESTNAME" ]; then
+  TESTNAME="r$(svnversion "$PKG_DIR")";
+fi
+echo "$PKG $TESTNAME"
+
+# Security note: it is important to exit if the directory cannot be
+# created as it can already belongs to someone else. In particular,
+# this is done by set -e.
+set -e
+TEST_DIR="/tmp/o$PKG-$USER"
+echo "Erasing previous $TEST_DIR"
+rm -rf "$TEST_DIR"
+mkdir "$TEST_DIR"
+cd $TEST_DIR
+mkdir html
+set +e
+
+echo "Building $PKG"
+$PKG_DIR/configure --disable-shared --enable-static $@ \
+    CFLAGS="-fprofile-arcs -ftest-coverage -g"
+make check -j -l 4
+
+if [ -d $PKG_DIR/src ]; then
+    lcov -o html/$PKG.capture -t "$TESTNAME" -d src -c
+    lcov -o html/$PKG.info -e html/$PKG.capture "$PKG_DIR/src/*.c"
+else
+    lcov -o html/$PKG.capture -t "$TESTNAME" -d . -c
+    lcov -o html/$PKG.0 -e html/$PKG.capture "$PKG_DIR/*.c"
+    lcov -o html/$PKG.info -r html/$PKG.0 "*/tests/*"
+fi
+genhtml -output html -t "$TESTNAME" html/$PKG.info
+
+echo "See results in "$TEST_DIR"/html/index.html"
