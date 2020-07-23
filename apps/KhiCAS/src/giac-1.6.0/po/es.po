@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 17:45+0200\n"
+"POT-Creation-Date: 2020-07-23 18:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -653,7 +653,7 @@ msgid "2nd arg"
 msgstr "2° arg"
 
 #: src/misc.cc:1839 src/misc.cc:1879 src/misc.cc:1885 src/vecteur.cc:11507
-#: src/cocoa.cc:3360 src/gen.cc:4379 src/gen.cc:10233 src/gen.cc:10287
+#: src/cocoa.cc:3373 src/gen.cc:4379 src/gen.cc:10233 src/gen.cc:10287
 msgid "Not invertible"
 msgstr "No inversible"
 
@@ -669,73 +669,73 @@ msgstr "No es un potencial del vector"
 msgid "Low accuracy"
 msgstr "Baja precisión"
 
-#: src/misc.cc:4121
+#: src/misc.cc:4120
 msgid "Guessing initial production requires more than 20 samples"
 msgstr "La producción inicial de conjeturas requiere más de 20 muestras"
 
-#: src/misc.cc:4129
+#: src/misc.cc:4128
 msgid "Initial cumulative estimated to "
 msgstr "Acumulado inicial estimado en "
 
-#: src/misc.cc:4129
+#: src/misc.cc:4128
 msgid "Correlation for 5 first years to estimate initial cumulative : "
 msgstr ""
 "La correlación de los 5 primeros años para calcular el acumulado inicial: "
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid "Pinstant="
 msgstr "Pinstant="
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid "*Pcumul+"
 msgstr "*Pcumul+"
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid "Correlation "
 msgstr "Correlación "
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid ", Estimated total P="
 msgstr ", P total estimado="
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid "Returning estimated Pcumul, Pinstant, Ptotal, Pinstantmax, tmax, R"
 msgstr "Retornando Pcumul, Pinstant, Ptotal, Pinstantmax, tmax, R estimados"
 
-#: src/misc.cc:4246
+#: src/misc.cc:4245
 msgid "Values out of range"
 msgstr "Valores fuera del rango"
 
-#: src/misc.cc:4348
+#: src/misc.cc:4347
 msgid "Invalid class size (replaced by 1) "
 msgstr "Tamaño de clase inválido (sustituido por 1) "
 
-#: src/misc.cc:5302 src/misc.cc:5347
+#: src/misc.cc:5301 src/misc.cc:5346
 msgid "Negative value encoutered"
 msgstr "Se encontró un valor negativo"
 
-#: src/misc.cc:5403
+#: src/misc.cc:5402
 msgid "graham_sort_function"
 msgstr "graham_sort_function"
 
-#: src/misc.cc:5865
+#: src/misc.cc:5864
 msgid "binop"
 msgstr "binop"
 
-#: src/misc.cc:5965
+#: src/misc.cc:5964
 msgid "plotarea(f(x),x=a..b[,n,method])"
 msgstr "plotarea(f(x),x=a..b[,n,method])"
 
-#: src/misc.cc:6051
+#: src/misc.cc:6050
 #, fuzzy
 msgid "not supported"
 msgstr "No hay compatibilidad con mathml"
 
-#: src/misc.cc:6186
+#: src/misc.cc:6185
 msgid "Warning: not a graph matrix!"
 msgstr "Advertencia: ¡no es una matriz de gráfico!"
 
-#: src/misc.cc:6467
+#: src/misc.cc:6466
 msgid ""
 "Warning! Leaving conjugate gradient algorithm after dimension of matrix "
 "iterations. Check that your matrix is hermitian/symmetric definite."
@@ -744,7 +744,7 @@ msgstr ""
 "dimensión de las iteraciones de la matriz. Verifique que su matriz sea "
 "definitiva hermitiana/simétrica."
 
-#: src/misc.cc:6497
+#: src/misc.cc:6496
 msgid ""
 "Warning! Leaving Jacobi iterative algorithm after maximal number of "
 "iterations. Check that your matrix is diagonal dominant."
@@ -753,7 +753,7 @@ msgstr ""
 "cantidad máxima de iteraciones. Verifique que su matriz sea dominante "
 "diagonal."
 
-#: src/misc.cc:6529
+#: src/misc.cc:6528
 msgid ""
 "Warning! Leaving Gauss-Seidel iterative algorithm after maximal number of "
 "iterations. Check that your matrix is diagonal dominant."
@@ -762,7 +762,7 @@ msgstr ""
 "la cantidad máxima de iteraciones. Verifique que su matriz sea dominante "
 "diagonal."
 
-#: src/misc.cc:7510
+#: src/misc.cc:7509
 #, c-format
 msgid ""
 "====================\n"
@@ -771,46 +771,46 @@ msgstr ""
 "====================\n"
 "Gráfico paramétrico (%gen,%gen), variable %gen"
 
-#: src/misc.cc:7523
+#: src/misc.cc:7522
 msgid "Even functions."
 msgstr "Funciones pares."
 
-#: src/misc.cc:7525
+#: src/misc.cc:7524
 #, c-format
 msgid "Even function %gen, odd function %gen. Reflection Ox"
 msgstr "Función par %gen, función impar %gen. Reflexión: Ox"
 
-#: src/misc.cc:7529
+#: src/misc.cc:7528
 #, c-format
 msgid "Odd function %gen, even function %gen. Reflection Oy"
 msgstr "Función impar %gen, función par %gen. Reflexión: Oy"
 
-#: src/misc.cc:7531
+#: src/misc.cc:7530
 msgid "Odd functions. Center O"
 msgstr "Funciones impares. O central"
 
-#: src/misc.cc:7545 src/misc.cc:8144
+#: src/misc.cc:7544 src/misc.cc:8143
 #, c-format
 msgid "Domain %gen"
 msgstr "Dominio %gen"
 
-#: src/misc.cc:7548 src/misc.cc:8147
+#: src/misc.cc:7547 src/misc.cc:8146
 msgid "Unable to find singular points"
 msgstr "No es posible encontrar los puntos singulares"
 
-#: src/misc.cc:7584 src/misc.cc:8197 src/misc.cc:8211
+#: src/misc.cc:7583 src/misc.cc:8196 src/misc.cc:8210
 msgid "Unable to find critical points"
 msgstr "No es posible encontrar los puntos criticos"
 
-#: src/misc.cc:7594
+#: src/misc.cc:7593
 msgid "Unable to find inflection points"
 msgstr "No es posible encontrar los puntos de inflexión"
 
-#: src/misc.cc:7601 src/misc.cc:8219
+#: src/misc.cc:7600 src/misc.cc:8218
 msgid "Infinite number of critical points. Try with optional argument "
 msgstr "Número infinito de puntos críticos. Pruebe con un argumento opcional "
 
-#: src/misc.cc:7664
+#: src/misc.cc:7663
 #, c-format
 msgid ""
 "Singular point %gen, point %gen direction %gen kind (%gen,%gen)\n"
@@ -819,37 +819,37 @@ msgstr ""
 "Punto singular %gen, punto %gen, dirección %gen, tipo (%gen,%gen)\n"
 "Expansiones de Taylor %gen"
 
-#: src/misc.cc:7739
+#: src/misc.cc:7738
 #, c-format
 msgid "Horizontal asymptote at %gen : %gen"
 msgstr "Asíntota horizontal en %gen : %gen"
 
-#: src/misc.cc:7749 src/misc.cc:8318
+#: src/misc.cc:7748 src/misc.cc:8317
 #, c-format
 msgid "Vertical parabolic asymptote at %gen"
 msgstr "Asíntota parabólica vertical en %gen"
 
-#: src/misc.cc:7755 src/misc.cc:8325
+#: src/misc.cc:7754 src/misc.cc:8324
 #, c-format
 msgid "Horizontal parabolic asymptote at %gen"
 msgstr "Asíntota parabólica horizontal en %gen"
 
-#: src/misc.cc:7762
+#: src/misc.cc:7761
 #, c-format
 msgid "Parabolic asymptote direction at %gen: %gen"
 msgstr "Dirección de asíntota parabólica en %gen: %gen"
 
-#: src/misc.cc:7768
+#: src/misc.cc:7767
 #, c-format
 msgid "Asymptote at %gen: %gen"
 msgstr "Asíntota en %gen: %gen"
 
-#: src/misc.cc:7780
+#: src/misc.cc:7779
 #, c-format
 msgid "Vertical asymptote at %gen: %gen"
 msgstr "Asíntota vertical en %gen: %gen"
 
-#: src/misc.cc:8051
+#: src/misc.cc:8050
 #, c-format
 msgid ""
 "Variations (%gen,%gen)\n"
@@ -858,14 +858,14 @@ msgstr ""
 "Variaciones (%gen,%gen)\n"
 "%gen"
 
-#: src/misc.cc:8064
+#: src/misc.cc:8063
 msgid ""
 "Warning, using x or y as variable in parametric plot may lead to confusion!"
 msgstr ""
 "¡Advertencia, el uso de x o y como variable en el gráfico paramétrico puede "
 "causar confusión!"
 
-#: src/misc.cc:8107
+#: src/misc.cc:8106
 #, c-format
 msgid ""
 "====================\n"
@@ -874,61 +874,61 @@ msgstr ""
 "====================\n"
 "Gráfico de función %gen, variable %gen"
 
-#: src/misc.cc:8109
+#: src/misc.cc:8108
 #, c-format
 msgid "Periodic function T=%gen"
 msgstr "T de la función periódica=%gen"
 
-#: src/misc.cc:8126
+#: src/misc.cc:8125
 #, c-format
 msgid "Even function %gen. Reflection Oy"
 msgstr "Función par %gen. Reflexión: Oy"
 
-#: src/misc.cc:8128
+#: src/misc.cc:8127
 #, c-format
 msgid "Odd function %gen. Center O"
 msgstr "Función impar %gen. O central"
 
-#: src/misc.cc:8205
+#: src/misc.cc:8204
 msgid "Unable to find convexity"
 msgstr "No es posible encontrar la convexidad"
 
-#: src/misc.cc:8281
+#: src/misc.cc:8280
 #, c-format
 msgid "Vertical asymptote %gen"
 msgstr "Asíntota vertical %gen"
 
-#: src/misc.cc:8286
+#: src/misc.cc:8285
 #, c-format
 msgid "Symmetric vertical asymptote %gen"
 msgstr "Asíntota vertical simétrica %gen"
 
-#: src/misc.cc:8299
+#: src/misc.cc:8298
 #, c-format
 msgid "Horizontal asymptote %gen"
 msgstr "Asíntota horizontal %gen"
 
-#: src/misc.cc:8306
+#: src/misc.cc:8305
 #, c-format
 msgid "Symmetric horizontal asymptote %gen"
 msgstr "Asíntota horizontal simétrica %gen"
 
-#: src/misc.cc:8334
+#: src/misc.cc:8333
 #, c-format
 msgid "Parabolic asymptote direction %gen at infinity"
 msgstr "Dirección de asíntota parabólica %gen en infinito"
 
-#: src/misc.cc:8341
+#: src/misc.cc:8340
 #, c-format
 msgid "Asymptote %gen"
 msgstr "Asíntota %gen"
 
-#: src/misc.cc:8351
+#: src/misc.cc:8350
 #, c-format
 msgid "Symmetric asymptote %gen"
 msgstr "Asíntota simétrica %gen"
 
-#: src/misc.cc:8587
+#: src/misc.cc:8586
 #, fuzzy, c-format
 msgid ""
 "Sign %gen\n"
@@ -1232,7 +1232,8 @@ msgid "Args must be multivariate polynomials"
 msgstr "Los argumentos deben ser polinomios multivariados"
 
 #: src/ezgcd.cc:1563
-msgid "GCD not successfull"
+#, fuzzy
+msgid "GCD not successful"
 msgstr "GCD sin éxito"
 
 #: src/derive.cc:102
@@ -1484,7 +1485,7 @@ msgstr ""
 "supuesto sobre los parámetros, de lo contrario se pueden perder las "
 "soluciones. Las soluciones de la ecuación son "
 
-#: src/solve.cc:1427 src/prog.cc:7083 src/prog.cc:7085
+#: src/solve.cc:1427 src/prog.cc:7095 src/prog.cc:7097
 msgid "Unable to sort "
 msgstr "No es posible ordenar "
 
@@ -1888,11 +1889,11 @@ msgstr ""
 msgid "Floor definite integration: unable to handle infinite boundaries"
 msgstr "Integración definida de suelo: no es posible manejar límites infinitos"
 
-#: src/intg.cc:3609 src/plot.cc:1385 src/prog.cc:13205
+#: src/intg.cc:3609 src/plot.cc:1385 src/prog.cc:13217
 msgid "Assuming false condition "
 msgstr "Suponiendo una condición falsa "
 
-#: src/intg.cc:3613 src/plot.cc:1389 src/prog.cc:13209
+#: src/intg.cc:3613 src/plot.cc:1389 src/prog.cc:13221
 msgid "Assuming true condition "
 msgstr "Suponiendo una condición verdadera "
 
@@ -2816,7 +2817,7 @@ msgid "3-d instruction"
 msgstr "Instrucción 3-d"
 
 #: src/plot.cc:3792 src/plot.cc:3831 src/Input.cc:1280 src/Input.cc:1282
-#: src/Graph.cc:7001
+#: src/Graph.cc:7009
 msgid "circle"
 msgstr "círculo"
 
@@ -3093,7 +3094,7 @@ msgstr "Puntos colineales"
 msgid "Circle centers are identical"
 msgstr "Los centros del círculos son idénticos"
 
-#: src/plot.cc:15380 src/Graph.cc:7036
+#: src/plot.cc:15380 src/Graph.cc:7044
 msgid "reciprocation"
 msgstr "reciprocación"
 
@@ -3247,7 +3248,8 @@ msgid "Proc Parameters"
 msgstr "Parámetros de proc"
 
 #: src/prog.cc:1038
-msgid "Unitialized parameter "
+#, fuzzy
+msgid "Uninitialized parameter "
 msgstr "Parámetro no inicializado "
 
 #: src/prog.cc:1059
@@ -3388,7 +3390,8 @@ msgid "Local must have 2 args"
 msgstr "El local debe tener 2 args"
 
 #: src/prog.cc:3129
-msgid "Unitialized local variable "
+#, fuzzy
+msgid "Uninitialized local variable "
 msgstr "Variable local no inicializada "
 
 #: src/prog.cc:3291
@@ -3443,7 +3446,7 @@ msgstr "¡Lo sentimos! la depuración requiere un verdadero sistema operativo"
 msgid "Please try xcas on Linux or an Unix"
 msgstr "Pruebe xcas en Linux o en Unix"
 
-#: src/prog.cc:5964 src/prog.cc:9205
+#: src/prog.cc:5964 src/prog.cc:9217
 msgid "Archiving "
 msgstr "Archivado "
 
@@ -3465,113 +3468,113 @@ msgstr ""
 "Advertencia: algunos comandos como subs podrían cambiar el orden de los "
 "argumentos"
 
-#: src/prog.cc:6726
+#: src/prog.cc:6738
 msgid "Cas_setup "
 msgstr "Cas_setup "
 
-#: src/prog.cc:7010
+#: src/prog.cc:7022
 msgid "Parent insmod"
 msgstr "insmod padre"
 
-#: src/prog.cc:7383
+#: src/prog.cc:7395
 msgid "Float too large"
 msgstr "Flotante demasiado grande"
 
-#: src/prog.cc:7419
+#: src/prog.cc:7431
 msgid "Incompatible units"
 msgstr "Unidades incompatibles"
 
-#: src/prog.cc:7687
+#: src/prog.cc:7699
 msgid "Some units could not be converted to MKSA"
 msgstr "Algunas unidades no se pudieron convertir a MKSA"
 
-#: src/prog.cc:7736
+#: src/prog.cc:7748
 msgid "Bad conversion basis"
 msgstr "Base de conversión incorrecta"
 
-#: src/prog.cc:7820
+#: src/prog.cc:7832
 msgid "Run convert(matrix,array) for dense conversion"
 msgstr "Ejecute convert(matrix,array) para la conversión densa"
 
-#: src/prog.cc:7827
+#: src/prog.cc:7839
 msgid "Invalid map"
 msgstr "Mapa inválido"
 
-#: src/prog.cc:8160
+#: src/prog.cc:8172
 msgid "Running maple text translation __.map"
 msgstr "Ejecución de translation __.map del texto maple"
 
-#: src/prog.cc:8180
+#: src/prog.cc:8192
 msgid "Running TI89 text translation __.ti"
 msgstr "Ejecución de translation __.ti del texto TI89"
 
-#: src/prog.cc:8541
+#: src/prog.cc:8553
 msgid "No help file found"
 msgstr "No se encontró el archivo de ayuda"
 
-#: src/prog.cc:8747
+#: src/prog.cc:8759
 msgid "Restoring epsilon to 1e-6 from "
 msgstr "Restauración de épsilon a 1e-6 desde "
 
-#: src/prog.cc:8751
+#: src/prog.cc:8763
 msgid "Restoring proba epsilon to 1e-6 from "
 msgstr "Restauración de épsilon proba a 1e-6 desde "
 
-#: src/prog.cc:9045
+#: src/prog.cc:9057
 msgid "invalid |"
 msgstr "inválido |"
 
-#: src/prog.cc:9093
+#: src/prog.cc:9105
 msgid "Invalid |"
 msgstr "Inválido |"
 
-#: src/prog.cc:9189
+#: src/prog.cc:9201
 msgid "inputform may be used in a window environment only"
 msgstr "inputform solo puede usarse en un entorno de ventanas"
 
-#: src/prog.cc:9217
+#: src/prog.cc:9229
 msgid "Inputform reads "
 msgstr "Lecturas de Inputform "
 
-#: src/prog.cc:9800
+#: src/prog.cc:9812
 msgid "Error printasmaple_lib"
 msgstr "Error printasmaple_lib"
 
-#: src/prog.cc:12592
+#: src/prog.cc:12604
 msgid "Invalid unit exponent"
 msgstr "Exponente de unidad inválido"
 
-#: src/prog.cc:12750
+#: src/prog.cc:12762
 msgid "printasunit error"
 msgstr "error de printasunit"
 
-#: src/prog.cc:12910
+#: src/prog.cc:12922
 msgid "User operator not available on this architecture"
 msgstr "El operador de usuario no está disponible en esta arquitectura"
 
-#: src/prog.cc:12922
+#: src/prog.cc:12934
 msgid "Operator name must be of type string"
 msgstr "El nombre del operador debe ser de la cadena del tipo"
 
-#: src/prog.cc:13010
+#: src/prog.cc:13022
 msgid "Non existent Folder"
 msgstr "Carpeta no existente"
 
-#: src/prog.cc:13058
+#: src/prog.cc:13070
 msgid "No case applies"
 msgstr "Ningún caso aplica"
 
-#: src/prog.cc:13222
+#: src/prog.cc:13234
 msgid "Unable to handle when condition "
 msgstr "No se puede manejar cuando la condición "
 
-#: src/prog.cc:13228
+#: src/prog.cc:13240
 msgid ""
 "when2sign does not work properly with infinities. Replace inf by Inf and run "
 "limit after."
 msgstr ""
 
-#: src/prog.cc:13461
+#: src/prog.cc:13473
 msgid "assert failure: "
 msgstr "falla de afirmación: "
 
@@ -3583,18 +3586,19 @@ msgstr "Error en subsistema PARI"
 msgid "Not implemented, please recompile giac with PARI"
 msgstr "No se implementó, vuelva a compilar giac con PARI"
 
-#: src/cocoa.cc:132 src/cocoa.cc:155
+#: src/cocoa.cc:145 src/cocoa.cc:168
 msgid "Invalid giac gen -> CoCoA ZZ conversion"
 msgstr "Conversión giac gen -> CoCoA ZZ inválida"
 
-#: src/cocoa.cc:144 src/cocoa.cc:167
+#: src/cocoa.cc:157 src/cocoa.cc:180
 msgid "Unable to convert CoCoA data"
 msgstr "No es posible convertir los datos de CoCoA"
 
 #: src/cocoa.cc:14607 src/cocoa.cc:14775
+#, fuzzy
 msgid ""
 "Running a probabilistic check for the reconstructed Groebner basis. If "
-"successfull, error probability is less than "
+"successful, error probability is less than "
 msgstr ""
 "Se está ejecutando una verificación de probabilidades para la base de "
 "Groebner reconstruida. Si tiene éxito, la probabilidad de error es inferior "
@@ -4241,11 +4245,11 @@ msgstr "imprimir"
 msgid "Unable to convert to real "
 msgstr "No es posible convertir en real "
 
-#: src/gen.cc:14978 src/gen.cc:14999 src/gen.cc:15105 src/gen.cc:15124
+#: src/gen.cc:14978 src/gen.cc:14999 src/gen.cc:15108 src/gen.cc:15129
 msgid "real_object + gen"
 msgstr "real_object + gen"
 
-#: src/gen.cc:15261
+#: src/gen.cc:15266
 msgid ""
 "Compile with MPFR or USE_GMP_REPLACEMENTS if you want transcendental long "
 "float support"
@@ -4253,46 +4257,46 @@ msgstr ""
 "Compile con MPFR o USE_GMP_REPLACEMENTS si desea compatibilidad con flotante "
 "largo trascendental"
 
-#: src/gen.cc:15549
+#: src/gen.cc:15554
 msgid "real_interval inv"
 msgstr "real_interval inv"
 
-#: src/gen.cc:15565 src/gen.cc:15587 src/gen.cc:15598 src/gen.cc:15609
-#: src/gen.cc:15620 src/gen.cc:15631 src/gen.cc:15642 src/gen.cc:15653
-#: src/gen.cc:15664 src/gen.cc:15675 src/gen.cc:15686 src/gen.cc:15697
-#: src/gen.cc:15708 src/gen.cc:15719 src/gen.cc:15730
+#: src/gen.cc:15570 src/gen.cc:15592 src/gen.cc:15603 src/gen.cc:15614
+#: src/gen.cc:15625 src/gen.cc:15636 src/gen.cc:15647 src/gen.cc:15658
+#: src/gen.cc:15669 src/gen.cc:15680 src/gen.cc:15691 src/gen.cc:15702
+#: src/gen.cc:15713 src/gen.cc:15724 src/gen.cc:15735
 msgid "real_interval sqrt"
 msgstr "real_interval sqrt"
 
-#: src/gen.cc:15576
+#: src/gen.cc:15581
 msgid "real_interval abs"
 msgstr "real_interval abs"
 
-#: src/gen.cc:15806
+#: src/gen.cc:15811
 msgid "real_interval mul"
 msgstr "real_interval mul"
 
-#: src/gen.cc:15836
+#: src/gen.cc:15841
 msgid "real_interval mul 2"
 msgstr "real_interval mul 2"
 
-#: src/gen.cc:15938
+#: src/gen.cc:15943
 msgid "MPFR error reading binary "
 msgstr "Error de MPFR al leer en binario "
 
-#: src/gen.cc:15940
+#: src/gen.cc:15945
 msgid "Error no MPFR reading "
 msgstr "Error de lectura de no MPFR "
 
-#: src/help.cc:209 src/help.cc:695
+#: src/help.cc:408 src/help.cc:894
 msgid "Best match has score "
 msgstr "La coincidencia más exacta tiene puntuación "
 
-#: src/help.cc:659
+#: src/help.cc:858
 msgid "No help available for "
 msgstr "No hay ayuda disponible para "
 
-#: src/help.cc:720
+#: src/help.cc:919
 msgid "See also: "
 msgstr "Consulte también: "
 
@@ -4410,19 +4414,19 @@ msgstr ""
 # src/xcas.cxx:3724
 # src/xcas.cxx:3761
 # src/xcas.cxx:4777
-#: src/hist.cxx:1777 src/hist.cxx:1832 src/Graph.cc:6363
+#: src/hist.cxx:1777 src/hist.cxx:1832 src/Graph.cc:6371
 #, fuzzy
 msgid "Graph of a function"
 msgstr "Guardar config."
 
-#: src/hist.cxx:1810 src/Graph.cc:6969
+#: src/hist.cxx:1810 src/Graph.cc:6977
 msgid "Area under curve"
 msgstr ""
 
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/hist.cxx:1854 src/Graph.cc:6560
+#: src/hist.cxx:1854 src/Graph.cc:6568
 #, fuzzy
 msgid "Graph of a recurrent sequence"
 msgstr "Imprimir sesión"
@@ -4974,7 +4978,7 @@ msgstr ""
 # src/xcas.cxx:7903
 # src/xcas.cxx:7970
 # src/xcas.cxx:9117
-#: src/hist.cxx:4172 src/Graph.cc:6967
+#: src/hist.cxx:4172 src/Graph.cc:6975
 #, fuzzy
 msgid "Tangent"
 msgstr "General"
@@ -5457,7 +5461,7 @@ msgstr "Imprimir gráf."
 msgid "Format"
 msgstr "Normal"
 
-#: src/hist.cxx:4949 src/Tableur.cc:158 src/Graph.cc:6960
+#: src/hist.cxx:4949 src/Tableur.cc:158 src/Graph.cc:6968
 #, fuzzy
 msgid "Landscape"
 msgstr "Cargar script en eqw"
@@ -5673,7 +5677,7 @@ msgstr "Líneas"
 # src/xcas.cxx:3738
 # src/xcas.cxx:4766
 #: src/hist.menus:13 src/History.cc:3737 src/Tableur.cc:2937
-#: src/Editeur.cc:2444 src/Graph.cc:6943
+#: src/Editeur.cc:2444 src/Graph.cc:6951
 #, fuzzy
 msgid "Insert"
 msgstr "Insertar fila"
@@ -5782,7 +5786,7 @@ msgstr "completar"
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
 #: src/hist.menus:30 src/hist.menus:313 src/hist.menus:315 src/History.cc:3744
-#: src/Graph.cc:1196 src/Graph.cc:7851
+#: src/Graph.cc:1204 src/Graph.cc:7859
 #, fuzzy
 msgid "Print"
 msgstr "Imprimir sesión"
@@ -5798,7 +5802,7 @@ msgstr "Vista preliminar"
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/hist.menus:32 src/Graph.cc:6946
+#: src/hist.menus:32 src/Graph.cc:6954
 #, fuzzy
 msgid "To printer"
 msgstr "Imprimir sesión"
@@ -5866,7 +5870,7 @@ msgstr "Salir"
 # src/xcas.cxx:3765
 # src/xcas.cxx:4782
 #: src/hist.menus:44 src/History.cc:3754 src/Tableur.cc:2947
-#: src/Editeur.cc:2475 src/Graph.cc:6951
+#: src/Editeur.cc:2475 src/Graph.cc:6959
 msgid "Edit"
 msgstr "Editar"
 
@@ -5904,11 +5908,11 @@ msgstr "Seleccionar respuesta"
 # src/xcas.cxx:7990
 # src/xcas.cxx:8060
 # src/xcas.cxx:4800
-#: src/hist.menus:49 src/History.cc:3794 src/Tableur.cc:2951 src/Graph.cc:6961
+#: src/hist.menus:49 src/History.cc:3794 src/Tableur.cc:2951 src/Graph.cc:6969
 msgid "Undo"
 msgstr "Deshacer"
 
-#: src/hist.menus:50 src/History.cc:3795 src/Tableur.cc:2952 src/Graph.cc:6962
+#: src/hist.menus:50 src/History.cc:3795 src/Tableur.cc:2952 src/Graph.cc:6970
 msgid "Redo"
 msgstr ""
 
@@ -5916,7 +5920,7 @@ msgstr ""
 # src/xcas.cxx:3816
 # src/xcas.cxx:4799
 #: src/hist.menus:51 src/History.cc:3789 src/Tableur.cc:2950
-#: src/Editeur.cc:2476 src/Graph.cc:6957
+#: src/Editeur.cc:2476 src/Graph.cc:6965
 msgid "Paste"
 msgstr "Pegar"
 
@@ -5986,7 +5990,7 @@ msgstr "Guardar selección"
 # src/xcas.cxx:4119
 # src/xcas.cxx:4166
 # src/xcas.cxx:5225
-#: src/hist.menus:61 src/Graph.cc:1785
+#: src/hist.menus:61 src/Graph.cc:1793
 #, fuzzy
 msgid "Cfg"
 msgstr "Especiales"
@@ -6002,7 +6006,7 @@ msgstr "Guardar config."
 # src/xcas.cxx:3724
 # src/xcas.cxx:3761
 # src/xcas.cxx:4777
-#: src/hist.menus:63 src/Graph.cc:1818
+#: src/hist.menus:63 src/Graph.cc:1826
 #, fuzzy
 msgid "Graph configuration"
 msgstr "Guardar config."
@@ -6965,7 +6969,7 @@ msgstr "Distribuciones"
 # src/xcas.cxx:3974
 # src/xcas.cxx:4021
 # src/xcas.cxx:5114
-#: src/hist.menus:258 src/Graph.cc:7006
+#: src/hist.menus:258 src/Graph.cc:7014
 #, fuzzy
 msgid "Curves"
 msgstr "Circunferencias"
@@ -7247,8 +7251,8 @@ msgstr ": fichero existe. ¿Sobreescribir?"
 #: src/Xcas1.cc:3748 src/Equation.cc:4695 src/Print.cc:798 src/Tableur.cc:166
 #: src/Tableur.cc:1496 src/Tableur.cc:1833 src/Tableur.cc:2002
 #: src/Tableur.cc:2084 src/Tableur.cc:2287 src/Editeur.cc:1634
-#: src/Editeur.cc:1768 src/Editeur.cc:1933 src/Graph.cc:1496 src/Graph.cc:1811
-#: src/Graph.cc:3176 src/Graph.cc:5968 src/Graph.cc:6174
+#: src/Editeur.cc:1768 src/Editeur.cc:1933 src/Graph.cc:1504 src/Graph.cc:1819
+#: src/Graph.cc:3184 src/Graph.cc:5976 src/Graph.cc:6182
 msgid "OK"
 msgstr ""
 
@@ -7261,8 +7265,8 @@ msgstr ""
 #: src/Tableur.cc:499 src/Tableur.cc:1499 src/Tableur.cc:1836
 #: src/Tableur.cc:2005 src/Tableur.cc:2087 src/Tableur.cc:2290
 #: src/Editeur.cc:1492 src/Editeur.cc:1637 src/Editeur.cc:1771
-#: src/Editeur.cc:1936 src/Graph.cc:954 src/Graph.cc:1498 src/Graph.cc:1813
-#: src/Graph.cc:3179 src/Graph.cc:5971 src/Graph.cc:6177
+#: src/Editeur.cc:1936 src/Graph.cc:962 src/Graph.cc:1506 src/Graph.cc:1821
+#: src/Graph.cc:3187 src/Graph.cc:5979 src/Graph.cc:6185
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -7308,7 +7312,7 @@ msgid ""
 msgstr "Error analizando línea "
 
 #: src/History.cc:488 src/History.cc:510 src/Input.cc:1036 src/Editeur.cc:1166
-#: src/Editeur.cc:1251 src/Editeur.cc:1428 src/Graph.cc:7653 src/Graph.cc:7679
+#: src/Editeur.cc:1251 src/Editeur.cc:1428 src/Graph.cc:7661 src/Graph.cc:7687
 #, fuzzy
 msgid " column "
 msgstr "columna"
@@ -7316,7 +7320,7 @@ msgstr "columna"
 # src/xcas.cxx:6543
 # src/xcas.cxx:174 src/xcas.cxx:6644
 #: src/History.cc:488 src/History.cc:510 src/Input.cc:1036 src/Editeur.cc:1166
-#: src/Editeur.cc:1251 src/Editeur.cc:1428 src/Graph.cc:7653 src/Graph.cc:7679
+#: src/Editeur.cc:1251 src/Editeur.cc:1428 src/Graph.cc:7661 src/Graph.cc:7687
 msgid " at "
 msgstr " en "
 
@@ -7595,7 +7599,7 @@ msgstr "etiqueta"
 msgid "remove answers below"
 msgstr "Seleccionar respuesta"
 
-#: src/History.cc:3790 src/Graph.cc:6958
+#: src/History.cc:3790 src/Graph.cc:6966
 msgid "Delete selected levels"
 msgstr ""
 
@@ -7756,7 +7760,7 @@ msgstr ""
 # src/xcas.cxx:6543
 # src/xcas.cxx:174 src/xcas.cxx:6644
 #: src/Input.cc:1036 src/Editeur.cc:1166 src/Editeur.cc:1251
-#: src/Editeur.cc:1428 src/Graph.cc:7653 src/Graph.cc:7679
+#: src/Editeur.cc:1428 src/Graph.cc:7661 src/Graph.cc:7687
 msgid "Parse error line "
 msgstr "Error analizando línea "
 
@@ -7767,7 +7771,7 @@ msgstr ""
 # src/xcas.cxx:3810
 # src/xcas.cxx:3854
 # src/xcas.cxx:4943
-#: src/Input.cc:1285 src/Graph.cc:6998
+#: src/Input.cc:1285 src/Graph.cc:7006
 #, fuzzy
 msgid "polygon"
 msgstr "Polinómios"
@@ -7775,19 +7779,19 @@ msgstr "Polinómios"
 # src/xcas.cxx:3954
 # src/xcas.cxx:4001
 # src/xcas.cxx:5087
-#: src/Input.cc:1290 src/Graph.cc:6986
+#: src/Input.cc:1290 src/Graph.cc:6994
 #, fuzzy
 msgid "line"
 msgstr "Líneas"
 
-#: src/Input.cc:1293 src/Graph.cc:6985
+#: src/Input.cc:1293 src/Graph.cc:6993
 msgid "half_line"
 msgstr ""
 
 # src/xcas.cxx:4071
 # src/xcas.cxx:4118
 # src/xcas.cxx:5357
-#: src/Input.cc:1296 src/Graph.cc:6983
+#: src/Input.cc:1296 src/Graph.cc:6991
 #, fuzzy
 msgid "segment"
 msgstr "Listas"
@@ -8064,11 +8068,11 @@ msgstr "Variables complejas"
 msgid "Variables are complex or real"
 msgstr "Variables complejas o reales"
 
-#: src/Cfg.cc:383 src/Cfg.cc:764 src/Graph.cc:1505 src/Graph.cc:1781
+#: src/Cfg.cc:383 src/Cfg.cc:764 src/Graph.cc:1513 src/Graph.cc:1789
 msgid "Apply"
 msgstr ""
 
-#: src/Cfg.cc:397 src/Graph.cc:1501 src/Graph.cc:1777
+#: src/Cfg.cc:397 src/Graph.cc:1509 src/Graph.cc:1785
 msgid "Default"
 msgstr ""
 
@@ -8319,7 +8323,7 @@ msgstr "auto-escala"
 msgid "WX-"
 msgstr ""
 
-#: src/Cfg.cc:777 src/Graph.cc:1636
+#: src/Cfg.cc:777 src/Graph.cc:1644
 #, fuzzy
 msgid "Xmin for visualisation"
 msgstr "X-min para visualizar"
@@ -8381,7 +8385,7 @@ msgstr ""
 msgid "Copy W to XYminmax"
 msgstr ""
 
-#: src/Equation.cc:4530 src/Graph.cc:1153 src/Graph.cc:7833
+#: src/Equation.cc:4530 src/Graph.cc:1161 src/Graph.cc:7841
 msgid "M"
 msgstr ""
 
@@ -8547,7 +8551,7 @@ msgstr "Hoja de cálculo"
 msgid "Split sheet/graph horizontally or vertically"
 msgstr ""
 
-#: src/Tableur.cc:160 src/Tableur.cc:2955 src/Graph.cc:6965
+#: src/Tableur.cc:160 src/Tableur.cc:2955 src/Graph.cc:6973
 msgid "Graph"
 msgstr ""
 
@@ -8596,7 +8600,7 @@ msgstr ""
 msgid "Save sheet"
 msgstr "Grabar hoja como"
 
-#: src/Tableur.cc:1278 src/Editeur.cc:750 src/Graph.cc:5815
+#: src/Tableur.cc:1278 src/Editeur.cc:750 src/Graph.cc:5823
 msgid ": file exists. Overwrite?"
 msgstr ": fichero existe. ¿Sobreescribir?"
 
@@ -8668,7 +8672,8 @@ msgid "Endfile"
 msgstr "Archivo"
 
 #: src/Tableur.cc:1491
-msgid "Stop reading at first occurence of this character, leave blank for none"
+msgid ""
+"Stop reading at first occurrence of this character, leave blank for none"
 msgstr ""
 
 #: src/Tableur.cc:1492
@@ -8743,56 +8748,57 @@ msgstr ""
 msgid "Expression of the function (e.g x-y^2)"
 msgstr ""
 
-#: src/Tableur.cc:1795 src/Graph.cc:6109 src/Graph.cc:6115
+#: src/Tableur.cc:1795 src/Graph.cc:6117 src/Graph.cc:6123
 msgid "1st var"
 msgstr ""
 
 #: src/Tableur.cc:1797
 #, fuzzy
-msgid "Independant variable name (e.g x)"
+msgid "Independent variable name (e.g x)"
 msgstr "Añadir un nombre de variable"
 
-#: src/Tableur.cc:1798 src/Graph.cc:6112 src/Graph.cc:6118 src/Graph.cc:6124
+#: src/Tableur.cc:1798 src/Graph.cc:6120 src/Graph.cc:6126 src/Graph.cc:6132
 msgid "2nd var"
 msgstr ""
 
-#: src/Tableur.cc:1800 src/Graph.cc:6120
+#: src/Tableur.cc:1800 src/Graph.cc:6128
 #, fuzzy
-msgid "Second independant variable name (e.g y)"
+msgid "Second independent variable name (e.g y)"
 msgstr "Añadir un nombre de variable"
 
 # src/xcas.cxx:8156
 # src/xcas.cxx:8234
 # src/xcas.cxx:8783 src/xcas.cxx:8953
-#: src/Tableur.cc:1801 src/Graph.cc:6154
+#: src/Tableur.cc:1801 src/Graph.cc:6162
 #, fuzzy
 msgid "xmin"
 msgstr "dentro"
 
 #: src/Tableur.cc:1804
 #, fuzzy
-msgid "Minimal value for 1st independant variable"
+msgid "Minimal value for 1st independent variable"
 msgstr "Añadir un nombre de variable"
 
 # src/xcas.cxx:6939
 # src/xcas.cxx:7009
 # src/xcas.cxx:9771
-#: src/Tableur.cc:1805 src/Graph.cc:6157
+#: src/Tableur.cc:1805 src/Graph.cc:6165
 #, fuzzy
 msgid "xstep"
 msgstr "ENTER"
 
 #: src/Tableur.cc:1808
-msgid "Discretization step for 1st independant variable"
-msgstr ""
+#, fuzzy
+msgid "Discretization step for 1st independent variable"
+msgstr "Añadir un nombre de variable"
 
-#: src/Tableur.cc:1809 src/Graph.cc:6160
+#: src/Tableur.cc:1809 src/Graph.cc:6168
 msgid "xmax"
 msgstr ""
 
 #: src/Tableur.cc:1812
 #, fuzzy
-msgid "Maximal value for 1st independant variable"
+msgid "Maximal value for 1st independent variable"
 msgstr "Número máximo de hilos en paralelo"
 
 # src/xcas.cxx:7903
@@ -8811,35 +8817,36 @@ msgstr ""
 # src/xcas.cxx:8156
 # src/xcas.cxx:8234
 # src/xcas.cxx:8783 src/xcas.cxx:8953
-#: src/Tableur.cc:1815 src/Graph.cc:6163
+#: src/Tableur.cc:1815 src/Graph.cc:6171
 #, fuzzy
 msgid "ymin"
 msgstr "dentro"
 
 #: src/Tableur.cc:1818
 #, fuzzy
-msgid "Minimal value for 2nd independant variable"
+msgid "Minimal value for 2nd independent variable"
 msgstr "Añadir un nombre de variable"
 
 # src/xcas.cxx:6939
 # src/xcas.cxx:7009
 # src/xcas.cxx:9771
-#: src/Tableur.cc:1819 src/Graph.cc:6166
+#: src/Tableur.cc:1819 src/Graph.cc:6174
 #, fuzzy
 msgid "ystep"
 msgstr "ENTER"
 
 #: src/Tableur.cc:1822
-msgid "Discretization step for 2nd independant variable"
-msgstr ""
+#, fuzzy
+msgid "Discretization step for 2nd independent variable"
+msgstr "Añadir un nombre de variable"
 
-#: src/Tableur.cc:1823 src/Graph.cc:6169
+#: src/Tableur.cc:1823 src/Graph.cc:6177
 msgid "ymax"
 msgstr ""
 
 #: src/Tableur.cc:1826
 #, fuzzy
-msgid "Maximal value for 2nd independant variable"
+msgid "Maximal value for 2nd independent variable"
 msgstr "Número máximo de hilos en paralelo"
 
 #: src/Tableur.cc:1827
@@ -8924,8 +8931,8 @@ msgstr "Triángulos"
 
 #: src/Tableur.cc:2064
 msgid ""
-"Independant variable name representing u_n, e.g. x\n"
-"Or list of independant variables representing u_n,...,u_(n+k), e.g. [x,y]"
+"Independent variable name representing u_n, e.g. x\n"
+"Or list of independent variables representing u_n,...,u_(n+k), e.g. [x,y]"
 msgstr ""
 
 #: src/Tableur.cc:2067
@@ -9185,7 +9192,7 @@ msgstr "Tablero"
 msgid "Save sheet as text"
 msgstr "¿Guardar cambios hoja de cálculo?"
 
-#: src/Tableur.cc:2933 src/Graph.cc:6942
+#: src/Tableur.cc:2933 src/Graph.cc:6950
 msgid "Save as alternate filename"
 msgstr ""
 
@@ -9230,7 +9237,7 @@ msgstr "Imprimir"
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Tableur.cc:2943 src/Graph.cc:1194 src/Graph.cc:6945
+#: src/Tableur.cc:2943 src/Graph.cc:1202 src/Graph.cc:6953
 #, fuzzy
 msgid "EPS PNG and preview"
 msgstr "Imprimir sesión"
@@ -9558,7 +9565,7 @@ msgstr "Matemáticas"
 # src/xcas.cxx:4138
 # src/xcas.cxx:4185
 # src/xcas.cxx:5312
-#: src/Tableur.cc:3008 src/Graph.cc:6966
+#: src/Tableur.cc:3008 src/Graph.cc:6974
 #, fuzzy
 msgid "Function"
 msgstr "Funciones"
@@ -9783,7 +9790,7 @@ msgstr "Reemplazar"
 
 # src/xcas.cxx:3802
 # src/xcas.cxx:4856
-#: src/Editeur.cc:1495 src/Graph.cc:1163
+#: src/Editeur.cc:1495 src/Graph.cc:1171
 #, fuzzy
 msgid "Next"
 msgstr "siguiente"
@@ -9878,7 +9885,7 @@ msgstr ""
 msgid "Check this button for a undefined loop"
 msgstr ""
 
-#: src/Editeur.cc:1745 src/Graph.cc:6106
+#: src/Editeur.cc:1745 src/Graph.cc:6114
 msgid "Var"
 msgstr ""
 
@@ -9897,7 +9904,7 @@ msgstr ""
 # src/xcas.cxx:6943
 # src/xcas.cxx:7986
 # src/xcas.cxx:9133
-#: src/Editeur.cc:1751 src/Graph.cc:1174 src/Help1.cc:274
+#: src/Editeur.cc:1751 src/Graph.cc:1182 src/Help1.cc:274
 #, fuzzy
 msgid "Stop"
 msgstr "STOP"
@@ -10078,7 +10085,7 @@ msgstr ""
 # src/xcas.cxx:4082
 # src/xcas.cxx:4129
 # src/xcas.cxx:4830
-#: src/Editeur.cc:2468 src/Graph.cc:7849
+#: src/Editeur.cc:2468 src/Graph.cc:7857
 #, fuzzy
 msgid "Export/Print"
 msgstr "Ordena"
@@ -10227,7 +10234,7 @@ msgid "nxt"
 msgstr "siguiente"
 
 #: src/Editeur.cc:2585
-msgid "Find next occurence (defined by Edit->Search)"
+msgid "Find next occurrence (defined by Edit->Search)"
 msgstr ""
 
 # src/xcas.cxx:6999
@@ -10288,7 +10295,7 @@ msgstr ""
 # src/xcas.cxx:3695
 # src/xcas.cxx:3733
 # src/xcas.cxx:4755
-#: src/Graph.cc:748 src/Graph.cc:3988
+#: src/Graph.cc:756 src/Graph.cc:3996
 #, fuzzy
 msgid "Export to PNG file"
 msgstr "Guardar gráfica 2D como LaTeX&PS"
@@ -10296,27 +10303,27 @@ msgstr "Guardar gráfica 2D como LaTeX&PS"
 # src/xcas.cxx:7393
 # src/xcas.cxx:7460
 # src/xcas.cxx:8367
-#: src/Graph.cc:955
+#: src/Graph.cc:963
 #, fuzzy
 msgid "Rotate Animation"
 msgstr "radianes"
 
-#: src/Graph.cc:1053
+#: src/Graph.cc:1061
 msgid "Trace which object?"
 msgstr ""
 
-#: src/Graph.cc:1119
+#: src/Graph.cc:1127
 msgid "Frames number? (>0 forward, <0 forward+backward)"
 msgstr ""
 
-#: src/Graph.cc:1124
+#: src/Graph.cc:1132
 msgid "Figure must depend on a parameter (Edit->Add parameter)"
 msgstr ""
 
 # src/xcas.cxx:7324
 # src/xcas.cxx:7391
 # src/xcas.cxx:8300
-#: src/Graph.cc:1145
+#: src/Graph.cc:1153
 #, fuzzy
 msgid "auto"
 msgstr "auto-escala"
@@ -10324,7 +10331,7 @@ msgstr "auto-escala"
 # src/xcas.cxx:7324
 # src/xcas.cxx:7391
 # src/xcas.cxx:8300
-#: src/Graph.cc:1146 src/Graph.cc:1155 src/Graph.cc:1268 src/Graph.cc:1779
+#: src/Graph.cc:1154 src/Graph.cc:1163 src/Graph.cc:1276 src/Graph.cc:1787
 #, fuzzy
 msgid "Autoscale"
 msgstr "auto-escala"
@@ -10332,20 +10339,20 @@ msgstr "auto-escala"
 # src/xcas.cxx:7324
 # src/xcas.cxx:7391
 # src/xcas.cxx:8300
-#: src/Graph.cc:1147 src/Graph.cc:1156
+#: src/Graph.cc:1155 src/Graph.cc:1164
 #, fuzzy
 msgid "Autoscale (full)"
 msgstr "auto-escala"
 
 # src/xcas.cxx:3749
-#: src/Graph.cc:1154 src/Graph.cc:7839 src/Help1.cc:241
+#: src/Graph.cc:1162 src/Graph.cc:7847 src/Help1.cc:241
 msgid "View"
 msgstr "Ver"
 
 # src/xcas.cxx:3884
 # src/xcas.cxx:3929
 # src/xcas.cxx:5006
-#: src/Graph.cc:1157
+#: src/Graph.cc:1165
 #, fuzzy
 msgid "Orthonormalize (2-d)"
 msgstr "Transformadas"
@@ -10353,28 +10360,28 @@ msgstr "Transformadas"
 # src/xcas.cxx:4037
 # src/xcas.cxx:4084
 # src/xcas.cxx:4820
-#: src/Graph.cc:1158 src/Graph.cc:1218 src/Graph.cc:7840
+#: src/Graph.cc:1166 src/Graph.cc:1226 src/Graph.cc:7848
 msgid "Zoom in"
 msgstr "Zoom +"
 
 # src/xcas.cxx:4821
-#: src/Graph.cc:1159 src/Graph.cc:1243 src/Graph.cc:7841
+#: src/Graph.cc:1167 src/Graph.cc:1251 src/Graph.cc:7849
 msgid "Zoom out"
 msgstr "Zoom -"
 
-#: src/Graph.cc:1160
+#: src/Graph.cc:1168
 #, fuzzy
 msgid "Frame move on"
 msgstr "Borrar "
 
-#: src/Graph.cc:1161
+#: src/Graph.cc:1169
 msgid "Frame move off"
 msgstr ""
 
 # src/xcas.cxx:3716
 # src/xcas.cxx:3753
 # src/xcas.cxx:4769
-#: src/Graph.cc:1162
+#: src/Graph.cc:1170
 #, fuzzy
 msgid "Previous"
 msgstr "Vista preliminar"
@@ -10382,7 +10389,7 @@ msgstr "Vista preliminar"
 # src/xcas.cxx:3724
 # src/xcas.cxx:3761
 # src/xcas.cxx:4777
-#: src/Graph.cc:1164
+#: src/Graph.cc:1172
 #, fuzzy
 msgid "Config"
 msgstr "Guardar config."
@@ -10390,31 +10397,31 @@ msgstr "Guardar config."
 # src/xcas.cxx:3968
 # src/xcas.cxx:4015
 # src/xcas.cxx:5101
-#: src/Graph.cc:1166
+#: src/Graph.cc:1174
 #, fuzzy
 msgid "Trace"
 msgstr "Triángulos"
 
-#: src/Graph.cc:1167
+#: src/Graph.cc:1175
 msgid "Trace clear"
 msgstr ""
 
-#: src/Graph.cc:1168
+#: src/Graph.cc:1176
 msgid "Trace on"
 msgstr ""
 
-#: src/Graph.cc:1169
+#: src/Graph.cc:1177
 msgid "Trace off"
 msgstr ""
 
-#: src/Graph.cc:1170
+#: src/Graph.cc:1178
 msgid "Trace object"
 msgstr ""
 
 # src/xcas.cxx:7393
 # src/xcas.cxx:7460
 # src/xcas.cxx:8367
-#: src/Graph.cc:1172
+#: src/Graph.cc:1180
 #, fuzzy
 msgid "Animation"
 msgstr "radianes"
@@ -10422,39 +10429,39 @@ msgstr "radianes"
 # src/xcas.cxx:3772
 # src/xcas.cxx:3816
 # src/xcas.cxx:4799
-#: src/Graph.cc:1173
+#: src/Graph.cc:1181
 #, fuzzy
 msgid "Pause"
 msgstr "Pegar"
 
-#: src/Graph.cc:1175
+#: src/Graph.cc:1183
 msgid "Restart"
 msgstr ""
 
-#: src/Graph.cc:1176
+#: src/Graph.cc:1184
 msgid "Faster (2x)"
 msgstr ""
 
-#: src/Graph.cc:1177
+#: src/Graph.cc:1185
 msgid "Slower (2x)"
 msgstr ""
 
 # src/xcas.cxx:7393
 # src/xcas.cxx:7460
 # src/xcas.cxx:8367
-#: src/Graph.cc:1178
+#: src/Graph.cc:1186
 #, fuzzy
 msgid "Build animation"
 msgstr "radianes"
 
-#: src/Graph.cc:1179
+#: src/Graph.cc:1187
 msgid "Unanimate"
 msgstr ""
 
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:1180
+#: src/Graph.cc:1188
 #, fuzzy
 msgid "Graph on"
 msgstr "Imprimir sesión"
@@ -10462,323 +10469,323 @@ msgstr "Imprimir sesión"
 # src/xcas.cxx:3724
 # src/xcas.cxx:3761
 # src/xcas.cxx:4777
-#: src/Graph.cc:1181
+#: src/Graph.cc:1189
 #, fuzzy
 msgid "Graph off"
 msgstr "Guardar config."
 
-#: src/Graph.cc:1183
+#: src/Graph.cc:1191
 msgid "3-d"
 msgstr ""
 
 # src/xcas.cxx:3704
 # src/xcas.cxx:3741
 # src/xcas.cxx:4749
-#: src/Graph.cc:1184
+#: src/Graph.cc:1192
 #, fuzzy
 msgid "Mouse plane equation"
 msgstr "Cargar ecuación"
 
-#: src/Graph.cc:1185
+#: src/Graph.cc:1193
 msgid "Oyz view (x=cst=depth)"
 msgstr ""
 
-#: src/Graph.cc:1186
+#: src/Graph.cc:1194
 msgid "Oxz view (y=cst=depth)"
 msgstr ""
 
-#: src/Graph.cc:1187
+#: src/Graph.cc:1195
 msgid "Upper view (z=cst=depth)"
 msgstr ""
 
-#: src/Graph.cc:1188
+#: src/Graph.cc:1196
 msgid "Default view"
 msgstr ""
 
 # src/xcas.cxx:7393
 # src/xcas.cxx:7460
 # src/xcas.cxx:8367
-#: src/Graph.cc:1189
+#: src/Graph.cc:1197
 #, fuzzy
 msgid "Rotate animation"
 msgstr "radianes"
 
-#: src/Graph.cc:1190
+#: src/Graph.cc:1198
 msgid "Hide below depth"
 msgstr ""
 
-#: src/Graph.cc:1191
+#: src/Graph.cc:1199
 msgid "Show below depth"
 msgstr ""
 
 # src/xcas.cxx:4082
 # src/xcas.cxx:4129
 # src/xcas.cxx:4830
-#: src/Graph.cc:1193 src/Graph.cc:6944
+#: src/Graph.cc:1201 src/Graph.cc:6952
 #, fuzzy
 msgid "Export Print"
 msgstr "Ordena"
 
-#: src/Graph.cc:1195
+#: src/Graph.cc:1203
 msgid "3-d to PNG"
 msgstr ""
 
-#: src/Graph.cc:1197 src/Graph.cc:7852
+#: src/Graph.cc:1205 src/Graph.cc:7860
 msgid "Preview (with Latex)"
 msgstr ""
 
-#: src/Graph.cc:1198 src/Graph.cc:7853
+#: src/Graph.cc:1206 src/Graph.cc:7861
 msgid "Print (with Latex)"
 msgstr ""
 
-#: src/Graph.cc:1222
+#: src/Graph.cc:1230
 msgid "Increase y"
 msgstr ""
 
-#: src/Graph.cc:1226
+#: src/Graph.cc:1234
 msgid "Increase z (3-d)/Zoom in for y (2-d)"
 msgstr ""
 
-#: src/Graph.cc:1232
+#: src/Graph.cc:1240
 msgid "Decrease x"
 msgstr ""
 
-#: src/Graph.cc:1235
+#: src/Graph.cc:1243
 msgid "Hide or show below depth"
 msgstr ""
 
-#: src/Graph.cc:1239
+#: src/Graph.cc:1247
 msgid "Increase x"
 msgstr ""
 
-#: src/Graph.cc:1247
+#: src/Graph.cc:1255
 msgid "Decrease y"
 msgstr ""
 
-#: src/Graph.cc:1251
+#: src/Graph.cc:1259
 msgid "Decrease z (3-d)/Zoom out in y (2-d)"
 msgstr ""
 
 # src/xcas.cxx:3744
 # src/xcas.cxx:3784
 # src/xcas.cxx:4795
-#: src/Graph.cc:1255
+#: src/Graph.cc:1263
 #, fuzzy
 msgid "Back in cfg history"
 msgstr "Borrar historial"
 
-#: src/Graph.cc:1258
+#: src/Graph.cc:1266
 #, fuzzy
 msgid "Forward in cfg history"
 msgstr "Modificar nivel actual del historial"
 
-#: src/Graph.cc:1261
+#: src/Graph.cc:1269
 msgid "Configure screen view and axis"
 msgstr ""
 
-#: src/Graph.cc:1265
+#: src/Graph.cc:1273
 msgid "Stop or restart animation"
 msgstr ""
 
-#: src/Graph.cc:1275
+#: src/Graph.cc:1283
 msgid "Graphic menu"
 msgstr ""
 
 # src/xcas.cxx:3849
 # src/xcas.cxx:3893
-#: src/Graph.cc:1437
+#: src/Graph.cc:1445
 #, fuzzy
 msgid "x position of spot"
 msgstr "Gestión"
 
 # src/xcas.cxx:3849
 # src/xcas.cxx:3893
-#: src/Graph.cc:1439
+#: src/Graph.cc:1447
 #, fuzzy
 msgid "y position of spot"
 msgstr "Gestión"
 
 # src/xcas.cxx:3849
 # src/xcas.cxx:3893
-#: src/Graph.cc:1441
+#: src/Graph.cc:1449
 #, fuzzy
 msgid "z position of spot"
 msgstr "Gestión"
 
-#: src/Graph.cc:1443
+#: src/Graph.cc:1451
 msgid "0 directional light source (e.g. sun), 1 position light (e.g. bulb)"
 msgstr ""
 
-#: src/Graph.cc:1446
+#: src/Graph.cc:1454
 msgid "x direction of spot"
 msgstr ""
 
-#: src/Graph.cc:1448
+#: src/Graph.cc:1456
 msgid "y direction of spot"
 msgstr ""
 
-#: src/Graph.cc:1450
+#: src/Graph.cc:1458
 msgid "z direction of spot"
 msgstr ""
 
-#: src/Graph.cc:1452
+#: src/Graph.cc:1460
 msgid "Turn on/off light"
 msgstr ""
 
-#: src/Graph.cc:1457
+#: src/Graph.cc:1465
 msgid "ambient red component"
 msgstr ""
 
-#: src/Graph.cc:1459
+#: src/Graph.cc:1467
 msgid "ambient green component"
 msgstr ""
 
-#: src/Graph.cc:1461
+#: src/Graph.cc:1469
 msgid "ambient blue component"
 msgstr ""
 
-#: src/Graph.cc:1463
+#: src/Graph.cc:1471
 msgid "ambient alpha component"
 msgstr ""
 
-#: src/Graph.cc:1466
+#: src/Graph.cc:1474
 msgid "diffuse red component"
 msgstr ""
 
-#: src/Graph.cc:1468
+#: src/Graph.cc:1476
 msgid "diffuse green component"
 msgstr ""
 
-#: src/Graph.cc:1470
+#: src/Graph.cc:1478
 msgid "diffuse blue component"
 msgstr ""
 
-#: src/Graph.cc:1472
+#: src/Graph.cc:1480
 msgid "diffuse alpha component"
 msgstr ""
 
-#: src/Graph.cc:1475
+#: src/Graph.cc:1483
 #, fuzzy
 msgid "specular red component"
 msgstr "Pegar contenido del portapapeles"
 
-#: src/Graph.cc:1477
+#: src/Graph.cc:1485
 msgid "specular green component"
 msgstr ""
 
-#: src/Graph.cc:1479
+#: src/Graph.cc:1487
 msgid "specular blue component"
 msgstr ""
 
-#: src/Graph.cc:1481
+#: src/Graph.cc:1489
 msgid "specular alpha component"
 msgstr ""
 
-#: src/Graph.cc:1485
+#: src/Graph.cc:1493
 msgid "Spot attenuation exponent: power of cos(theta), e.g. 1"
 msgstr ""
 
-#: src/Graph.cc:1487
+#: src/Graph.cc:1495
 msgid "Spot cutoff angle in 0..90 or 180 for no cutoff"
 msgstr ""
 
-#: src/Graph.cc:1489
+#: src/Graph.cc:1497
 msgid "Attenuation constant coefficient"
 msgstr ""
 
-#: src/Graph.cc:1491
+#: src/Graph.cc:1499
 msgid "Attenuation linear coefficient"
 msgstr ""
 
-#: src/Graph.cc:1493
+#: src/Graph.cc:1501
 msgid "Attenuation quadratic coefficient"
 msgstr ""
 
-#: src/Graph.cc:1503
+#: src/Graph.cc:1511
 msgid "Reset"
 msgstr ""
 
 # src/xcas.cxx:3724
 # src/xcas.cxx:3761
 # src/xcas.cxx:4777
-#: src/Graph.cc:1507
+#: src/Graph.cc:1515
 #, fuzzy
 msgid "Light configuration"
 msgstr "Guardar config."
 
-#: src/Graph.cc:1639
+#: src/Graph.cc:1647
 #, fuzzy
 msgid "Xmax for visualisation"
 msgstr "X-max para visualizar"
 
-#: src/Graph.cc:1642
+#: src/Graph.cc:1650
 msgid "X Logarithmic scale"
 msgstr ""
 
 # src/xcas.cxx:3884
 # src/xcas.cxx:3929
 # src/xcas.cxx:5006
-#: src/Graph.cc:1645
+#: src/Graph.cc:1653
 #, fuzzy
 msgid "Orthonormal or perspective"
 msgstr "Transformadas"
 
-#: src/Graph.cc:1649
+#: src/Graph.cc:1657
 #, fuzzy
 msgid "Ymin for visualisation"
 msgstr "X-min para visualizar"
 
-#: src/Graph.cc:1652
+#: src/Graph.cc:1660
 #, fuzzy
 msgid "Ymax for visualisation"
 msgstr "Y-max para visualizar"
 
-#: src/Graph.cc:1655
+#: src/Graph.cc:1663
 msgid "Y Logarithmic scale"
 msgstr ""
 
-#: src/Graph.cc:1658
+#: src/Graph.cc:1666
 msgid "Flat or Gouraud shading"
 msgstr ""
 
-#: src/Graph.cc:1662
+#: src/Graph.cc:1670
 #, fuzzy
 msgid "Zmin for visualisation"
 msgstr "X-min para visualizar"
 
-#: src/Graph.cc:1665
+#: src/Graph.cc:1673
 #, fuzzy
 msgid "Zmax for visualisation"
 msgstr "X-max para visualizar"
 
-#: src/Graph.cc:1668
+#: src/Graph.cc:1676
 msgid "Enable blending"
 msgstr ""
 
-#: src/Graph.cc:1678
+#: src/Graph.cc:1686
 msgid "Graphic displayed with a framebox"
 msgstr ""
 
-#: src/Graph.cc:1681
+#: src/Graph.cc:1689
 msgid "Ticks in pixels or units"
 msgstr ""
 
-#: src/Graph.cc:1684
+#: src/Graph.cc:1692
 msgid "View triedre even if axes are hidden"
 msgstr ""
 
-#: src/Graph.cc:1687
+#: src/Graph.cc:1695
 msgid "Number of units or pixels for ticks on X"
 msgstr ""
 
-#: src/Graph.cc:1689
+#: src/Graph.cc:1697
 msgid "Number of units or pixels for ticks on Y"
 msgstr ""
 
 # src/xcas.cxx:3704
 # src/xcas.cxx:3741
 # src/xcas.cxx:4749
-#: src/Graph.cc:1692
+#: src/Graph.cc:1700
 #, fuzzy
 msgid "x coefficient of mouse plane equation"
 msgstr "Cargar ecuación"
@@ -10786,7 +10793,7 @@ msgstr "Cargar ecuación"
 # src/xcas.cxx:3704
 # src/xcas.cxx:3741
 # src/xcas.cxx:4749
-#: src/Graph.cc:1697
+#: src/Graph.cc:1705
 #, fuzzy
 msgid "y coefficient of mouse plane equation"
 msgstr "Cargar ecuación"
@@ -10794,161 +10801,161 @@ msgstr "Cargar ecuación"
 # src/xcas.cxx:3704
 # src/xcas.cxx:3741
 # src/xcas.cxx:4749
-#: src/Graph.cc:1702
+#: src/Graph.cc:1710
 #, fuzzy
 msgid "z coefficient of mouse plane equation"
 msgstr "Cargar ecuación"
 
-#: src/Graph.cc:1707
+#: src/Graph.cc:1715
 msgid "constant coefficient of mouse plane equation"
 msgstr ""
 
-#: src/Graph.cc:1712
+#: src/Graph.cc:1720
 #, fuzzy
 msgid "3d rotation"
 msgstr "(3-d) Cambiar ángulo de rotación z"
 
-#: src/Graph.cc:1717
+#: src/Graph.cc:1725
 msgid "Number of latitude divisions for sphere drawing"
 msgstr ""
 
-#: src/Graph.cc:1722
+#: src/Graph.cc:1730
 msgid "Number of longitude divisions for sphere drawing"
 msgstr ""
 
-#: src/Graph.cc:1727
+#: src/Graph.cc:1735
 msgid "Size in pixels for y graduation printing"
 msgstr ""
 
 # src/xcas.cxx:3724
 # src/xcas.cxx:3761
 # src/xcas.cxx:4777
-#: src/Graph.cc:1733 src/Graph.cc:1735 src/Graph.cc:1737 src/Graph.cc:1739
 #: src/Graph.cc:1741 src/Graph.cc:1743 src/Graph.cc:1745 src/Graph.cc:1747
+#: src/Graph.cc:1749 src/Graph.cc:1751 src/Graph.cc:1753 src/Graph.cc:1755
 #, fuzzy
 msgid "Configure light"
 msgstr "Guardar config."
 
-#: src/Graph.cc:1749
+#: src/Graph.cc:1757
 msgid "Show scene with lights"
 msgstr ""
 
-#: src/Graph.cc:1752
+#: src/Graph.cc:1760
 #, fuzzy
 msgid "Show names"
 msgstr "Mostrar"
 
-#: src/Graph.cc:1753
+#: src/Graph.cc:1761
 msgid "Show/Hide names of geometric objects"
 msgstr ""
 
-#: src/Graph.cc:1755
+#: src/Graph.cc:1763
 #, fuzzy
 msgid "Plot names"
 msgstr "Mostrar"
 
-#: src/Graph.cc:1756
+#: src/Graph.cc:1764
 msgid "Show/Hide names of parametric and function plots"
 msgstr ""
 
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:1758 src/Graph.cc:6959
+#: src/Graph.cc:1766 src/Graph.cc:6967
 #, fuzzy
 msgid "Portrait"
 msgstr "Imprimir sesión"
 
-#: src/Graph.cc:1759
+#: src/Graph.cc:1767
 msgid "Portrait or landscape split"
 msgstr ""
 
-#: src/Graph.cc:1762
+#: src/Graph.cc:1770
 msgid "Autoname"
 msgstr ""
 
-#: src/Graph.cc:1764
+#: src/Graph.cc:1772
 #, fuzzy
 msgid "Show axis"
 msgstr "Mostrar"
 
-#: src/Graph.cc:1765
+#: src/Graph.cc:1773
 #, fuzzy
 msgid "Show or hide axis"
 msgstr "Mostrar"
 
-#: src/Graph.cc:1768
+#: src/Graph.cc:1776
 msgid "Time between image changes for animations"
 msgstr ""
 
 # src/xcas.cxx:7990
 # src/xcas.cxx:8060
 # src/xcas.cxx:8573
-#: src/Graph.cc:1773
+#: src/Graph.cc:1781
 #, fuzzy
 msgid "Round"
 msgstr "deshacer"
 
-#: src/Graph.cc:1774
+#: src/Graph.cc:1782
 msgid "Round xmin/xmax/ymin/ymax/zmin/zmax"
 msgstr ""
 
-#: src/Graph.cc:1786
+#: src/Graph.cc:1794
 msgid "Current gl_quaternion= value"
 msgstr ""
 
-#: src/Graph.cc:1790
+#: src/Graph.cc:1798
 msgid "Rotate what: 1 l1, 2 l2, 4 l3, ..., 128 l8, 256 viewpoint"
 msgstr ""
 
-#: src/Graph.cc:1793
+#: src/Graph.cc:1801
 msgid "Time for 1 step in s"
 msgstr ""
 
-#: src/Graph.cc:1796
+#: src/Graph.cc:1804
 msgid "Number of steps for animation"
 msgstr ""
 
-#: src/Graph.cc:1799
+#: src/Graph.cc:1807
 msgid "x rotation axis coordinate"
 msgstr ""
 
-#: src/Graph.cc:1802
+#: src/Graph.cc:1810
 msgid "y rotation axis coordinate"
 msgstr ""
 
-#: src/Graph.cc:1805
+#: src/Graph.cc:1813
 msgid "z rotation axis coordinate"
 msgstr ""
 
-#: src/Graph.cc:1808
+#: src/Graph.cc:1816
 msgid "Other animation change (normally 0)"
 msgstr ""
 
-#: src/Graph.cc:2465
+#: src/Graph.cc:2473
 msgid "LaTeX filaneme"
 msgstr ""
 
-#: src/Graph.cc:3066
+#: src/Graph.cc:3074
 msgid "Thickness"
 msgstr ""
 
 # src/xcas.cxx:3945
 # src/xcas.cxx:3992
 # src/xcas.cxx:5078
-#: src/Graph.cc:3071
+#: src/Graph.cc:3079
 #, fuzzy
 msgid "Point width"
 msgstr "Puntos"
 
-#: src/Graph.cc:3170
+#: src/Graph.cc:3178
 msgid "Make point symbolic"
 msgstr ""
 
 # src/xcas.cxx:7393
 # src/xcas.cxx:7460
 # src/xcas.cxx:8367
-#: src/Graph.cc:3173
+#: src/Graph.cc:3181
 #, fuzzy
 msgid "Remove translation"
 msgstr "radianes"
@@ -10956,7 +10963,7 @@ msgstr "radianes"
 # src/xcas.cxx:3875
 # src/xcas.cxx:3920
 # src/xcas.cxx:5146
-#: src/Graph.cc:3181
+#: src/Graph.cc:3189
 #, fuzzy
 msgid "Delete"
 msgstr "Propiedades"
@@ -10964,19 +10971,19 @@ msgstr "Propiedades"
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:3182
+#: src/Graph.cc:3190
 #, fuzzy
 msgid "Delete current object"
 msgstr "Imprimir sesión"
 
-#: src/Graph.cc:3216
+#: src/Graph.cc:3224
 msgid "Object attributs "
 msgstr ""
 
 # src/xcas.cxx:5592
 # src/xcas.cxx:5629
 # src/xcas.cxx:5682
-#: src/Graph.cc:4244 src/Graph.cc:6979 src/Graph.cc:7137
+#: src/Graph.cc:4252 src/Graph.cc:6987 src/Graph.cc:7145
 #, fuzzy
 msgid "Frame"
 msgstr "Normal"
@@ -10984,7 +10991,7 @@ msgstr "Normal"
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:4246 src/Graph.cc:6980
+#: src/Graph.cc:4254 src/Graph.cc:6988
 #, fuzzy
 msgid "Pointer"
 msgstr "Imprimir sesión"
@@ -10992,7 +10999,7 @@ msgstr "Imprimir sesión"
 # src/xcas.cxx:3864
 # src/xcas.cxx:3909
 # src/xcas.cxx:4986
-#: src/Graph.cc:5390 src/Graph.cc:5604 src/Graph3d.cc:2238
+#: src/Graph.cc:5398 src/Graph.cc:5612 src/Graph3d.cc:2238
 #, fuzzy
 msgid "Click "
 msgstr "Cálculo"
@@ -11000,7 +11007,7 @@ msgstr "Cálculo"
 # src/xcas.cxx:3724
 # src/xcas.cxx:3761
 # src/xcas.cxx:4777
-#: src/Graph.cc:5807
+#: src/Graph.cc:5815
 #, fuzzy
 msgid "Save figure"
 msgstr "Guardar config."
@@ -11008,23 +11015,23 @@ msgstr "Guardar config."
 # src/xcas.cxx:3700
 # src/xcas.cxx:3738
 # src/xcas.cxx:4766
-#: src/Graph.cc:5877
+#: src/Graph.cc:5885
 #, fuzzy
 msgid "Insert figure"
 msgstr "Insertar fila"
 
-#: src/Graph.cc:5947
+#: src/Graph.cc:5955
 msgid "Parameter minimal value"
 msgstr ""
 
-#: src/Graph.cc:5950
+#: src/Graph.cc:5958
 msgid "Parameter maximal value"
 msgstr ""
 
 # src/xcas.cxx:3699
 # src/xcas.cxx:3737
 # src/xcas.cxx:4839
-#: src/Graph.cc:5953
+#: src/Graph.cc:5961
 #, fuzzy
 msgid "Parameter current value"
 msgstr "Borrar columna actual"
@@ -11032,7 +11039,7 @@ msgstr "Borrar columna actual"
 # src/xcas.cxx:3699
 # src/xcas.cxx:3737
 # src/xcas.cxx:4839
-#: src/Graph.cc:5955
+#: src/Graph.cc:5963
 #, fuzzy
 msgid "Parameter step value"
 msgstr "Borrar columna actual"
@@ -11040,125 +11047,125 @@ msgstr "Borrar columna actual"
 # src/xcas.cxx:3697
 # src/xcas.cxx:3735
 # src/xcas.cxx:5378
-#: src/Graph.cc:5961
+#: src/Graph.cc:5969
 #, fuzzy
 msgid "Parameter variable name"
 msgstr "Nombre del programa"
 
-#: src/Graph.cc:5964
+#: src/Graph.cc:5972
 msgid "Numeric or formal parameter"
 msgstr ""
 
-#: src/Graph.cc:5975
+#: src/Graph.cc:5983
 msgid "Parameter definition"
 msgstr ""
 
-#: src/Graph.cc:6075
+#: src/Graph.cc:6083
 msgid "Draw slopefield"
 msgstr ""
 
-#: src/Graph.cc:6078
+#: src/Graph.cc:6086
 msgid "Autonomous 2d systems."
 msgstr ""
 
-#: src/Graph.cc:6081
+#: src/Graph.cc:6089
 msgid "Normalize slopefield"
 msgstr ""
 
-#: src/Graph.cc:6082
+#: src/Graph.cc:6090
 msgid "F(x,y)="
 msgstr ""
 
 # src/xcas.cxx:3849
 # src/xcas.cxx:3893
-#: src/Graph.cc:6084
+#: src/Graph.cc:6092
 #, fuzzy
 msgid "Implicit expression"
 msgstr "Gestión"
 
-#: src/Graph.cc:6085
+#: src/Graph.cc:6093
 msgid "dy/dt(t,y)="
 msgstr ""
 
-#: src/Graph.cc:6087
+#: src/Graph.cc:6095
 msgid ""
 "Expression of dy/dt in terms of y and t, e.g. sin(t*y). For autonomous 2d "
 "system,change time variable to x and enter d[x,y]/dt in terms of [x,y], e.g. "
 "[[1,2],[3,4]]*[x,y]"
 msgstr ""
 
-#: src/Graph.cc:6088
+#: src/Graph.cc:6096
 msgid "rho(t)="
 msgstr ""
 
-#: src/Graph.cc:6090
+#: src/Graph.cc:6098
 msgid "Expression of modulus rho wrt to angle t (e.g sin(t))"
 msgstr ""
 
-#: src/Graph.cc:6091
+#: src/Graph.cc:6099
 msgid "x(t)="
 msgstr ""
 
-#: src/Graph.cc:6093
+#: src/Graph.cc:6101
 msgid "Expression of x wrt to t (e.g sin(t))"
 msgstr ""
 
-#: src/Graph.cc:6094
+#: src/Graph.cc:6102
 msgid "y(t)="
 msgstr ""
 
-#: src/Graph.cc:6096
+#: src/Graph.cc:6104
 msgid "Expression of y wrt to t (e.g cos(t))"
 msgstr ""
 
-#: src/Graph.cc:6097
+#: src/Graph.cc:6105
 msgid "x="
 msgstr ""
 
-#: src/Graph.cc:6099
+#: src/Graph.cc:6107
 msgid "Expression of x wrt to u and v (e.g. u+v)"
 msgstr ""
 
-#: src/Graph.cc:6100 src/Graph.cc:6103
+#: src/Graph.cc:6108 src/Graph.cc:6111
 msgid "y="
 msgstr ""
 
-#: src/Graph.cc:6102
+#: src/Graph.cc:6110
 msgid "Expression of y wrt to u and v (e.g exp(u)-v)"
 msgstr ""
 
-#: src/Graph.cc:6105
+#: src/Graph.cc:6113
 msgid "Expression of z wrt to u and v (e.g u-v)"
 msgstr ""
 
-#: src/Graph.cc:6108
+#: src/Graph.cc:6116
 #, fuzzy
-msgid "Independant variable name (e.g t)"
+msgid "Independent variable name (e.g t)"
 msgstr "Añadir un nombre de variable"
 
-#: src/Graph.cc:6111
+#: src/Graph.cc:6119
 #, fuzzy
-msgid "First independant variable name (e.g u)"
+msgid "First independent variable name (e.g u)"
 msgstr "Añadir un nombre de variable"
 
-#: src/Graph.cc:6114
+#: src/Graph.cc:6122
 #, fuzzy
-msgid "Second independant variable name (e.g v)"
+msgid "Second independent variable name (e.g v)"
 msgstr "Añadir un nombre de variable"
 
-#: src/Graph.cc:6117
+#: src/Graph.cc:6125
 #, fuzzy
-msgid "First independant variable name (e.g x)"
+msgid "First independent variable name (e.g x)"
 msgstr "Añadir un nombre de variable"
 
-#: src/Graph.cc:6121
+#: src/Graph.cc:6129
 msgid "Time var"
 msgstr ""
 
 # src/xcas.cxx:3697
 # src/xcas.cxx:3735
 # src/xcas.cxx:5378
-#: src/Graph.cc:6123
+#: src/Graph.cc:6131
 #, fuzzy
 msgid "Time variable name"
 msgstr "Nombre del programa"
@@ -11166,7 +11173,7 @@ msgstr "Nombre del programa"
 # src/xcas.cxx:3697
 # src/xcas.cxx:3735
 # src/xcas.cxx:5378
-#: src/Graph.cc:6126
+#: src/Graph.cc:6134
 #, fuzzy
 msgid "Function variable name"
 msgstr "Nombre del programa"
@@ -11174,7 +11181,7 @@ msgstr "Nombre del programa"
 # src/xcas.cxx:8156
 # src/xcas.cxx:8234
 # src/xcas.cxx:8783 src/xcas.cxx:8953
-#: src/Graph.cc:6127
+#: src/Graph.cc:6135
 #, fuzzy
 msgid "tmin"
 msgstr "dentro"
@@ -11182,19 +11189,19 @@ msgstr "dentro"
 # src/xcas.cxx:6939
 # src/xcas.cxx:7009
 # src/xcas.cxx:9771
-#: src/Graph.cc:6130
+#: src/Graph.cc:6138
 #, fuzzy
 msgid "tstep"
 msgstr "ENTER"
 
-#: src/Graph.cc:6133
+#: src/Graph.cc:6141
 msgid "tmax"
 msgstr ""
 
 # src/xcas.cxx:8156
 # src/xcas.cxx:8234
 # src/xcas.cxx:8783 src/xcas.cxx:8953
-#: src/Graph.cc:6136
+#: src/Graph.cc:6144
 #, fuzzy
 msgid "umin"
 msgstr "dentro"
@@ -11202,19 +11209,19 @@ msgstr "dentro"
 # src/xcas.cxx:6939
 # src/xcas.cxx:7009
 # src/xcas.cxx:9771
-#: src/Graph.cc:6139
+#: src/Graph.cc:6147
 #, fuzzy
 msgid "ustep"
 msgstr "ENTER"
 
-#: src/Graph.cc:6142
+#: src/Graph.cc:6150
 msgid "umax"
 msgstr ""
 
 # src/xcas.cxx:8156
 # src/xcas.cxx:8234
 # src/xcas.cxx:8783 src/xcas.cxx:8953
-#: src/Graph.cc:6145
+#: src/Graph.cc:6153
 #, fuzzy
 msgid "vmin"
 msgstr "dentro"
@@ -11222,77 +11229,77 @@ msgstr "dentro"
 # src/xcas.cxx:6939
 # src/xcas.cxx:7009
 # src/xcas.cxx:9771
-#: src/Graph.cc:6148
+#: src/Graph.cc:6156
 #, fuzzy
 msgid "vstep"
 msgstr "ENTER"
 
-#: src/Graph.cc:6151
+#: src/Graph.cc:6159
 msgid "vmax"
 msgstr ""
 
 # src/xcas.cxx:6531
-#: src/Graph.cc:6184
+#: src/Graph.cc:6192
 #, fuzzy
 msgid "Polar plot"
 msgstr "Dibujo de polígonos"
 
-#: src/Graph.cc:6187
+#: src/Graph.cc:6195
 msgid "Parametric plot"
 msgstr ""
 
 # src/xcas.cxx:3715 src/xcas.cxx:3717
 # src/xcas.cxx:3752 src/xcas.cxx:3754
-#: src/Graph.cc:6190
+#: src/Graph.cc:6198
 #, fuzzy
 msgid "Field/Odeplot"
 msgstr "Imprimir gráf."
 
-#: src/Graph.cc:6193
+#: src/Graph.cc:6201
 msgid "Implicitplot"
 msgstr ""
 
 # src/xcas.cxx:3974
 # src/xcas.cxx:3777
 # src/xcas.cxx:4793
-#: src/Graph.cc:6354
+#: src/Graph.cc:6362
 #, fuzzy
 msgid "Click first in a commandline"
 msgstr "Borrar línea de comandos"
 
-#: src/Graph.cc:6458 src/Graph.cc:6472
+#: src/Graph.cc:6466 src/Graph.cc:6480
 msgid "Point_on_ode_curve"
 msgstr ""
 
-#: src/Graph.cc:6459
+#: src/Graph.cc:6467
 msgid "Click initials conditions in graphic window. Change mode when finished."
 msgstr ""
 
-#: src/Graph.cc:6535
+#: src/Graph.cc:6543
 msgid "Shade area under a curve"
 msgstr ""
 
-#: src/Graph.cc:6715
+#: src/Graph.cc:6723
 #, fuzzy
 msgid "Real number?"
 msgstr "columna"
 
-#: src/Graph.cc:6749
+#: src/Graph.cc:6757
 msgid "Center,Point_on_circle,Point_in_plane"
 msgstr ""
 
-#: src/Graph.cc:6749
+#: src/Graph.cc:6757
 msgid "Center,Point_on_circle"
 msgstr ""
 
-#: src/Graph.cc:6753 src/Graph.cc:6757
+#: src/Graph.cc:6761 src/Graph.cc:6765
 msgid "Curve1,Curve2"
 msgstr ""
 
 # src/xcas.cxx:3945
 # src/xcas.cxx:3992
 # src/xcas.cxx:5078
-#: src/Graph.cc:6761
+#: src/Graph.cc:6769
 #, fuzzy
 msgid "Curve1,Curve2,Point"
 msgstr "Puntos"
@@ -11300,69 +11307,69 @@ msgstr "Puntos"
 # src/xcas.cxx:3945
 # src/xcas.cxx:3992
 # src/xcas.cxx:5078
-#: src/Graph.cc:6765
+#: src/Graph.cc:6773
 #, fuzzy
 msgid "Curve,Point"
 msgstr "Puntos"
 
-#: src/Graph.cc:6769 src/Graph.cc:6773 src/Graph.cc:6777 src/Graph.cc:6781
-#: src/Graph.cc:6876 src/Graph.cc:6880 src/Graph.cc:6904
+#: src/Graph.cc:6777 src/Graph.cc:6781 src/Graph.cc:6785 src/Graph.cc:6789
+#: src/Graph.cc:6884 src/Graph.cc:6888 src/Graph.cc:6912
 msgid "Point1,Point2"
 msgstr ""
 
-#: src/Graph.cc:6785 src/Graph.cc:6788
+#: src/Graph.cc:6793 src/Graph.cc:6796
 msgid "Object1,Object2,Position"
 msgstr ""
 
-#: src/Graph.cc:6792 src/Graph.cc:6795
+#: src/Graph.cc:6800 src/Graph.cc:6803
 msgid "Angle_vertex,Direction1,Direction2,Position"
 msgstr ""
 
 # src/xcas.cxx:3849
 # src/xcas.cxx:3893
-#: src/Graph.cc:6799 src/Graph.cc:6803 src/Graph.cc:6807 src/Graph.cc:6811
-#: src/Graph.cc:6815 src/Graph.cc:6819
+#: src/Graph.cc:6807 src/Graph.cc:6811 src/Graph.cc:6815 src/Graph.cc:6819
+#: src/Graph.cc:6823 src/Graph.cc:6827
 #, fuzzy
 msgid "Object,Position"
 msgstr "Gestión"
 
-#: src/Graph.cc:6823
+#: src/Graph.cc:6831
 msgid "Symmetry_center_axis,Object"
 msgstr ""
 
-#: src/Graph.cc:6827 src/Graph.cc:6843
+#: src/Graph.cc:6835 src/Graph.cc:6851
 msgid "Center,Ratio,Object"
 msgstr ""
 
-#: src/Graph.cc:6831
+#: src/Graph.cc:6839
 msgid "Curve,Object"
 msgstr ""
 
 # src/xcas.cxx:7492
 # src/xcas.cxx:7559
 # src/xcas.cxx:8466
-#: src/Graph.cc:6835
+#: src/Graph.cc:6843
 #, fuzzy
 msgid "Circle,Object"
 msgstr "Centrado"
 
-#: src/Graph.cc:6839
+#: src/Graph.cc:6847
 msgid "Center,Angle,Object"
 msgstr ""
 
 # src/xcas.cxx:7492
 # src/xcas.cxx:7559
 # src/xcas.cxx:8466
-#: src/Graph.cc:6847
+#: src/Graph.cc:6855
 #, fuzzy
 msgid "Vector,Object"
 msgstr "Centrado"
 
-#: src/Graph.cc:6851
+#: src/Graph.cc:6859
 msgid "Center,Ratio,Angle,Object"
 msgstr ""
 
-#: src/Graph.cc:6855
+#: src/Graph.cc:6863
 #, fuzzy
 msgid "Number of vertices?"
 msgstr "Número de dígitos"
@@ -11370,60 +11377,60 @@ msgstr "Número de dígitos"
 # src/xcas.cxx:3945
 # src/xcas.cxx:3992
 # src/xcas.cxx:5078
-#: src/Graph.cc:6862
+#: src/Graph.cc:6870
 #, fuzzy
 msgid "Point"
 msgstr "Puntos"
 
-#: src/Graph.cc:6872 src/Graph.cc:6908 src/Graph.cc:6912 src/Graph.cc:6916
-#: src/Graph.cc:6932
+#: src/Graph.cc:6880 src/Graph.cc:6916 src/Graph.cc:6920 src/Graph.cc:6924
+#: src/Graph.cc:6940
 msgid "Point1,Point2,Point3"
 msgstr ""
 
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:6884 src/Graph.cc:6888
+#: src/Graph.cc:6892 src/Graph.cc:6896
 #, fuzzy
 msgid "Point,Line"
 msgstr "Imprimir sesión"
 
-#: src/Graph.cc:6892 src/Graph.cc:6896
+#: src/Graph.cc:6900 src/Graph.cc:6904
 msgid "Sommet_angle,Point2,Point3"
 msgstr ""
 
-#: src/Graph.cc:6900
+#: src/Graph.cc:6908
 msgid "Point1,Point2,Point3,Point4"
 msgstr ""
 
-#: src/Graph.cc:6904
+#: src/Graph.cc:6912
 msgid "Point1,Point2,Point_in_plane"
 msgstr ""
 
-#: src/Graph.cc:6920
+#: src/Graph.cc:6928
 msgid "Focus1,Focus2,Point_on_ellipse"
 msgstr ""
 
-#: src/Graph.cc:6924
+#: src/Graph.cc:6932
 msgid "Focus,Point_or_line"
 msgstr ""
 
-#: src/Graph.cc:6928
+#: src/Graph.cc:6936
 msgid "Focus1,Focus2,Point_on_hyperbola"
 msgstr ""
 
-#: src/Graph.cc:6936
+#: src/Graph.cc:6944
 msgid "Center,Point_on_sphere"
 msgstr ""
 
-#: src/Graph.cc:6940
+#: src/Graph.cc:6948
 msgid "Fig"
 msgstr ""
 
 # src/xcas.cxx:3724
 # src/xcas.cxx:3761
 # src/xcas.cxx:4777
-#: src/Graph.cc:6941
+#: src/Graph.cc:6949
 #, fuzzy
 msgid "Save figure as text"
 msgstr "Guardar config."
@@ -11431,7 +11438,7 @@ msgstr "Guardar config."
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:6947
+#: src/Graph.cc:6955
 #, fuzzy
 msgid "Latex preview"
 msgstr "Imprimir sesión"
@@ -11439,7 +11446,7 @@ msgstr "Imprimir sesión"
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:6948
+#: src/Graph.cc:6956
 #, fuzzy
 msgid "Latex printer"
 msgstr "Imprimir sesión"
@@ -11447,24 +11454,24 @@ msgstr "Imprimir sesión"
 # src/xcas.cxx:3875
 # src/xcas.cxx:3920
 # src/xcas.cxx:5146
-#: src/Graph.cc:6952
+#: src/Graph.cc:6960
 #, fuzzy
 msgid "Add parameter"
 msgstr "Propiedades"
 
-#: src/Graph.cc:6953
+#: src/Graph.cc:6961
 msgid "Add numerical value"
 msgstr ""
 
-#: src/Graph.cc:6954
+#: src/Graph.cc:6962
 msgid "Add new entry"
 msgstr ""
 
-#: src/Graph.cc:6955
+#: src/Graph.cc:6963
 msgid "Add an object trace"
 msgstr ""
 
-#: src/Graph.cc:6956
+#: src/Graph.cc:6964
 #, fuzzy
 msgid "Change selection attribut"
 msgstr "Intercambiar selección a la derecha"
@@ -11472,7 +11479,7 @@ msgstr "Intercambiar selección a la derecha"
 # src/xcas.cxx:5592
 # src/xcas.cxx:5629
 # src/xcas.cxx:5682
-#: src/Graph.cc:6963
+#: src/Graph.cc:6971
 #, fuzzy
 msgid "Focus"
 msgstr "Normal"
@@ -11480,7 +11487,7 @@ msgstr "Normal"
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:6968
+#: src/Graph.cc:6976
 #, fuzzy
 msgid "Recurrent sequence (2-d)"
 msgstr "Imprimir sesión"
@@ -11488,27 +11495,27 @@ msgstr "Imprimir sesión"
 # src/xcas.cxx:5593
 # src/xcas.cxx:5630
 # src/xcas.cxx:5683
-#: src/Graph.cc:6970
+#: src/Graph.cc:6978
 #, fuzzy
 msgid "Parametric"
 msgstr "Simétrica"
 
-#: src/Graph.cc:6971
+#: src/Graph.cc:6979
 msgid "Polar (2-d)"
 msgstr ""
 
-#: src/Graph.cc:6972
+#: src/Graph.cc:6980
 msgid "Implicit"
 msgstr ""
 
-#: src/Graph.cc:6973
+#: src/Graph.cc:6981
 msgid "Slopefield Ode (2-d)"
 msgstr ""
 
 # src/xcas.cxx:3945
 # src/xcas.cxx:3992
 # src/xcas.cxx:5078
-#: src/Graph.cc:6981
+#: src/Graph.cc:6989
 #, fuzzy
 msgid "point"
 msgstr "Puntos"
@@ -11516,7 +11523,7 @@ msgstr "Puntos"
 # src/xcas.cxx:3954
 # src/xcas.cxx:4001
 # src/xcas.cxx:5087
-#: src/Graph.cc:6982
+#: src/Graph.cc:6990
 #, fuzzy
 msgid "Lines"
 msgstr "Líneas"
@@ -11524,7 +11531,7 @@ msgstr "Líneas"
 # src/xcas.cxx:3677
 # src/xcas.cxx:3779
 # src/xcas.cxx:4807
-#: src/Graph.cc:6984
+#: src/Graph.cc:6992
 #, fuzzy
 msgid "vector"
 msgstr "Historial"
@@ -11532,23 +11539,23 @@ msgstr "Historial"
 # src/xcas.cxx:3968
 # src/xcas.cxx:4015
 # src/xcas.cxx:5101
-#: src/Graph.cc:6987
+#: src/Graph.cc:6995
 #, fuzzy
 msgid "parallel"
 msgstr "Triángulos"
 
-#: src/Graph.cc:6988
+#: src/Graph.cc:6996
 msgid "perpendicular"
 msgstr ""
 
-#: src/Graph.cc:6989
+#: src/Graph.cc:6997
 msgid "perpen_bisector"
 msgstr ""
 
 # src/xcas.cxx:7393
 # src/xcas.cxx:7460
 # src/xcas.cxx:8367
-#: src/Graph.cc:6990
+#: src/Graph.cc:6998
 #, fuzzy
 msgid "median_line"
 msgstr "radianes"
@@ -11556,7 +11563,7 @@ msgstr "radianes"
 # src/xcas.cxx:3677
 # src/xcas.cxx:3779
 # src/xcas.cxx:4807
-#: src/Graph.cc:6991
+#: src/Graph.cc:6999
 #, fuzzy
 msgid "bisector"
 msgstr "Historial"
@@ -11564,7 +11571,7 @@ msgstr "Historial"
 # src/xcas.cxx:3810
 # src/xcas.cxx:3854
 # src/xcas.cxx:4943
-#: src/Graph.cc:6993
+#: src/Graph.cc:7001
 #, fuzzy
 msgid "Polygons"
 msgstr "Polinómios"
@@ -11572,19 +11579,19 @@ msgstr "Polinómios"
 # src/xcas.cxx:3968
 # src/xcas.cxx:4015
 # src/xcas.cxx:5101
-#: src/Graph.cc:6994
+#: src/Graph.cc:7002
 #, fuzzy
 msgid "triangle"
 msgstr "Triángulos"
 
-#: src/Graph.cc:6995
+#: src/Graph.cc:7003
 msgid "equilateral_triangle"
 msgstr ""
 
 # src/xcas.cxx:6931 src/xcas.cxx:7026
 # src/xcas.cxx:8121
 # src/xcas.cxx:8884
-#: src/Graph.cc:6996
+#: src/Graph.cc:7004
 #, fuzzy
 msgid "square"
 msgstr "interpretar"
@@ -11592,7 +11599,7 @@ msgstr "interpretar"
 # src/xcas.cxx:3843
 # src/xcas.cxx:3887
 # src/xcas.cxx:5107
-#: src/Graph.cc:6997
+#: src/Graph.cc:7005
 #, fuzzy
 msgid "quadrilateral"
 msgstr "Cuadriláteros"
@@ -11600,7 +11607,7 @@ msgstr "Cuadriláteros"
 # src/xcas.cxx:3974
 # src/xcas.cxx:4021
 # src/xcas.cxx:5114
-#: src/Graph.cc:7000
+#: src/Graph.cc:7008
 #, fuzzy
 msgid "Circles"
 msgstr "Circunferencias"
@@ -11608,7 +11615,7 @@ msgstr "Circunferencias"
 # src/xcas.cxx:3864
 # src/xcas.cxx:3909
 # src/xcas.cxx:4986
-#: src/Graph.cc:7002
+#: src/Graph.cc:7010
 #, fuzzy
 msgid "incircle"
 msgstr "recalcular"
@@ -11616,7 +11623,7 @@ msgstr "recalcular"
 # src/xcas.cxx:3864
 # src/xcas.cxx:3909
 # src/xcas.cxx:4986
-#: src/Graph.cc:7003
+#: src/Graph.cc:7011
 #, fuzzy
 msgid "excircle"
 msgstr "recalcular"
@@ -11624,7 +11631,7 @@ msgstr "recalcular"
 # src/xcas.cxx:3864
 # src/xcas.cxx:3909
 # src/xcas.cxx:4986
-#: src/Graph.cc:7004
+#: src/Graph.cc:7012
 #, fuzzy
 msgid "circumcircle"
 msgstr "recalcular"
@@ -11632,31 +11639,31 @@ msgstr "recalcular"
 # src/xcas.cxx:3721
 # src/xcas.cxx:3758
 # src/xcas.cxx:4774 src/xcas.cxx:5379
-#: src/Graph.cc:7007
+#: src/Graph.cc:7015
 #, fuzzy
 msgid "ellipse"
 msgstr "Inglés"
 
 # src/xcas.cxx:3680 src/xcas.cxx:3686 src/xcas.cxx:3751
 # src/xcas.cxx:3718 src/xcas.cxx:3724
-#: src/Graph.cc:7008
+#: src/Graph.cc:7016
 #, fuzzy
 msgid "hyperbola"
 msgstr "maple"
 
 # src/xcas.cxx:3680 src/xcas.cxx:3686 src/xcas.cxx:3751
 # src/xcas.cxx:3718 src/xcas.cxx:3724
-#: src/Graph.cc:7009
+#: src/Graph.cc:7017
 #, fuzzy
 msgid "parabola"
 msgstr "maple"
 
-#: src/Graph.cc:7010
+#: src/Graph.cc:7018
 msgid "plotode"
 msgstr ""
 
 # src/xcas.cxx:6546
-#: src/Graph.cc:7012
+#: src/Graph.cc:7020
 #, fuzzy
 msgid "Surfaces (3d)"
 msgstr "Conseguido"
@@ -11664,19 +11671,19 @@ msgstr "Conseguido"
 # src/xcas.cxx:4107
 # src/xcas.cxx:4154
 # src/xcas.cxx:5276
-#: src/Graph.cc:7013
+#: src/Graph.cc:7021
 #, fuzzy
 msgid "plane"
 msgstr "Exp & Log"
 
-#: src/Graph.cc:7014
+#: src/Graph.cc:7022
 msgid "sphere"
 msgstr ""
 
 # src/xcas.cxx:3986
 # src/xcas.cxx:4033
 # src/xcas.cxx:5126
-#: src/Graph.cc:7016
+#: src/Graph.cc:7024
 #, fuzzy
 msgid "Measures"
 msgstr "Medidas"
@@ -11684,7 +11691,7 @@ msgstr "Medidas"
 # src/xcas.cxx:7259 src/xcas.cxx:7405 src/xcas.cxx:7462 src/xcas.cxx:8070
 # src/xcas.cxx:7326 src/xcas.cxx:7472 src/xcas.cxx:7529 src/xcas.cxx:8148
 # src/xcas.cxx:8335 src/xcas.cxx:8400 src/xcas.cxx:8537
-#: src/Graph.cc:7017
+#: src/Graph.cc:7025
 #, fuzzy
 msgid "distanceat"
 msgstr "Cancelar"
@@ -11692,7 +11699,7 @@ msgstr "Cancelar"
 # src/xcas.cxx:3968
 # src/xcas.cxx:4015
 # src/xcas.cxx:5101
-#: src/Graph.cc:7018
+#: src/Graph.cc:7026
 #, fuzzy
 msgid "angleat"
 msgstr "Triángulos"
@@ -11700,7 +11707,7 @@ msgstr "Triángulos"
 # src/xcas.cxx:3772
 # src/xcas.cxx:3816
 # src/xcas.cxx:4799
-#: src/Graph.cc:7019
+#: src/Graph.cc:7027
 #, fuzzy
 msgid "areaat"
 msgstr "Pegar"
@@ -11708,7 +11715,7 @@ msgstr "Pegar"
 # src/xcas.cxx:3875
 # src/xcas.cxx:3920
 # src/xcas.cxx:5146
-#: src/Graph.cc:7020
+#: src/Graph.cc:7028
 #, fuzzy
 msgid "perimeterat"
 msgstr "Propiedades"
@@ -11716,7 +11723,7 @@ msgstr "Propiedades"
 # src/xcas.cxx:3690
 # src/xcas.cxx:3728
 # src/xcas.cxx:4729
-#: src/Graph.cc:7021
+#: src/Graph.cc:7029
 #, fuzzy
 msgid "slopeat"
 msgstr "Ejecutar"
@@ -11724,7 +11731,7 @@ msgstr "Ejecutar"
 # src/xcas.cxx:7259 src/xcas.cxx:7405 src/xcas.cxx:7462 src/xcas.cxx:8070
 # src/xcas.cxx:7326 src/xcas.cxx:7472 src/xcas.cxx:7529 src/xcas.cxx:8148
 # src/xcas.cxx:8335 src/xcas.cxx:8400 src/xcas.cxx:8537
-#: src/Graph.cc:7022
+#: src/Graph.cc:7030
 #, fuzzy
 msgid "distanceatraw"
 msgstr "Cancelar"
@@ -11732,7 +11739,7 @@ msgstr "Cancelar"
 # src/xcas.cxx:3690
 # src/xcas.cxx:3728
 # src/xcas.cxx:4729
-#: src/Graph.cc:7023
+#: src/Graph.cc:7031
 #, fuzzy
 msgid "angleatraw"
 msgstr "Ejecutar"
@@ -11740,7 +11747,7 @@ msgstr "Ejecutar"
 # src/xcas.cxx:3690
 # src/xcas.cxx:3728
 # src/xcas.cxx:4729
-#: src/Graph.cc:7024
+#: src/Graph.cc:7032
 #, fuzzy
 msgid "areaatraw"
 msgstr "Ejecutar"
@@ -11748,7 +11755,7 @@ msgstr "Ejecutar"
 # src/xcas.cxx:3875
 # src/xcas.cxx:3920
 # src/xcas.cxx:5146
-#: src/Graph.cc:7025
+#: src/Graph.cc:7033
 #, fuzzy
 msgid "perimeteratraw"
 msgstr "Propiedades"
@@ -11756,7 +11763,7 @@ msgstr "Propiedades"
 # src/xcas.cxx:3690
 # src/xcas.cxx:3728
 # src/xcas.cxx:4729
-#: src/Graph.cc:7026
+#: src/Graph.cc:7034
 #, fuzzy
 msgid "slopeatraw"
 msgstr "Ejecutar"
@@ -11764,19 +11771,19 @@ msgstr "Ejecutar"
 # src/xcas.cxx:3884
 # src/xcas.cxx:3929
 # src/xcas.cxx:5137
-#: src/Graph.cc:7028
+#: src/Graph.cc:7036
 msgid "Transformations"
 msgstr "Transformaciones"
 
 # src/xcas.cxx:4030
 # src/xcas.cxx:4077
 # src/xcas.cxx:5220
-#: src/Graph.cc:7029
+#: src/Graph.cc:7037
 #, fuzzy
 msgid "reflection"
 msgstr "Graficar selección"
 
-#: src/Graph.cc:7030
+#: src/Graph.cc:7038
 #, fuzzy
 msgid "rotation"
 msgstr "(3-d) Cambiar ángulo de rotación z"
@@ -11784,7 +11791,7 @@ msgstr "(3-d) Cambiar ángulo de rotación z"
 # src/xcas.cxx:7393
 # src/xcas.cxx:7460
 # src/xcas.cxx:8367
-#: src/Graph.cc:7031
+#: src/Graph.cc:7039
 #, fuzzy
 msgid "translation"
 msgstr "radianes"
@@ -11792,23 +11799,23 @@ msgstr "radianes"
 # src/xcas.cxx:4030
 # src/xcas.cxx:4077
 # src/xcas.cxx:5220
-#: src/Graph.cc:7032
+#: src/Graph.cc:7040
 #, fuzzy
 msgid "projection"
 msgstr "Graficar selección"
 
-#: src/Graph.cc:7033
+#: src/Graph.cc:7041
 msgid "homothety"
 msgstr ""
 
-#: src/Graph.cc:7034
+#: src/Graph.cc:7042
 msgid "similarity"
 msgstr ""
 
 # src/xcas.cxx:3700
 # src/xcas.cxx:3738
 # src/xcas.cxx:4766
-#: src/Graph.cc:7035
+#: src/Graph.cc:7043
 #, fuzzy
 msgid "inversion"
 msgstr "Insertar fila"
@@ -11816,80 +11823,80 @@ msgstr "Insertar fila"
 # src/xcas.cxx:3700
 # src/xcas.cxx:3738
 # src/xcas.cxx:4766
-#: src/Graph.cc:7038
+#: src/Graph.cc:7046
 #, fuzzy
 msgid "Intersections"
 msgstr "Insertar fila"
 
-#: src/Graph.cc:7039
+#: src/Graph.cc:7047
 msgid "inter_unique (1 point)"
 msgstr ""
 
-#: src/Graph.cc:7040
+#: src/Graph.cc:7048
 msgid "inter (close to a point)"
 msgstr ""
 
-#: src/Graph.cc:7041
+#: src/Graph.cc:7049
 msgid "inter (list of points)"
 msgstr ""
 
 # src/xcas.cxx:7903
 # src/xcas.cxx:7970
 # src/xcas.cxx:9117
-#: src/Graph.cc:7043
+#: src/Graph.cc:7051
 #, fuzzy
 msgid "tangent"
 msgstr "General"
 
-#: src/Graph.cc:7139
+#: src/Graph.cc:7147
 msgid "Set mode for mouse constructions"
 msgstr ""
 
-#: src/Graph.cc:7153
+#: src/Graph.cc:7161
 msgid "Color used for next mouse drawings"
 msgstr ""
 
-#: src/Graph.cc:7159
+#: src/Graph.cc:7167
 msgid "Line style used for next mouse drawings"
 msgstr ""
 
-#: src/Graph.cc:7164
+#: src/Graph.cc:7172
 msgid "Check for step evaluation"
 msgstr ""
 
-#: src/Graph.cc:7169
+#: src/Graph.cc:7177
 #, fuzzy
 msgid "Check for landscape"
 msgstr "Cargar script en eqw"
 
-#: src/Graph.cc:7174
+#: src/Graph.cc:7182
 msgid "Check if mouse clicks in approx mode"
 msgstr ""
 
-#: src/Graph.cc:7179
+#: src/Graph.cc:7187
 msgid "Save current figure commands independently of the session"
 msgstr ""
 
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4742
-#: src/Graph.cc:7301
+#: src/Graph.cc:7309
 #, fuzzy
 msgid "Export to LaTeX"
 msgstr "Exportar sesión como"
 
-#: src/Graph.cc:7573 src/Graph.cc:7887
+#: src/Graph.cc:7581 src/Graph.cc:7895
 msgid "fw"
 msgstr ""
 
-#: src/Graph.cc:7575 src/Graph.cc:7892
+#: src/Graph.cc:7583 src/Graph.cc:7900
 msgid "bw"
 msgstr ""
 
 # src/xcas.cxx:7393
 # src/xcas.cxx:7460
 # src/xcas.cxx:8367
-#: src/Graph.cc:7577 src/Graph.cc:7897
+#: src/Graph.cc:7585 src/Graph.cc:7905
 #, fuzzy
 msgid "tr"
 msgstr "radianes"
@@ -11897,51 +11904,51 @@ msgstr "radianes"
 # src/xcas.cxx:3864
 # src/xcas.cxx:3909
 # src/xcas.cxx:4986
-#: src/Graph.cc:7579 src/Graph.cc:7902
+#: src/Graph.cc:7587 src/Graph.cc:7910
 #, fuzzy
 msgid "tl"
 msgstr "recalcular"
 
-#: src/Graph.cc:7581 src/Graph.cc:7907
+#: src/Graph.cc:7589 src/Graph.cc:7915
 msgid "ss"
 msgstr ""
 
-#: src/Graph.cc:7583 src/Graph.cc:7912
+#: src/Graph.cc:7591 src/Graph.cc:7920
 msgid "ju"
 msgstr ""
 
 # src/xcas.cxx:4119
 # src/xcas.cxx:4166
 # src/xcas.cxx:5225
-#: src/Graph.cc:7585 src/Graph.cc:7917
+#: src/Graph.cc:7593 src/Graph.cc:7925
 #, fuzzy
 msgid "pe"
 msgstr "Especiales"
 
-#: src/Graph.cc:7594 src/Graph.cc:7922
+#: src/Graph.cc:7602 src/Graph.cc:7930
 msgid "ci"
 msgstr ""
 
 # src/xcas.cxx:3728
 # src/xcas.cxx:3765
 # src/xcas.cxx:4782
-#: src/Graph.cc:7596 src/Graph.cc:7927
+#: src/Graph.cc:7604 src/Graph.cc:7935
 #, fuzzy
 msgid "di"
 msgstr "Editar"
 
-#: src/Graph.cc:7598 src/Graph.cc:7932
+#: src/Graph.cc:7606 src/Graph.cc:7940
 msgid "fr"
 msgstr ""
 
-#: src/Graph.cc:7600 src/Graph.cc:7937
+#: src/Graph.cc:7608 src/Graph.cc:7945
 msgid "ft"
 msgstr ""
 
 # src/xcas.cxx:3864
 # src/xcas.cxx:3909
 # src/xcas.cxx:4986
-#: src/Graph.cc:7602 src/Graph.cc:7952
+#: src/Graph.cc:7610 src/Graph.cc:7960
 #, fuzzy
 msgid "cl"
 msgstr "recalcular"
@@ -11949,24 +11956,24 @@ msgstr "recalcular"
 # src/xcas.cxx:6950
 # src/xcas.cxx:7013
 # src/xcas.cxx:9762
-#: src/Graph.cc:7604 src/Graph.cc:7942
+#: src/Graph.cc:7612 src/Graph.cc:7950
 #, fuzzy
 msgid "ec"
 msgstr "ESC"
 
-#: src/Graph.cc:7606 src/Graph.cc:7947
+#: src/Graph.cc:7614 src/Graph.cc:7955
 msgid "sg"
 msgstr ""
 
-#: src/Graph.cc:7652 src/Graph.cc:7678
+#: src/Graph.cc:7660 src/Graph.cc:7686
 msgid "Not registered\n"
 msgstr ""
 
-#: src/Graph.cc:7834
+#: src/Graph.cc:7842
 msgid "Mesh"
 msgstr ""
 
-#: src/Graph.cc:7835
+#: src/Graph.cc:7843
 #, fuzzy
 msgid "None"
 msgstr "columna"
@@ -11974,7 +11981,7 @@ msgstr "columna"
 # src/xcas.cxx:6931 src/xcas.cxx:7026
 # src/xcas.cxx:8121
 # src/xcas.cxx:8884
-#: src/Graph.cc:7836
+#: src/Graph.cc:7844
 #, fuzzy
 msgid "Square"
 msgstr "interpretar"
@@ -11982,7 +11989,7 @@ msgstr "interpretar"
 # src/xcas.cxx:3968
 # src/xcas.cxx:4015
 # src/xcas.cxx:5101
-#: src/Graph.cc:7837
+#: src/Graph.cc:7845
 #, fuzzy
 msgid "Triangle"
 msgstr "Triángulos"
@@ -11990,37 +11997,37 @@ msgstr "Triángulos"
 # src/xcas.cxx:4076
 # src/xcas.cxx:4123
 # src/xcas.cxx:5336
-#: src/Graph.cc:7842
+#: src/Graph.cc:7850
 #, fuzzy
 msgid "Right"
 msgstr "Listas"
 
-#: src/Graph.cc:7843
+#: src/Graph.cc:7851
 msgid "Left"
 msgstr ""
 
-#: src/Graph.cc:7844
+#: src/Graph.cc:7852
 msgid "Up"
 msgstr ""
 
 # src/xcas.cxx:3762
 # src/xcas.cxx:3793
 # src/xcas.cxx:4846
-#: src/Graph.cc:7845
+#: src/Graph.cc:7853
 #, fuzzy
 msgid "Down"
 msgstr "abajo"
 
 # src/xcas.cxx:4058
 # src/xcas.cxx:4105
-#: src/Graph.cc:7846
+#: src/Graph.cc:7854
 #, fuzzy
 msgid "ShowPosition"
 msgstr "Dividir ventana"
 
 # src/xcas.cxx:3849
 # src/xcas.cxx:3893
-#: src/Graph.cc:7847
+#: src/Graph.cc:7855
 #, fuzzy
 msgid "HidePosition"
 msgstr "Gestión"
@@ -12028,7 +12035,7 @@ msgstr "Gestión"
 # src/xcas.cxx:3691
 # src/xcas.cxx:3729
 # src/xcas.cxx:4740
-#: src/Graph.cc:7850
+#: src/Graph.cc:7858
 #, fuzzy
 msgid "EPS/PNG and preview"
 msgstr "Imprimir sesión"
@@ -12036,55 +12043,55 @@ msgstr "Imprimir sesión"
 # src/xcas.cxx:7425
 # src/xcas.cxx:7492
 # src/xcas.cxx:8434
-#: src/Graph.cc:7855
+#: src/Graph.cc:7863
 #, fuzzy
 msgid "Color"
 msgstr "Columnas"
 
-#: src/Graph.cc:7888
+#: src/Graph.cc:7896
 msgid "Turtle n steps forward"
 msgstr ""
 
-#: src/Graph.cc:7893
+#: src/Graph.cc:7901
 msgid "Turtle n steps backward"
 msgstr ""
 
-#: src/Graph.cc:7898
+#: src/Graph.cc:7906
 msgid "Turtle turns right n degrees"
 msgstr ""
 
-#: src/Graph.cc:7903
+#: src/Graph.cc:7911
 msgid "Turtle turns left n degrees"
 msgstr ""
 
-#: src/Graph.cc:7908
+#: src/Graph.cc:7916
 msgid "Turtle steps to the left from n steps"
 msgstr ""
 
-#: src/Graph.cc:7913
+#: src/Graph.cc:7921
 msgid "Turtle jumps n steps"
 msgstr ""
 
-#: src/Graph.cc:7918
+#: src/Graph.cc:7926
 msgid "Change pen color"
 msgstr ""
 
 # src/xcas.cxx:3974
 # src/xcas.cxx:4021
 # src/xcas.cxx:5114
-#: src/Graph.cc:7923
+#: src/Graph.cc:7931
 #, fuzzy
 msgid "Circle arc"
 msgstr "Circunferencias"
 
-#: src/Graph.cc:7928
+#: src/Graph.cc:7936
 msgid "Filled circle arc"
 msgstr ""
 
 # src/xcas.cxx:3968
 # src/xcas.cxx:4015
 # src/xcas.cxx:5101
-#: src/Graph.cc:7933
+#: src/Graph.cc:7941
 #, fuzzy
 msgid "Filled rectangle"
 msgstr "Triángulos"
@@ -12092,27 +12099,27 @@ msgstr "Triángulos"
 # src/xcas.cxx:3968
 # src/xcas.cxx:4015
 # src/xcas.cxx:5101
-#: src/Graph.cc:7938
+#: src/Graph.cc:7946
 #, fuzzy
 msgid "Filled triangle"
 msgstr "Triángulos"
 
-#: src/Graph.cc:7943
+#: src/Graph.cc:7951
 msgid "Write to the right of the turtle"
 msgstr ""
 
-#: src/Graph.cc:7948
+#: src/Graph.cc:7956
 msgid "Sign picture"
 msgstr ""
 
 # src/xcas.cxx:3743 src/xcas.cxx:3747
 # src/xcas.cxx:3775
 # src/xcas.cxx:4792
-#: src/Graph.cc:7953
+#: src/Graph.cc:7961
 msgid "Clear all"
 msgstr "Borrar todo"
 
-#: src/Graph.cc:7962
+#: src/Graph.cc:7970
 msgid "Turtle menu"
 msgstr ""
 
