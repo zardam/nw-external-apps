@@ -114,7 +114,7 @@ namespace giac {
     if (!assume_t_in_ab(t,plus_inf,plus_inf,true,true,contextptr))
       return gensizeerr(contextptr);
     gen res=_integrate(makesequence(f*exp(-t*x,contextptr),x),contextptr);
-    if (lop(res,at_integrate).empty())
+    if (lop(res,at_integrate).empty() && lop(res,at_piecewise).empty() && lop(res,at_sign).empty())
       res=-_limit(makesequence(res,x,0,1),contextptr);
     else
       res=undef;
@@ -1077,9 +1077,9 @@ namespace giac {
     num=false;
     // if x_orig.type==_VECT || y_orig.type==_VECT, they should be evaled
     if (x_orig.type!=_VECT && eval(x_orig,1,contextptr)!=x_orig)
-      return gensizeerr("Independant variable assigned. Run purge("+x_orig.print(contextptr)+")\n");
+      return gensizeerr("Independent variable assigned. Run purge("+x_orig.print(contextptr)+")\n");
     if (y_orig.type!=_VECT && eval(y_orig,1,contextptr)!=y_orig)
-      return gensizeerr("Dependant variable assigned. Run purge("+y_orig.print(contextptr)+")\n");
+      return gensizeerr("Dependent variable assigned. Run purge("+y_orig.print(contextptr)+")\n");
     gen x(x_orig);
     if ( (x_orig.type==_VECT) && (x_orig._VECTptr->size()==1) )
       x=x_orig._VECTptr->front();

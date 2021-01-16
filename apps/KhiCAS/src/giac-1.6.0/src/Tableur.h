@@ -48,7 +48,7 @@ namespace xcas {
   extern Fl_Menu_Item Tableur_menu[];
   class Flv_Table_Gen;
   bool iscell_range(const giac::gen & g,const giac::matrice & m,giac::matrice & mselect,Flv_Table_Gen * ptr);
-  // Returns 0 if not a cell range, 1 if vc is made of successives integers, n if of n independant columns, set absolu to true if IDNT are used for cols
+  // Returns 0 if not a cell range, 1 if vc is made of successives integers, n if of n independent columns, set absolu to true if IDNT are used for cols
   int iscell_range(const giac::gen & g,const giac::matrice & m,giac::matrice & mselect,Flv_Table_Gen * sptr,int & r1,int & r2,std::vector<int> & vc,bool & absolu);
 
   bool tablefunc_dialog(Fl_Widget * spread_ptr,std::string & arg,bool plot,int type,const std::string & title);

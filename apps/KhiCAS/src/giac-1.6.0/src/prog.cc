@@ -1035,7 +1035,7 @@ namespace giac {
       a=a._SYMBptr->feuille[0];
       return;
     }
-    b=string2gen(gettext("Unitialized parameter ")+a.print(contextptr),false);
+    b=string2gen(gettext("Uninitialized parameter ")+a.print(contextptr),false);
     b.subtype=-1;
   }
 
@@ -3126,7 +3126,7 @@ namespace giac {
       if (it->type==_IDNT){
 	names.push_back(*it);
 #if 1
-	gen err=string2gen(gettext("Unitialized local variable ")+it->print(contextptr),false);
+	gen err=string2gen(gettext("Uninitialized local variable ")+it->print(contextptr),false);
 	err.subtype=-1;
 	values.push_back(err);
 #else
@@ -3673,7 +3673,7 @@ namespace giac {
       if (selecting)
 	return symb_select(args);
       else {
-	if (f.type==_VECT){ // remove 1st occurence of v
+	if (f.type==_VECT){ // remove 1st occurrence of v
 	  vecteur w=*f._VECTptr;
 	  for (unsigned i=0;i<w.size();++i){
 	    if (w[i]==v){
@@ -6450,12 +6450,24 @@ namespace giac {
   define_unary_function_ptr5( at_maple_mode ,alias_at_maple_mode,&__maple_mode,0,true);
   gen _python_compat(const gen & g,GIAC_CONTEXT){
     if ( g.type==_STRNG &&  g.subtype==-1) return  g;
+    int p=python_compat(contextptr);
     gen args(g);
     if (g.type==_DOUBLE_)
-      args=int(g._DOUBLE_val);    
+      args=int(g._DOUBLE_val);
+    if (args.type==_VECT && args._VECTptr->size()==3){
+      vecteur & v=*args._VECTptr;
+      gen a=v[0],b=v[1],c=v[2];
+      if (is_integral(a) && is_integral(b) && is_integral(c)){
+	python_compat(a.val,contextptr) ;
+#ifdef KHICAS
+	python_heap_size=giacmax(absint(b.val),16*1024);
+	python_stack_size=giacmax(absint(c.val),8*1024);
+#endif
+	return p;
+      }
+    }
     if (args.type!=_INT_)
-      return python_compat(contextptr);
-    int p=python_compat(contextptr);
+      return gensizeerr(contextptr);
     python_compat(args.val,contextptr) ;
     return p;
   }

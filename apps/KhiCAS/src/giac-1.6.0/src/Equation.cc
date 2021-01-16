@@ -560,7 +560,7 @@ namespace xcas {
 
   // vertical merge with same baseline
   // for vertical merge of hp,yp at top (like ^) add fontsize to yp
-  // at bottom (like lower bound of int) substract fontsize from yp
+  // at bottom (like lower bound of int) subtract fontsize from yp
   void Equation_vertical_adjust(int hp,int yp,int & h,int & y){
     int yf=min(y,yp);
     h=max(y+h,yp+hp)-yf;

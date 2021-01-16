@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 17:45+0200\n"
+"POT-Creation-Date: 2020-07-23 18:23+0200\n"
 "PO-Revision-Date: 2013-09-09 17:43+0200\n"
 "Last-Translator: Alkis Akritas <akritas@uth.gr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -628,7 +628,7 @@ msgid "2nd arg"
 msgstr "2ο όρισμα"
 
 #: src/misc.cc:1839 src/misc.cc:1879 src/misc.cc:1885 src/vecteur.cc:11507
-#: src/cocoa.cc:3360 src/gen.cc:4379 src/gen.cc:10233 src/gen.cc:10287
+#: src/cocoa.cc:3373 src/gen.cc:4379 src/gen.cc:10233 src/gen.cc:10287
 msgid "Not invertible"
 msgstr ""
 
@@ -644,250 +644,250 @@ msgstr ""
 msgid "Low accuracy"
 msgstr ""
 
-#: src/misc.cc:4121
+#: src/misc.cc:4120
 msgid "Guessing initial production requires more than 20 samples"
 msgstr ""
 
-#: src/misc.cc:4129
+#: src/misc.cc:4128
 msgid "Initial cumulative estimated to "
 msgstr ""
 
-#: src/misc.cc:4129
+#: src/misc.cc:4128
 msgid "Correlation for 5 first years to estimate initial cumulative : "
 msgstr ""
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid "Pinstant="
 msgstr ""
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid "*Pcumul+"
 msgstr ""
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid "Correlation "
 msgstr "Συσχέτιση"
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid ", Estimated total P="
 msgstr ""
 
-#: src/misc.cc:4168
+#: src/misc.cc:4167
 msgid "Returning estimated Pcumul, Pinstant, Ptotal, Pinstantmax, tmax, R"
 msgstr ""
 
-#: src/misc.cc:4246
+#: src/misc.cc:4245
 msgid "Values out of range"
 msgstr ""
 
-#: src/misc.cc:4348
+#: src/misc.cc:4347
 msgid "Invalid class size (replaced by 1) "
 msgstr ""
 
-#: src/misc.cc:5302 src/misc.cc:5347
+#: src/misc.cc:5301 src/misc.cc:5346
 msgid "Negative value encoutered"
 msgstr ""
 
-#: src/misc.cc:5403
+#: src/misc.cc:5402
 msgid "graham_sort_function"
 msgstr ""
 
-#: src/misc.cc:5865
+#: src/misc.cc:5864
 msgid "binop"
 msgstr ""
 
-#: src/misc.cc:5965
+#: src/misc.cc:5964
 msgid "plotarea(f(x),x=a..b[,n,method])"
 msgstr ""
 
-#: src/misc.cc:6051
+#: src/misc.cc:6050
 msgid "not supported"
 msgstr ""
 
-#: src/misc.cc:6186
+#: src/misc.cc:6185
 msgid "Warning: not a graph matrix!"
 msgstr ""
 
-#: src/misc.cc:6467
+#: src/misc.cc:6466
 msgid ""
 "Warning! Leaving conjugate gradient algorithm after dimension of matrix "
 "iterations. Check that your matrix is hermitian/symmetric definite."
 msgstr ""
 
-#: src/misc.cc:6497
+#: src/misc.cc:6496
 msgid ""
 "Warning! Leaving Jacobi iterative algorithm after maximal number of "
 "iterations. Check that your matrix is diagonal dominant."
 msgstr ""
 
-#: src/misc.cc:6529
+#: src/misc.cc:6528
 msgid ""
 "Warning! Leaving Gauss-Seidel iterative algorithm after maximal number of "
 "iterations. Check that your matrix is diagonal dominant."
 msgstr ""
 
-#: src/misc.cc:7510
+#: src/misc.cc:7509
 #, c-format
 msgid ""
 "====================\n"
 "Parametric plot (%gen,%gen), variable %gen"
 msgstr ""
 
-#: src/misc.cc:7523
+#: src/misc.cc:7522
 #, fuzzy
 msgid "Even functions."
 msgstr "Νέα συνάρτηση"
 
-#: src/misc.cc:7525
+#: src/misc.cc:7524
 #, c-format
 msgid "Even function %gen, odd function %gen. Reflection Ox"
 msgstr ""
 
-#: src/misc.cc:7529
+#: src/misc.cc:7528
 #, c-format
 msgid "Odd function %gen, even function %gen. Reflection Oy"
 msgstr ""
 
-#: src/misc.cc:7531
+#: src/misc.cc:7530
 msgid "Odd functions. Center O"
 msgstr ""
 
-#: src/misc.cc:7545 src/misc.cc:8144
+#: src/misc.cc:7544 src/misc.cc:8143
 #, c-format
 msgid "Domain %gen"
 msgstr ""
 
-#: src/misc.cc:7548 src/misc.cc:8147
+#: src/misc.cc:7547 src/misc.cc:8146
 #, fuzzy
 msgid "Unable to find singular points"
 msgstr "Αδύνατη η μετατροπή σε ακέραιο"
 
-#: src/misc.cc:7584 src/misc.cc:8197 src/misc.cc:8211
+#: src/misc.cc:7583 src/misc.cc:8196 src/misc.cc:8210
 #, fuzzy
 msgid "Unable to find critical points"
 msgstr "Αδύνατη η μετατροπή σε ακέραιο"
 
-#: src/misc.cc:7594
+#: src/misc.cc:7593
 #, fuzzy
 msgid "Unable to find inflection points"
 msgstr "συνιστώσα x της κατεύθυνσης του προβολέα"
 
-#: src/misc.cc:7601 src/misc.cc:8219
+#: src/misc.cc:7600 src/misc.cc:8218
 msgid "Infinite number of critical points. Try with optional argument "
 msgstr ""
 
-#: src/misc.cc:7664
+#: src/misc.cc:7663
 #, c-format
 msgid ""
 "Singular point %gen, point %gen direction %gen kind (%gen,%gen)\n"
 "Taylor expansions %gen"
 msgstr ""
 
-#: src/misc.cc:7739
+#: src/misc.cc:7738
 #, c-format
 msgid "Horizontal asymptote at %gen : %gen"
 msgstr ""
 
-#: src/misc.cc:7749 src/misc.cc:8318
+#: src/misc.cc:7748 src/misc.cc:8317
 #, c-format
 msgid "Vertical parabolic asymptote at %gen"
 msgstr ""
 
-#: src/misc.cc:7755 src/misc.cc:8325
+#: src/misc.cc:7754 src/misc.cc:8324
 #, c-format
 msgid "Horizontal parabolic asymptote at %gen"
 msgstr ""
 
-#: src/misc.cc:7762
+#: src/misc.cc:7761
 #, c-format
 msgid "Parabolic asymptote direction at %gen: %gen"
 msgstr ""
 
-#: src/misc.cc:7768
+#: src/misc.cc:7767
 #, c-format
 msgid "Asymptote at %gen: %gen"
 msgstr ""
 
-#: src/misc.cc:7780
+#: src/misc.cc:7779
 #, c-format
 msgid "Vertical asymptote at %gen: %gen"
 msgstr ""
 
-#: src/misc.cc:8051
+#: src/misc.cc:8050
 #, c-format
 msgid ""
 "Variations (%gen,%gen)\n"
 "%gen"
 msgstr ""
 
-#: src/misc.cc:8064
+#: src/misc.cc:8063
 msgid ""
 "Warning, using x or y as variable in parametric plot may lead to confusion!"
 msgstr ""
 
-#: src/misc.cc:8107
+#: src/misc.cc:8106
 #, c-format
 msgid ""
 "====================\n"
 "Function plot %gen, variable %gen"
 msgstr ""
 
-#: src/misc.cc:8109
+#: src/misc.cc:8108
 #, c-format
 msgid "Periodic function T=%gen"
 msgstr ""
 
-#: src/misc.cc:8126
+#: src/misc.cc:8125
 #, c-format
 msgid "Even function %gen. Reflection Oy"
 msgstr ""
 
-#: src/misc.cc:8128
+#: src/misc.cc:8127
 #, c-format
 msgid "Odd function %gen. Center O"
 msgstr ""
 
-#: src/misc.cc:8205
+#: src/misc.cc:8204
 #, fuzzy
 msgid "Unable to find convexity"
 msgstr "Αδύνατη η μετατροπή σε ακέραιο"
 
-#: src/misc.cc:8281
+#: src/misc.cc:8280
 #, fuzzy, c-format
 msgid "Vertical asymptote %gen"
 msgstr "Κάθετος διαχωρισμός"
 
-#: src/misc.cc:8286
+#: src/misc.cc:8285
 #, c-format
 msgid "Symmetric vertical asymptote %gen"
 msgstr ""
 
-#: src/misc.cc:8299
+#: src/misc.cc:8298
 #, fuzzy, c-format
 msgid "Horizontal asymptote %gen"
 msgstr "Οριζόντιος διαχωρισμός"
 
-#: src/misc.cc:8306
+#: src/misc.cc:8305
 #, c-format
 msgid "Symmetric horizontal asymptote %gen"
 msgstr ""
 
-#: src/misc.cc:8334
+#: src/misc.cc:8333
 #, c-format
 msgid "Parabolic asymptote direction %gen at infinity"
 msgstr ""
 
-#: src/misc.cc:8341
+#: src/misc.cc:8340
 #, c-format
 msgid "Asymptote %gen"
 msgstr ""
 
-#: src/misc.cc:8351
+#: src/misc.cc:8350
 #, fuzzy, c-format
 msgid "Symmetric asymptote %gen"
 msgstr "Συμμετρικός Πίνακας"
 
-#: src/misc.cc:8587
+#: src/misc.cc:8586
 #, c-format
 msgid ""
 "Sign %gen\n"
@@ -1177,7 +1177,7 @@ msgid "Args must be multivariate polynomials"
 msgstr ""
 
 #: src/ezgcd.cc:1563
-msgid "GCD not successfull"
+msgid "GCD not successful"
 msgstr ""
 
 #: src/derive.cc:102
@@ -1410,7 +1410,7 @@ msgid ""
 "otherwise solutions may be missed. The solutions of the equation are "
 msgstr ""
 
-#: src/solve.cc:1427 src/prog.cc:7083 src/prog.cc:7085
+#: src/solve.cc:1427 src/prog.cc:7095 src/prog.cc:7097
 msgid "Unable to sort "
 msgstr ""
 
@@ -1765,11 +1765,11 @@ msgstr ""
 msgid "Floor definite integration: unable to handle infinite boundaries"
 msgstr ""
 
-#: src/intg.cc:3609 src/plot.cc:1385 src/prog.cc:13205
+#: src/intg.cc:3609 src/plot.cc:1385 src/prog.cc:13217
 msgid "Assuming false condition "
 msgstr ""
 
-#: src/intg.cc:3613 src/plot.cc:1389 src/prog.cc:13209
+#: src/intg.cc:3613 src/plot.cc:1389 src/prog.cc:13221
 msgid "Assuming true condition "
 msgstr ""
 
@@ -2667,7 +2667,7 @@ msgid "3-d instruction"
 msgstr ""
 
 #: src/plot.cc:3792 src/plot.cc:3831 src/Input.cc:1280 src/Input.cc:1282
-#: src/Graph.cc:7001
+#: src/Graph.cc:7009
 msgid "circle"
 msgstr "κύκλος"
 
@@ -2940,7 +2940,7 @@ msgstr ""
 msgid "Circle centers are identical"
 msgstr ""
 
-#: src/plot.cc:15380 src/Graph.cc:7036
+#: src/plot.cc:15380 src/Graph.cc:7044
 msgid "reciprocation"
 msgstr "πολική_αντιστροφή"
 
@@ -3094,7 +3094,7 @@ msgstr ""
 
 #: src/prog.cc:1038
 #, fuzzy
-msgid "Unitialized parameter "
+msgid "Uninitialized parameter "
 msgstr "Προσθήκη παραμέτρου"
 
 #: src/prog.cc:1059
@@ -3234,8 +3234,9 @@ msgid "Local must have 2 args"
 msgstr ""
 
 #: src/prog.cc:3129
-msgid "Unitialized local variable "
-msgstr ""
+#, fuzzy
+msgid "Uninitialized local variable "
+msgstr "Προσθήκη παραμέτρου"
 
 #: src/prog.cc:3291
 msgid "Try_catch must have 3 or 4 args"
@@ -3289,7 +3290,7 @@ msgstr ""
 msgid "Please try xcas on Linux or an Unix"
 msgstr ""
 
-#: src/prog.cc:5964 src/prog.cc:9205
+#: src/prog.cc:5964 src/prog.cc:9217
 msgid "Archiving "
 msgstr ""
 
@@ -3309,116 +3310,116 @@ msgstr ""
 msgid "Warning: some commands like subs might change arguments order"
 msgstr ""
 
-#: src/prog.cc:6726
+#: src/prog.cc:6738
 msgid "Cas_setup "
 msgstr ""
 
-#: src/prog.cc:7010
+#: src/prog.cc:7022
 msgid "Parent insmod"
 msgstr ""
 
-#: src/prog.cc:7383
+#: src/prog.cc:7395
 msgid "Float too large"
 msgstr ""
 
-#: src/prog.cc:7419
+#: src/prog.cc:7431
 msgid "Incompatible units"
 msgstr ""
 
-#: src/prog.cc:7687
+#: src/prog.cc:7699
 msgid "Some units could not be converted to MKSA"
 msgstr ""
 
-#: src/prog.cc:7736
+#: src/prog.cc:7748
 msgid "Bad conversion basis"
 msgstr ""
 
-#: src/prog.cc:7820
+#: src/prog.cc:7832
 msgid "Run convert(matrix,array) for dense conversion"
 msgstr ""
 
-#: src/prog.cc:7827
+#: src/prog.cc:7839
 #, fuzzy
 msgid "Invalid map"
 msgstr "Μη έγκυρη συνθήκη"
 
-#: src/prog.cc:8160
+#: src/prog.cc:8172
 msgid "Running maple text translation __.map"
 msgstr "Εκτελείται μετάφραση κειμένου maple __.map"
 
-#: src/prog.cc:8180
+#: src/prog.cc:8192
 msgid "Running TI89 text translation __.ti"
 msgstr ""
 
-#: src/prog.cc:8541
+#: src/prog.cc:8553
 msgid "No help file found"
 msgstr ""
 
-#: src/prog.cc:8747
+#: src/prog.cc:8759
 msgid "Restoring epsilon to 1e-6 from "
 msgstr ""
 
-#: src/prog.cc:8751
+#: src/prog.cc:8763
 msgid "Restoring proba epsilon to 1e-6 from "
 msgstr ""
 
-#: src/prog.cc:9045
+#: src/prog.cc:9057
 #, fuzzy
 msgid "invalid |"
 msgstr "Μη έγκυρη συνθήκη"
 
-#: src/prog.cc:9093
+#: src/prog.cc:9105
 msgid "Invalid |"
 msgstr ""
 
-#: src/prog.cc:9189
+#: src/prog.cc:9201
 msgid "inputform may be used in a window environment only"
 msgstr ""
 
-#: src/prog.cc:9217
+#: src/prog.cc:9229
 msgid "Inputform reads "
 msgstr ""
 
-#: src/prog.cc:9800
+#: src/prog.cc:9812
 msgid "Error printasmaple_lib"
 msgstr ""
 
-#: src/prog.cc:12592
+#: src/prog.cc:12604
 msgid "Invalid unit exponent"
 msgstr ""
 
-#: src/prog.cc:12750
+#: src/prog.cc:12762
 #, fuzzy
 msgid "printasunit error"
 msgstr "Συντακτικό λάθος"
 
-#: src/prog.cc:12910
+#: src/prog.cc:12922
 msgid "User operator not available on this architecture"
 msgstr ""
 
-#: src/prog.cc:12922
+#: src/prog.cc:12934
 msgid "Operator name must be of type string"
 msgstr ""
 
-#: src/prog.cc:13010
+#: src/prog.cc:13022
 msgid "Non existent Folder"
 msgstr ""
 
-#: src/prog.cc:13058
+#: src/prog.cc:13070
 msgid "No case applies"
 msgstr ""
 
-#: src/prog.cc:13222
+#: src/prog.cc:13234
 msgid "Unable to handle when condition "
 msgstr ""
 
-#: src/prog.cc:13228
+#: src/prog.cc:13240
 msgid ""
 "when2sign does not work properly with infinities. Replace inf by Inf and run "
 "limit after."
 msgstr ""
 
-#: src/prog.cc:13461
+#: src/prog.cc:13473
 #, fuzzy
 msgid "assert failure: "
 msgstr "Προσθήκη σχήματος"
@@ -3431,18 +3432,18 @@ msgstr ""
 msgid "Not implemented, please recompile giac with PARI"
 msgstr ""
 
-#: src/cocoa.cc:132 src/cocoa.cc:155
+#: src/cocoa.cc:145 src/cocoa.cc:168
 msgid "Invalid giac gen -> CoCoA ZZ conversion"
 msgstr ""
 
-#: src/cocoa.cc:144 src/cocoa.cc:167
+#: src/cocoa.cc:157 src/cocoa.cc:180
 msgid "Unable to convert CoCoA data"
 msgstr ""
 
 #: src/cocoa.cc:14607 src/cocoa.cc:14775
 msgid ""
 "Running a probabilistic check for the reconstructed Groebner basis. If "
-"successfull, error probability is less than "
+"successful, error probability is less than "
 msgstr ""
 
 #: src/cocoa.cc:14607 src/cocoa.cc:14775
@@ -4066,56 +4067,56 @@ msgstr "εκτύπωση"
 msgid "Unable to convert to real "
 msgstr ""
 
-#: src/gen.cc:14978 src/gen.cc:14999 src/gen.cc:15105 src/gen.cc:15124
+#: src/gen.cc:14978 src/gen.cc:14999 src/gen.cc:15108 src/gen.cc:15129
 msgid "real_object + gen"
 msgstr ""
 
-#: src/gen.cc:15261
+#: src/gen.cc:15266
 msgid ""
 "Compile with MPFR or USE_GMP_REPLACEMENTS if you want transcendental long "
 "float support"
 msgstr ""
 
-#: src/gen.cc:15549
+#: src/gen.cc:15554
 msgid "real_interval inv"
 msgstr ""
 
-#: src/gen.cc:15565 src/gen.cc:15587 src/gen.cc:15598 src/gen.cc:15609
-#: src/gen.cc:15620 src/gen.cc:15631 src/gen.cc:15642 src/gen.cc:15653
-#: src/gen.cc:15664 src/gen.cc:15675 src/gen.cc:15686 src/gen.cc:15697
-#: src/gen.cc:15708 src/gen.cc:15719 src/gen.cc:15730
+#: src/gen.cc:15570 src/gen.cc:15592 src/gen.cc:15603 src/gen.cc:15614
+#: src/gen.cc:15625 src/gen.cc:15636 src/gen.cc:15647 src/gen.cc:15658
+#: src/gen.cc:15669 src/gen.cc:15680 src/gen.cc:15691 src/gen.cc:15702
+#: src/gen.cc:15713 src/gen.cc:15724 src/gen.cc:15735
 msgid "real_interval sqrt"
 msgstr ""
 
-#: src/gen.cc:15576
+#: src/gen.cc:15581
 msgid "real_interval abs"
 msgstr ""
 
-#: src/gen.cc:15806
+#: src/gen.cc:15811
 msgid "real_interval mul"
 msgstr ""
 
-#: src/gen.cc:15836
+#: src/gen.cc:15841
 msgid "real_interval mul 2"
 msgstr ""
 
-#: src/gen.cc:15938
+#: src/gen.cc:15943
 msgid "MPFR error reading binary "
 msgstr ""
 
-#: src/gen.cc:15940
+#: src/gen.cc:15945
 msgid "Error no MPFR reading "
 msgstr ""
 
-#: src/help.cc:209 src/help.cc:695
+#: src/help.cc:408 src/help.cc:894
 msgid "Best match has score "
 msgstr ""
 
-#: src/help.cc:659
+#: src/help.cc:858
 msgid "No help available for "
 msgstr ""
 
-#: src/help.cc:720
+#: src/help.cc:919
 msgid "See also: "
 msgstr ""
 
@@ -4204,15 +4205,15 @@ msgstr ""
 msgid "Exercise number (from 1 to 25)?"
 msgstr "Αριθμός άσκησης (από 1 εως 25)?"
 
-#: src/hist.cxx:1777 src/hist.cxx:1832 src/Graph.cc:6363
+#: src/hist.cxx:1777 src/hist.cxx:1832 src/Graph.cc:6371
 msgid "Graph of a function"
 msgstr "Γράφημα συνάρτησης"
 
-#: src/hist.cxx:1810 src/Graph.cc:6969
+#: src/hist.cxx:1810 src/Graph.cc:6977
 msgid "Area under curve"
 msgstr "Περιοχή κάτω από την καμπύλη"
 
-#: src/hist.cxx:1854 src/Graph.cc:6560
+#: src/hist.cxx:1854 src/Graph.cc:6568
 msgid "Graph of a recurrent sequence"
 msgstr "Γράφημα αναδρομικής ακολουθίας"
 
@@ -4557,7 +4558,7 @@ msgstr "cos"
 msgid "tan"
 msgstr "tan"
 
-#: src/hist.cxx:4172 src/Graph.cc:6967
+#: src/hist.cxx:4172 src/Graph.cc:6975
 msgid "Tangent"
 msgstr "Εφαπτομένη"
 
@@ -4881,7 +4882,7 @@ msgstr "Μορφή σελίδας εκτύπωσης"
 msgid "Format"
 msgstr "Μορφή"
 
-#: src/hist.cxx:4949 src/Tableur.cc:158 src/Graph.cc:6960
+#: src/hist.cxx:4949 src/Tableur.cc:158 src/Graph.cc:6968
 msgid "Landscape"
 msgstr "Τοπίο"
 
@@ -5040,7 +5041,7 @@ msgid "Online"
 msgstr "ευθεία"
 
 #: src/hist.menus:13 src/History.cc:3737 src/Tableur.cc:2937
-#: src/Editeur.cc:2444 src/Graph.cc:6943
+#: src/Editeur.cc:2444 src/Graph.cc:6951
 msgid "Insert"
 msgstr "Προσθήκη"
 
@@ -5109,7 +5110,7 @@ msgid "Kill"
 msgstr "Τερματισμός"
 
 #: src/hist.menus:30 src/hist.menus:313 src/hist.menus:315 src/History.cc:3744
-#: src/Graph.cc:1196 src/Graph.cc:7851
+#: src/Graph.cc:1204 src/Graph.cc:7859
 msgid "Print"
 msgstr "Εκτύπωση"
 
@@ -5117,7 +5118,7 @@ msgstr "Εκτύπωση"
 msgid "Preview"
 msgstr "Προεπισκόπηση"
 
-#: src/hist.menus:32 src/Graph.cc:6946
+#: src/hist.menus:32 src/Graph.cc:6954
 #, fuzzy
 msgid "To printer"
 msgstr "για εκτύπωση"
@@ -5167,7 +5168,7 @@ msgid "Quit"
 msgstr "Έξοδος"
 
 #: src/hist.menus:44 src/History.cc:3754 src/Tableur.cc:2947
-#: src/Editeur.cc:2475 src/Graph.cc:6951
+#: src/Editeur.cc:2475 src/Graph.cc:6959
 msgid "Edit"
 msgstr "Επεξ"
 
@@ -5189,16 +5190,16 @@ msgstr "Εκτέλεση του/των κατωτέρω"
 msgid "Remove answers below"
 msgstr "αφαίρεση των παρακάτω απαντήσεων"
 
-#: src/hist.menus:49 src/History.cc:3794 src/Tableur.cc:2951 src/Graph.cc:6961
+#: src/hist.menus:49 src/History.cc:3794 src/Tableur.cc:2951 src/Graph.cc:6969
 msgid "Undo"
 msgstr "Αναίρεση"
 
-#: src/hist.menus:50 src/History.cc:3795 src/Tableur.cc:2952 src/Graph.cc:6962
+#: src/hist.menus:50 src/History.cc:3795 src/Tableur.cc:2952 src/Graph.cc:6970
 msgid "Redo"
 msgstr "Ακύρωση αναίρεσης"
 
 #: src/hist.menus:51 src/History.cc:3789 src/Tableur.cc:2950
-#: src/Editeur.cc:2476 src/Graph.cc:6957
+#: src/Editeur.cc:2476 src/Graph.cc:6965
 msgid "Paste"
 msgstr "Επικόλληση"
 
@@ -5239,7 +5240,7 @@ msgstr "Ομαδοποίηση επιλεγμένων επιπέδων"
 msgid "Degroup selected levels"
 msgstr "Αποομαδοποίηση επιλεγμένων επιπέδων"
 
-#: src/hist.menus:61 src/Graph.cc:1785
+#: src/hist.menus:61 src/Graph.cc:1793
 msgid "Cfg"
 msgstr "Ρυθμίσεις"
 
@@ -5247,7 +5248,7 @@ msgstr "Ρυθμίσεις"
 msgid "Cas configuration"
 msgstr "Ρυθμίσεις CAS"
 
-#: src/hist.menus:63 src/Graph.cc:1818
+#: src/hist.menus:63 src/Graph.cc:1826
 msgid "Graph configuration"
 msgstr "Ρυθμίσεις Γραφικών"
 
@@ -5985,7 +5986,7 @@ msgstr "debug: αποσφαλμάτωση"
 msgid "Attributs"
 msgstr "Χαρακτηριστικά"
 
-#: src/hist.menus:258 src/Graph.cc:7006
+#: src/hist.menus:258 src/Graph.cc:7014
 msgid "Curves"
 msgstr "Καμπύλες"
 
@@ -6193,8 +6194,8 @@ msgstr "Επιλέξτε αρχείο για επανεγγραφή"
 #: src/Xcas1.cc:3748 src/Equation.cc:4695 src/Print.cc:798 src/Tableur.cc:166
 #: src/Tableur.cc:1496 src/Tableur.cc:1833 src/Tableur.cc:2002
 #: src/Tableur.cc:2084 src/Tableur.cc:2287 src/Editeur.cc:1634
-#: src/Editeur.cc:1768 src/Editeur.cc:1933 src/Graph.cc:1496 src/Graph.cc:1811
-#: src/Graph.cc:3176 src/Graph.cc:5968 src/Graph.cc:6174
+#: src/Editeur.cc:1768 src/Editeur.cc:1933 src/Graph.cc:1504 src/Graph.cc:1819
+#: src/Graph.cc:3184 src/Graph.cc:5976 src/Graph.cc:6182
 msgid "OK"
 msgstr "ΟΚ"
 
@@ -6204,8 +6205,8 @@ msgstr "ΟΚ"
 #: src/Tableur.cc:499 src/Tableur.cc:1499 src/Tableur.cc:1836
 #: src/Tableur.cc:2005 src/Tableur.cc:2087 src/Tableur.cc:2290
 #: src/Editeur.cc:1492 src/Editeur.cc:1637 src/Editeur.cc:1771
-#: src/Editeur.cc:1936 src/Graph.cc:954 src/Graph.cc:1498 src/Graph.cc:1813
-#: src/Graph.cc:3179 src/Graph.cc:5971 src/Graph.cc:6177
+#: src/Editeur.cc:1936 src/Graph.cc:962 src/Graph.cc:1506 src/Graph.cc:1821
+#: src/Graph.cc:3187 src/Graph.cc:5979 src/Graph.cc:6185
 msgid "Cancel"
 msgstr "Ακύρωση"
 
@@ -6250,12 +6251,12 @@ msgstr ""
 "Σφάλμα συντακτικής ανάλυσης στην γραμμή "
 
 #: src/History.cc:488 src/History.cc:510 src/Input.cc:1036 src/Editeur.cc:1166
-#: src/Editeur.cc:1251 src/Editeur.cc:1428 src/Graph.cc:7653 src/Graph.cc:7679
+#: src/Editeur.cc:1251 src/Editeur.cc:1428 src/Graph.cc:7661 src/Graph.cc:7687
 msgid " column "
 msgstr " στήλη"
 
 #: src/History.cc:488 src/History.cc:510 src/Input.cc:1036 src/Editeur.cc:1166
-#: src/Editeur.cc:1251 src/Editeur.cc:1428 src/Graph.cc:7653 src/Graph.cc:7679
+#: src/Editeur.cc:1251 src/Editeur.cc:1428 src/Graph.cc:7661 src/Graph.cc:7687
 msgid " at "
 msgstr " στο "
 
@@ -6439,7 +6440,7 @@ msgstr "(από) κάτω"
 msgid "remove answers below"
 msgstr "αφαίρεση των παρακάτω απαντήσεων"
 
-#: src/History.cc:3790 src/Graph.cc:6958
+#: src/History.cc:3790 src/Graph.cc:6966
 msgid "Delete selected levels"
 msgstr "Διαγραφή επιλεγμένων επιπέδων"
 
@@ -6571,7 +6572,7 @@ msgid "Syntax error in compatibility mode: "
 msgstr "Συντακτικό λάθος στην λειτουργία συμβατότητας: "
 
 #: src/Input.cc:1036 src/Editeur.cc:1166 src/Editeur.cc:1251
-#: src/Editeur.cc:1428 src/Graph.cc:7653 src/Graph.cc:7679
+#: src/Editeur.cc:1428 src/Graph.cc:7661 src/Graph.cc:7687
 msgid "Parse error line "
 msgstr "Σφάλμα συντακτικής ανάλυσης στην γραμμή "
 
@@ -6579,19 +6580,19 @@ msgstr "Σφάλμα συντακτικής ανάλυσης στην γραμμ
 msgid "To get a newline, use shift-Enter. Reedit?"
 msgstr "Για νέα γραμμή, πατήστε Shift-Enter. Επανεπεξεργασία?"
 
-#: src/Input.cc:1285 src/Graph.cc:6998
+#: src/Input.cc:1285 src/Graph.cc:7006
 msgid "polygon"
 msgstr "πολύγωνο"
 
-#: src/Input.cc:1290 src/Graph.cc:6986
+#: src/Input.cc:1290 src/Graph.cc:6994
 msgid "line"
 msgstr "ευθεία"
 
-#: src/Input.cc:1293 src/Graph.cc:6985
+#: src/Input.cc:1293 src/Graph.cc:6993
 msgid "half_line"
 msgstr "ημιευθεία"
 
-#: src/Input.cc:1296 src/Graph.cc:6983
+#: src/Input.cc:1296 src/Graph.cc:6991
 msgid "segment"
 msgstr "ευθύγραμμο_τμήμα"
 
@@ -6815,11 +6816,11 @@ msgstr ""
 "Όταν δεν είναι τσεκαρισμένο, oι μεταβλητές είναι πραγματικές. Αλλιώς "
 "μιγαδικές."
 
-#: src/Cfg.cc:383 src/Cfg.cc:764 src/Graph.cc:1505 src/Graph.cc:1781
+#: src/Cfg.cc:383 src/Cfg.cc:764 src/Graph.cc:1513 src/Graph.cc:1789
 msgid "Apply"
 msgstr "Εφαρμογή"
 
-#: src/Cfg.cc:397 src/Graph.cc:1501 src/Graph.cc:1777
+#: src/Cfg.cc:397 src/Graph.cc:1509 src/Graph.cc:1785
 msgid "Default"
 msgstr "Προεπιλεγμένο"
 
@@ -7023,7 +7024,7 @@ msgstr ""
 msgid "WX-"
 msgstr "WX-"
 
-#: src/Cfg.cc:777 src/Graph.cc:1636
+#: src/Cfg.cc:777 src/Graph.cc:1644
 msgid "Xmin for visualisation"
 msgstr "Xmin για οπτικοποίηση"
 
@@ -7075,7 +7076,7 @@ msgstr ""
 msgid "Copy W to XYminmax"
 msgstr "Αντιγραφή W στο XYminmax"
 
-#: src/Equation.cc:4530 src/Graph.cc:1153 src/Graph.cc:7833
+#: src/Equation.cc:4530 src/Graph.cc:1161 src/Graph.cc:7841
 msgid "M"
 msgstr ""
 
@@ -7188,7 +7189,7 @@ msgstr "Πίνακας ή υπολογιστικό φύλλο"
 msgid "Split sheet/graph horizontally or vertically"
 msgstr "Διαχωρισμός φύλλου/γραφήματος οριζοντίως ή καθέτως"
 
-#: src/Tableur.cc:160 src/Tableur.cc:2955 src/Graph.cc:6965
+#: src/Tableur.cc:160 src/Tableur.cc:2955 src/Graph.cc:6973
 msgid "Graph"
 msgstr "Γράφημα"
 
@@ -7220,7 +7221,7 @@ msgstr "Υπολογισμός διεκόπη"
 msgid "Save sheet"
 msgstr "Απόθηκευση φύλλου"
 
-#: src/Tableur.cc:1278 src/Editeur.cc:750 src/Graph.cc:5815
+#: src/Tableur.cc:1278 src/Editeur.cc:750 src/Graph.cc:5823
 msgid ": file exists. Overwrite?"
 msgstr ": φάκελος υπάρχει. Αντικατάσταση?"
 
@@ -7273,7 +7274,9 @@ msgid "Endfile"
 msgstr "Τέλος αρχείου"
 
 #: src/Tableur.cc:1491
-msgid "Stop reading at first occurence of this character, leave blank for none"
+#, fuzzy
+msgid ""
+"Stop reading at first occurrence of this character, leave blank for none"
 msgstr ""
 "Η ανάγνωση σταματά όταν εμφανιστεί αυτός ο χαρακτήρας, αλλιώς αφήστε κενό"
 
@@ -7329,44 +7332,49 @@ msgstr "Παράσταση συνάρτησης (π.χ. sin(x))"
 msgid "Expression of the function (e.g x-y^2)"
 msgstr "Παράσταση συνάρτησης (π.χ. x-y^2)"
 
-#: src/Tableur.cc:1795 src/Graph.cc:6109 src/Graph.cc:6115
+#: src/Tableur.cc:1795 src/Graph.cc:6117 src/Graph.cc:6123
 msgid "1st var"
 msgstr "1η μεταβλητή"
 
 #: src/Tableur.cc:1797
-msgid "Independant variable name (e.g x)"
+#, fuzzy
+msgid "Independent variable name (e.g x)"
 msgstr "Όνομα ανεξάρτητης μεταβλητής (π.χ. x)"
 
-#: src/Tableur.cc:1798 src/Graph.cc:6112 src/Graph.cc:6118 src/Graph.cc:6124
+#: src/Tableur.cc:1798 src/Graph.cc:6120 src/Graph.cc:6126 src/Graph.cc:6132
 msgid "2nd var"
 msgstr "2η μεταβλητή"
 
-#: src/Tableur.cc:1800 src/Graph.cc:6120
-msgid "Second independant variable name (e.g y)"
+#: src/Tableur.cc:1800 src/Graph.cc:6128
+#, fuzzy
+msgid "Second independent variable name (e.g y)"
 msgstr "Όνομα δεύτερης ανεξάρτητης μεταβλητής (π.χ. y)"
 
-#: src/Tableur.cc:1801 src/Graph.cc:6154
+#: src/Tableur.cc:1801 src/Graph.cc:6162
 msgid "xmin"
 msgstr ""
 
 #: src/Tableur.cc:1804
-msgid "Minimal value for 1st independant variable"
+#, fuzzy
+msgid "Minimal value for 1st independent variable"
 msgstr "Ελάχιστη τιμή για την πρώτη ανεξάρτητη μεταβλητή"
 
-#: src/Tableur.cc:1805 src/Graph.cc:6157
+#: src/Tableur.cc:1805 src/Graph.cc:6165
 msgid "xstep"
 msgstr ""
 
 #: src/Tableur.cc:1808
-msgid "Discretization step for 1st independant variable"
-msgstr ""
+#, fuzzy
+msgid "Discretization step for 1st independent variable"
+msgstr "Ελάχιστη τιμή για την πρώτη ανεξάρτητη μεταβλητή"
 
-#: src/Tableur.cc:1809 src/Graph.cc:6160
+#: src/Tableur.cc:1809 src/Graph.cc:6168
 msgid "xmax"
 msgstr ""
 
 #: src/Tableur.cc:1812
-msgid "Maximal value for 1st independant variable"
+#, fuzzy
+msgid "Maximal value for 1st independent variable"
 msgstr "Μέγιστη τιμή για την πρώτη ανεξάρτητη μεταβλητή"
 
 #: src/Tableur.cc:1813
@@ -7379,28 +7387,31 @@ msgid ""
 msgstr ""
 "Όνομα της πρώτης εκ των δύο στηλών που θα αντικατασταθεί απο το tablefunc"
 
-#: src/Tableur.cc:1815 src/Graph.cc:6163
+#: src/Tableur.cc:1815 src/Graph.cc:6171
 msgid "ymin"
 msgstr ""
 
 #: src/Tableur.cc:1818
-msgid "Minimal value for 2nd independant variable"
+#, fuzzy
+msgid "Minimal value for 2nd independent variable"
 msgstr "Ελάχιστη τιμή για την δεύτερη ανεξάρτητη μεταβλητή"
 
-#: src/Tableur.cc:1819 src/Graph.cc:6166
+#: src/Tableur.cc:1819 src/Graph.cc:6174
 msgid "ystep"
 msgstr ""
 
 #: src/Tableur.cc:1822
-msgid "Discretization step for 2nd independant variable"
-msgstr ""
+#, fuzzy
+msgid "Discretization step for 2nd independent variable"
+msgstr "Ελάχιστη τιμή για την δεύτερη ανεξάρτητη μεταβλητή"
 
-#: src/Tableur.cc:1823 src/Graph.cc:6169
+#: src/Tableur.cc:1823 src/Graph.cc:6177
 msgid "ymax"
 msgstr ""
 
 #: src/Tableur.cc:1826
-msgid "Maximal value for 2nd independant variable"
+#, fuzzy
+msgid "Maximal value for 2nd independent variable"
 msgstr "Μέγιστη τιμή για την δεύτερη ανεξάρτητη μεταβλητή"
 
 #: src/Tableur.cc:1827
@@ -7471,9 +7482,10 @@ msgid "Variable(s)"
 msgstr "Μεταβλητή(-ές)"
 
 #: src/Tableur.cc:2064
+#, fuzzy
 msgid ""
-"Independant variable name representing u_n, e.g. x\n"
-"Or list of independant variables representing u_n,...,u_(n+k), e.g. [x,y]"
+"Independent variable name representing u_n, e.g. x\n"
+"Or list of independent variables representing u_n,...,u_(n+k), e.g. [x,y]"
 msgstr ""
 "Όνομα της ανεξάρτητης μεταβλητής που αναπαριστά το u_n, π.χ. x ή λίστα "
 "ανεξάρτητων μεταβλητών \n"
@@ -7695,7 +7707,7 @@ msgstr "Πίνακας"
 msgid "Save sheet as text"
 msgstr "Αποθήκευση φύλλου ως κείμενο"
 
-#: src/Tableur.cc:2933 src/Graph.cc:6942
+#: src/Tableur.cc:2933 src/Graph.cc:6950
 msgid "Save as alternate filename"
 msgstr "Αποθήκευση ως εναλλακτικό όνομα αρχείου"
 
@@ -7719,7 +7731,7 @@ msgstr "Εισαγωγή CSV"
 msgid "Print Export"
 msgstr "Εκτύπωση-Εξαγωγή"
 
-#: src/Tableur.cc:2943 src/Graph.cc:1194 src/Graph.cc:6945
+#: src/Tableur.cc:2943 src/Graph.cc:1202 src/Graph.cc:6953
 msgid "EPS PNG and preview"
 msgstr "EPS-PNG και προεπισκόπηση"
 
@@ -7905,7 +7917,7 @@ msgstr "Στήλη μικρότερη"
 msgid "Maths"
 msgstr "Μαθηματικά"
 
-#: src/Tableur.cc:3008 src/Graph.cc:6966
+#: src/Tableur.cc:3008 src/Graph.cc:6974
 msgid "Function"
 msgstr "Συνάρτηση"
 
@@ -8069,7 +8081,7 @@ msgstr "Εισαγωγή λέξης για αναζήτηση"
 msgid "Replace by"
 msgstr "Αντικατάσταση με"
 
-#: src/Editeur.cc:1495 src/Graph.cc:1163
+#: src/Editeur.cc:1495 src/Graph.cc:1171
 msgid "Next"
 msgstr "Επόμενο"
 
@@ -8134,7 +8146,7 @@ msgstr "while"
 msgid "Check this button for a undefined loop"
 msgstr ""
 
-#: src/Editeur.cc:1745 src/Graph.cc:6106
+#: src/Editeur.cc:1745 src/Graph.cc:6114
 msgid "Var"
 msgstr ""
 
@@ -8150,7 +8162,7 @@ msgstr "Εκκίνηση"
 msgid "First value of counter in the loop"
 msgstr ""
 
-#: src/Editeur.cc:1751 src/Graph.cc:1174 src/Help1.cc:274
+#: src/Editeur.cc:1751 src/Graph.cc:1182 src/Help1.cc:274
 msgid "Stop"
 msgstr "Στοπ"
 
@@ -8271,7 +8283,7 @@ msgstr "Μετάφραση"
 msgid "TI"
 msgstr ""
 
-#: src/Editeur.cc:2468 src/Graph.cc:7849
+#: src/Editeur.cc:2468 src/Graph.cc:7857
 msgid "Export/Print"
 msgstr "Εξαγωγή-Εκτύπωση"
 
@@ -8377,7 +8389,8 @@ msgid "nxt"
 msgstr "επόμενο"
 
 #: src/Editeur.cc:2585
-msgid "Find next occurence (defined by Edit->Search)"
+#, fuzzy
+msgid "Find next occurrence (defined by Edit->Search)"
 msgstr "Αναζήτηση επόμενης εμφάνισης (όπως ορίσθηκε στο Επεξ->Αναζήτηση)"
 
 #: src/Editeur.cc:2591
@@ -8420,1347 +8433,1351 @@ msgstr ""
 msgid "Press F1 to open help index at "
 msgstr ""
 
-#: src/Graph.cc:748 src/Graph.cc:3988
+#: src/Graph.cc:756 src/Graph.cc:3996
 msgid "Export to PNG file"
 msgstr "Εξαγωγή σε αρχείο PNG"
 
-#: src/Graph.cc:955
+#: src/Graph.cc:963
 msgid "Rotate Animation"
 msgstr "Εφέ κίνησης με περιστροφή"
 
-#: src/Graph.cc:1053
+#: src/Graph.cc:1061
 msgid "Trace which object?"
 msgstr "Ιχνηλάτηση τίνος αντικειμένου?"
 
-#: src/Graph.cc:1119
+#: src/Graph.cc:1127
 msgid "Frames number? (>0 forward, <0 forward+backward)"
 msgstr "Αριθμός πλαισίων; (>0 εμπρός, <0 εμπρός+ πίσω)"
 
-#: src/Graph.cc:1124
+#: src/Graph.cc:1132
 msgid "Figure must depend on a parameter (Edit->Add parameter)"
 msgstr ""
 "Το σχέδιο πρέπει να εξαρτάται από μία παράμετρο (Επεξ -> Προσθήκη παραμέτρου)"
 
-#: src/Graph.cc:1145
+#: src/Graph.cc:1153
 msgid "auto"
 msgstr ""
 
-#: src/Graph.cc:1146 src/Graph.cc:1155 src/Graph.cc:1268 src/Graph.cc:1779
+#: src/Graph.cc:1154 src/Graph.cc:1163 src/Graph.cc:1276 src/Graph.cc:1787
 msgid "Autoscale"
 msgstr "Αυτόματη ρύθμιση κλίμακας"
 
-#: src/Graph.cc:1147 src/Graph.cc:1156
+#: src/Graph.cc:1155 src/Graph.cc:1164
 #, fuzzy
 msgid "Autoscale (full)"
 msgstr "Αυτόματη ρύθμιση κλίμακας"
 
-#: src/Graph.cc:1154 src/Graph.cc:7839 src/Help1.cc:241
+#: src/Graph.cc:1162 src/Graph.cc:7847 src/Help1.cc:241
 msgid "View"
 msgstr "Εμφάνιση"
 
-#: src/Graph.cc:1157
+#: src/Graph.cc:1165
 msgid "Orthonormalize (2-d)"
 msgstr "Ορθοκανονικοποίηση (2-Δ)"
 
-#: src/Graph.cc:1158 src/Graph.cc:1218 src/Graph.cc:7840
+#: src/Graph.cc:1166 src/Graph.cc:1226 src/Graph.cc:7848
 msgid "Zoom in"
 msgstr "Μεγένθυση"
 
-#: src/Graph.cc:1159 src/Graph.cc:1243 src/Graph.cc:7841
+#: src/Graph.cc:1167 src/Graph.cc:1251 src/Graph.cc:7849
 msgid "Zoom out"
 msgstr "Σμίκρυνση"
 
-#: src/Graph.cc:1160
+#: src/Graph.cc:1168
 msgid "Frame move on"
 msgstr "Ενεργοποίηση κίνησης πλαισίου"
 
-#: src/Graph.cc:1161
+#: src/Graph.cc:1169
 msgid "Frame move off"
 msgstr "Απενεργοποίηση κίνησης πλαισίου"
 
-#: src/Graph.cc:1162
+#: src/Graph.cc:1170
 msgid "Previous"
 msgstr "Προηγούμενο"
 
-#: src/Graph.cc:1164
+#: src/Graph.cc:1172
 msgid "Config"
 msgstr "Ρυθμίσεις"
 
-#: src/Graph.cc:1166
+#: src/Graph.cc:1174
 msgid "Trace"
 msgstr "Ιχνηλάτηση"
 
-#: src/Graph.cc:1167
+#: src/Graph.cc:1175
 msgid "Trace clear"
 msgstr "Εκκαθάριση ιχνηλάτησης"
 
-#: src/Graph.cc:1168
+#: src/Graph.cc:1176
 msgid "Trace on"
 msgstr "Ενεργοποίηση ιχνηλάτησης"
 
-#: src/Graph.cc:1169
+#: src/Graph.cc:1177
 msgid "Trace off"
 msgstr "Απενεργοποίηση ιχνηλάτησης"
 
-#: src/Graph.cc:1170
+#: src/Graph.cc:1178
 msgid "Trace object"
 msgstr "Ιχνηλάτηση αντικειμένου"
 
-#: src/Graph.cc:1172
+#: src/Graph.cc:1180
 msgid "Animation"
 msgstr "Εφέ Κίνησης"
 
-#: src/Graph.cc:1173
+#: src/Graph.cc:1181
 msgid "Pause"
 msgstr "Παύση"
 
-#: src/Graph.cc:1175
+#: src/Graph.cc:1183
 msgid "Restart"
 msgstr "Επανεκκίνηση"
 
-#: src/Graph.cc:1176
+#: src/Graph.cc:1184
 msgid "Faster (2x)"
 msgstr "Πιο γρήγορα (2x)"
 
-#: src/Graph.cc:1177
+#: src/Graph.cc:1185
 msgid "Slower (2x)"
 msgstr "Πιο αργά (2x)"
 
-#: src/Graph.cc:1178
+#: src/Graph.cc:1186
 msgid "Build animation"
 msgstr "Δημιουργία εφέ κίνησης"
 
-#: src/Graph.cc:1179
+#: src/Graph.cc:1187
 msgid "Unanimate"
 msgstr "Διακοπή εφέ κίνησης"
 
-#: src/Graph.cc:1180
+#: src/Graph.cc:1188
 msgid "Graph on"
 msgstr "Ενεργοποίηση γραφήματος"
 
-#: src/Graph.cc:1181
+#: src/Graph.cc:1189
 msgid "Graph off"
 msgstr "Απενεργοποίηση γραφήματος"
 
-#: src/Graph.cc:1183
+#: src/Graph.cc:1191
 msgid "3-d"
 msgstr "3-Δ"
 
-#: src/Graph.cc:1184
+#: src/Graph.cc:1192
 #, fuzzy
 msgid "Mouse plane equation"
 msgstr "Περιοχή που κάνετε κλικ"
 
-#: src/Graph.cc:1185
+#: src/Graph.cc:1193
 msgid "Oyz view (x=cst=depth)"
 msgstr "Όψη Oyz (x=cst=βάθος)"
 
-#: src/Graph.cc:1186
+#: src/Graph.cc:1194
 msgid "Oxz view (y=cst=depth)"
 msgstr "Όψη Oxz (y=cst=βάθος)"
 
-#: src/Graph.cc:1187
+#: src/Graph.cc:1195
 #, fuzzy
 msgid "Upper view (z=cst=depth)"
 msgstr "Κάτοψη (Oxy, z=cst=βάθος)"
 
-#: src/Graph.cc:1188
+#: src/Graph.cc:1196
 #, fuzzy
 msgid "Default view"
 msgstr "Προεπιλεγμένη όψη"
 
-#: src/Graph.cc:1189
+#: src/Graph.cc:1197
 msgid "Rotate animation"
 msgstr "Εφέ κίνησης με περιστροφή"
 
-#: src/Graph.cc:1190
+#: src/Graph.cc:1198
 msgid "Hide below depth"
 msgstr "Απόκρυψη αντικειμένων"
 
-#: src/Graph.cc:1191
+#: src/Graph.cc:1199
 msgid "Show below depth"
 msgstr "Εμφάνιση αντικειμένων"
 
-#: src/Graph.cc:1193 src/Graph.cc:6944
+#: src/Graph.cc:1201 src/Graph.cc:6952
 msgid "Export Print"
 msgstr "Εξαγωγή-Εκτύπωση"
 
-#: src/Graph.cc:1195
+#: src/Graph.cc:1203
 msgid "3-d to PNG"
 msgstr "3-Δ σε PNG"
 
-#: src/Graph.cc:1197 src/Graph.cc:7852
+#: src/Graph.cc:1205 src/Graph.cc:7860
 msgid "Preview (with Latex)"
 msgstr "Προοπτικοποίηση (με LaTeX)"
 
-#: src/Graph.cc:1198 src/Graph.cc:7853
+#: src/Graph.cc:1206 src/Graph.cc:7861
 msgid "Print (with Latex)"
 msgstr "Εκτύπωση (με LaTeX)"
 
-#: src/Graph.cc:1222
+#: src/Graph.cc:1230
 msgid "Increase y"
 msgstr "Αύξηση y"
 
-#: src/Graph.cc:1226
+#: src/Graph.cc:1234
 msgid "Increase z (3-d)/Zoom in for y (2-d)"
 msgstr "Αύξηση z (3-Δ)/Μεγένθυση στο y (δύο διαστάσεων)"
 
-#: src/Graph.cc:1232
+#: src/Graph.cc:1240
 msgid "Decrease x"
 msgstr "Μείωση x"
 
-#: src/Graph.cc:1235
+#: src/Graph.cc:1243
 msgid "Hide or show below depth"
 msgstr "Απόκρυψη ή εμφάνιση αντικειμένων"
 
-#: src/Graph.cc:1239
+#: src/Graph.cc:1247
 msgid "Increase x"
 msgstr "Αύξηση x"
 
-#: src/Graph.cc:1247
+#: src/Graph.cc:1255
 msgid "Decrease y"
 msgstr "Μείωση y"
 
-#: src/Graph.cc:1251
+#: src/Graph.cc:1259
 msgid "Decrease z (3-d)/Zoom out in y (2-d)"
 msgstr "Μείωση z (3-Δ)/Σμίκρυνση στο y (δύο διαστάσεων)"
 
-#: src/Graph.cc:1255
+#: src/Graph.cc:1263
 msgid "Back in cfg history"
 msgstr "Πίσω στο ιστορικό ρυθμίσεων"
 
-#: src/Graph.cc:1258
+#: src/Graph.cc:1266
 msgid "Forward in cfg history"
 msgstr "Εμπρός στο ιστορικό ρυθμίσεων"
 
-#: src/Graph.cc:1261
+#: src/Graph.cc:1269
 msgid "Configure screen view and axis"
 msgstr "Ρύθμιση παραθύρου οπτοκιποίησης και αξόνων"
 
-#: src/Graph.cc:1265
+#: src/Graph.cc:1273
 msgid "Stop or restart animation"
 msgstr "Στοπ ή επανεκκίνηση του εφέ κίνησης"
 
-#: src/Graph.cc:1275
+#: src/Graph.cc:1283
 msgid "Graphic menu"
 msgstr "Μενού γραφικών"
 
-#: src/Graph.cc:1437
+#: src/Graph.cc:1445
 msgid "x position of spot"
 msgstr "συνιστώσα x του προβολέα"
 
-#: src/Graph.cc:1439
+#: src/Graph.cc:1447
 msgid "y position of spot"
 msgstr "συνιστώσα y  του προβολέα"
 
-#: src/Graph.cc:1441
+#: src/Graph.cc:1449
 msgid "z position of spot"
 msgstr "συνιστώσα z  του προβολέα"
 
-#: src/Graph.cc:1443
+#: src/Graph.cc:1451
 msgid "0 directional light source (e.g. sun), 1 position light (e.g. bulb)"
 msgstr "0 προβολέας κατεύθυνσης (π.χ. ήλιος), 1 προβολέας θέσης (π.χ. λάμπα)"
 
-#: src/Graph.cc:1446
+#: src/Graph.cc:1454
 msgid "x direction of spot"
 msgstr "συνιστώσα x της κατεύθυνσης του προβολέα"
 
-#: src/Graph.cc:1448
+#: src/Graph.cc:1456
 msgid "y direction of spot"
 msgstr "συνιστώσα y της κατεύθυνσης του προβολέα"
 
-#: src/Graph.cc:1450
+#: src/Graph.cc:1458
 msgid "z direction of spot"
 msgstr "συνιστώσα z της κατεύθυνσης του προβολέα"
 
-#: src/Graph.cc:1452
+#: src/Graph.cc:1460
 msgid "Turn on/off light"
 msgstr "Άνοιγμα/σβήσιμο του φωτός"
 
-#: src/Graph.cc:1457
+#: src/Graph.cc:1465
 msgid "ambient red component"
 msgstr "κόκκινη περιβάλλουσα συνιστώσα"
 
-#: src/Graph.cc:1459
+#: src/Graph.cc:1467
 msgid "ambient green component"
 msgstr "πράσινη περιβάλλουσα συνιστώσα"
 
-#: src/Graph.cc:1461
+#: src/Graph.cc:1469
 msgid "ambient blue component"
 msgstr "μπλε περιβάλλουσα συνιστώσα"
 
-#: src/Graph.cc:1463
+#: src/Graph.cc:1471
 msgid "ambient alpha component"
 msgstr "περιβάλλουσα συνιστώσα διαφάνειας"
 
-#: src/Graph.cc:1466
+#: src/Graph.cc:1474
 msgid "diffuse red component"
 msgstr "κόκκινη διάχυτη συνιστώσα"
 
-#: src/Graph.cc:1468
+#: src/Graph.cc:1476
 msgid "diffuse green component"
 msgstr "πράσινη διάχυτη συνιστώσα"
 
-#: src/Graph.cc:1470
+#: src/Graph.cc:1478
 msgid "diffuse blue component"
 msgstr "μπλε διάχυτη συνιστώσα"
 
-#: src/Graph.cc:1472
+#: src/Graph.cc:1480
 msgid "diffuse alpha component"
 msgstr "διάχυτη συνιστώσα διαφάνειας"
 
-#: src/Graph.cc:1475
+#: src/Graph.cc:1483
 msgid "specular red component"
 msgstr "κόκκινη κατοπτρική συνιστώσα"
 
-#: src/Graph.cc:1477
+#: src/Graph.cc:1485
 msgid "specular green component"
 msgstr "πράσινη κατοπτρική συνιστώσα"
 
-#: src/Graph.cc:1479
+#: src/Graph.cc:1487
 msgid "specular blue component"
 msgstr "μπλε κατοπτρική συνιστώσα"
 
-#: src/Graph.cc:1481
+#: src/Graph.cc:1489
 msgid "specular alpha component"
 msgstr "κατοπτρική συνιστώσα διαφάνειας"
 
-#: src/Graph.cc:1485
+#: src/Graph.cc:1493
 msgid "Spot attenuation exponent: power of cos(theta), e.g. 1"
 msgstr "Εκθέτης απόσβεσης του προβολέα: δύναμη του cos(θ), π.χ. 1"
 
-#: src/Graph.cc:1487
+#: src/Graph.cc:1495
 msgid "Spot cutoff angle in 0..90 or 180 for no cutoff"
 msgstr "Γωνία αποκοπής του προβολέα μεταξύ 0 και 90, ή 180 για μη αποκοπή"
 
-#: src/Graph.cc:1489
+#: src/Graph.cc:1497
 msgid "Attenuation constant coefficient"
 msgstr "Σταθερός συντελεστής απόσβεσης"
 
-#: src/Graph.cc:1491
+#: src/Graph.cc:1499
 msgid "Attenuation linear coefficient"
 msgstr "Γραμμικός συντελεστής απόσβεσης"
 
-#: src/Graph.cc:1493
+#: src/Graph.cc:1501
 msgid "Attenuation quadratic coefficient"
 msgstr "Τεραγωνικός συντελεστής απόσβεσης"
 
-#: src/Graph.cc:1503
+#: src/Graph.cc:1511
 msgid "Reset"
 msgstr ""
 
-#: src/Graph.cc:1507
+#: src/Graph.cc:1515
 msgid "Light configuration"
 msgstr "Ρύθμιση του φωτός"
 
-#: src/Graph.cc:1639
+#: src/Graph.cc:1647
 msgid "Xmax for visualisation"
 msgstr "Xmax για την οπτικοποίηση"
 
-#: src/Graph.cc:1642
+#: src/Graph.cc:1650
 msgid "X Logarithmic scale"
 msgstr "Χ Λογαριθμική κλίμακα "
 
-#: src/Graph.cc:1645
+#: src/Graph.cc:1653
 msgid "Orthonormal or perspective"
 msgstr "Ορθοκανονικό η προοπτικό"
 
-#: src/Graph.cc:1649
+#: src/Graph.cc:1657
 msgid "Ymin for visualisation"
 msgstr "Ymin για οπτικοποίηση"
 
-#: src/Graph.cc:1652
+#: src/Graph.cc:1660
 msgid "Ymax for visualisation"
 msgstr "Ymax για οπτικοποίηση"
 
-#: src/Graph.cc:1655
+#: src/Graph.cc:1663
 msgid "Y Logarithmic scale"
 msgstr "Υ Λογαριθμική κλίμακα "
 
-#: src/Graph.cc:1658
+#: src/Graph.cc:1666
 msgid "Flat or Gouraud shading"
 msgstr "Επίπεδη ή σκίαση Gouraud"
 
-#: src/Graph.cc:1662
+#: src/Graph.cc:1670
 msgid "Zmin for visualisation"
 msgstr "Zmin για οπτικοποίηση"
 
-#: src/Graph.cc:1665
+#: src/Graph.cc:1673
 msgid "Zmax for visualisation"
 msgstr "Zmax για οπτικοποίηση"
 
-#: src/Graph.cc:1668
+#: src/Graph.cc:1676
 msgid "Enable blending"
 msgstr "Ενέργοποίηση ανάμειξης"
 
-#: src/Graph.cc:1678
+#: src/Graph.cc:1686
 msgid "Graphic displayed with a framebox"
 msgstr ""
 
-#: src/Graph.cc:1681
+#: src/Graph.cc:1689
 msgid "Ticks in pixels or units"
 msgstr "Σημάδια (ticks) σε εικονοστοιχεία ή σε μονάδες"
 
-#: src/Graph.cc:1684
+#: src/Graph.cc:1692
 msgid "View triedre even if axes are hidden"
 msgstr ""
 
-#: src/Graph.cc:1687
+#: src/Graph.cc:1695
 msgid "Number of units or pixels for ticks on X"
 msgstr "Αριθμός εικονοστοιχείων ή μονάδων για σημάδια στον X"
 
-#: src/Graph.cc:1689
+#: src/Graph.cc:1697
 msgid "Number of units or pixels for ticks on Y"
 msgstr "Αριθμός εικονοστοιχείων ή μονάδων για σημάδια στον Y"
 
-#: src/Graph.cc:1692
+#: src/Graph.cc:1700
 #, fuzzy
 msgid "x coefficient of mouse plane equation"
 msgstr "x συνιστώσα της εξίσωσης του επιπέδου του ποντικιού"
 
-#: src/Graph.cc:1697
+#: src/Graph.cc:1705
 #, fuzzy
 msgid "y coefficient of mouse plane equation"
 msgstr "y συνιστώσα της εξίσωσης του επιπέδου του ποντικιού"
 
-#: src/Graph.cc:1702
+#: src/Graph.cc:1710
 #, fuzzy
 msgid "z coefficient of mouse plane equation"
 msgstr "z συνιστώσα της εξίσωσης του επιπέδου του ποντικιού"
 
-#: src/Graph.cc:1707
+#: src/Graph.cc:1715
 #, fuzzy
 msgid "constant coefficient of mouse plane equation"
 msgstr "σταθερά συνιστώσα της εξίσωσης του επιπέδου του ποντικιού"
 
-#: src/Graph.cc:1712
+#: src/Graph.cc:1720
 msgid "3d rotation"
 msgstr "3-Δ περιστροφή"
 
-#: src/Graph.cc:1717
+#: src/Graph.cc:1725
 msgid "Number of latitude divisions for sphere drawing"
 msgstr "Αριθμός διαιρέσεων γεωγραφικου πλάτους για σφαιρικό γράφημα"
 
-#: src/Graph.cc:1722
+#: src/Graph.cc:1730
 msgid "Number of longitude divisions for sphere drawing"
 msgstr "Αριθμός διαιρέσεων γεωγραφικου μήκους για σφαιρικό γράφημα"
 
-#: src/Graph.cc:1727
+#: src/Graph.cc:1735
 msgid "Size in pixels for y graduation printing"
 msgstr "Μέγεθος σε εικονοστοιχεία βαθμωτής εκτύπωσης στο y"
 
-#: src/Graph.cc:1733 src/Graph.cc:1735 src/Graph.cc:1737 src/Graph.cc:1739
 #: src/Graph.cc:1741 src/Graph.cc:1743 src/Graph.cc:1745 src/Graph.cc:1747
+#: src/Graph.cc:1749 src/Graph.cc:1751 src/Graph.cc:1753 src/Graph.cc:1755
 msgid "Configure light"
 msgstr "Ρύθμισεις φωτός"
 
-#: src/Graph.cc:1749
+#: src/Graph.cc:1757
 msgid "Show scene with lights"
 msgstr "Εμφάνιση σκηνής με φώτα"
 
-#: src/Graph.cc:1752
+#: src/Graph.cc:1760
 msgid "Show names"
 msgstr "Εμφάνιση ονομάτων"
 
-#: src/Graph.cc:1753
+#: src/Graph.cc:1761
 msgid "Show/Hide names of geometric objects"
 msgstr "Εμφάνιση/Απόκρυψη ονομάτων γεωμετρικών αντικειμένων"
 
-#: src/Graph.cc:1755
+#: src/Graph.cc:1763
 msgid "Plot names"
 msgstr "Ονόματα γραφημάτων"
 
-#: src/Graph.cc:1756
+#: src/Graph.cc:1764
 msgid "Show/Hide names of parametric and function plots"
 msgstr "Εμφάνιση/Απόκρυψη ονομάτων παραμετρικών και συναρτησιακών γραφημάτων "
 
-#: src/Graph.cc:1758 src/Graph.cc:6959
+#: src/Graph.cc:1766 src/Graph.cc:6967
 msgid "Portrait"
 msgstr "Πορτραίτο"
 
-#: src/Graph.cc:1759
+#: src/Graph.cc:1767
 msgid "Portrait or landscape split"
 msgstr "Διαχωρισμός σε πορτραίτο ή τοπίο"
 
-#: src/Graph.cc:1762
+#: src/Graph.cc:1770
 msgid "Autoname"
 msgstr "Αυτο-ονοματοδοσία"
 
-#: src/Graph.cc:1764
+#: src/Graph.cc:1772
 msgid "Show axis"
 msgstr "Εμφάνιση αξόνων"
 
-#: src/Graph.cc:1765
+#: src/Graph.cc:1773
 msgid "Show or hide axis"
 msgstr "Εμφάνιση/Απόκρυψη αξόνων"
 
-#: src/Graph.cc:1768
+#: src/Graph.cc:1776
 msgid "Time between image changes for animations"
 msgstr "Χρόνος για την εναλλαγή των εικόνων στο εφέ κίνησης"
 
-#: src/Graph.cc:1773
+#: src/Graph.cc:1781
 msgid "Round"
 msgstr "Στρογγυλοποίηση"
 
-#: src/Graph.cc:1774
+#: src/Graph.cc:1782
 msgid "Round xmin/xmax/ymin/ymax/zmin/zmax"
 msgstr "Στρογγυλοποίηση xmin/xmax/ymin/ymax/zmin/zmax"
 
-#: src/Graph.cc:1786
+#: src/Graph.cc:1794
 msgid "Current gl_quaternion= value"
 msgstr "Τρέχουσα τιμή gl_quaternion"
 
-#: src/Graph.cc:1790
+#: src/Graph.cc:1798
 msgid "Rotate what: 1 l1, 2 l2, 4 l3, ..., 128 l8, 256 viewpoint"
 msgstr "Περιστροφή τίνος: 1 l1, 2 l2, 4 l3, ..., 128 l8, 256 οπτικό σημείο"
 
-#: src/Graph.cc:1793
+#: src/Graph.cc:1801
 msgid "Time for 1 step in s"
 msgstr "Χρόνος για 1 βήμα σε sec"
 
-#: src/Graph.cc:1796
+#: src/Graph.cc:1804
 msgid "Number of steps for animation"
 msgstr "Αριθμός βημάτων για εφέ κίνησης"
 
-#: src/Graph.cc:1799
+#: src/Graph.cc:1807
 msgid "x rotation axis coordinate"
 msgstr "Συνιστώσα x του περιστρεφόμενου άξονα"
 
-#: src/Graph.cc:1802
+#: src/Graph.cc:1810
 msgid "y rotation axis coordinate"
 msgstr "Συνιστώσα y του περιστρεφόμενου άξονα"
 
-#: src/Graph.cc:1805
+#: src/Graph.cc:1813
 msgid "z rotation axis coordinate"
 msgstr "Συνιστώσα z του περιστρεφόμενου άξονα"
 
-#: src/Graph.cc:1808
+#: src/Graph.cc:1816
 msgid "Other animation change (normally 0)"
 msgstr "Άλλες αλλαγές στο εφέ κίνησης (κανονικά 0)"
 
-#: src/Graph.cc:2465
+#: src/Graph.cc:2473
 msgid "LaTeX filaneme"
 msgstr "Όνομα αρχείου latex"
 
-#: src/Graph.cc:3066
+#: src/Graph.cc:3074
 msgid "Thickness"
 msgstr "Λεπτότητα"
 
-#: src/Graph.cc:3071
+#: src/Graph.cc:3079
 msgid "Point width"
 msgstr "Πλάτος σημείου"
 
-#: src/Graph.cc:3170
+#: src/Graph.cc:3178
 msgid "Make point symbolic"
 msgstr "Μετατροπή του σημείου σε συμβολικές συνιστώσες"
 
-#: src/Graph.cc:3173
+#: src/Graph.cc:3181
 msgid "Remove translation"
 msgstr "Αφαίρεση μετάφρασης"
 
-#: src/Graph.cc:3181
+#: src/Graph.cc:3189
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: src/Graph.cc:3182
+#: src/Graph.cc:3190
 msgid "Delete current object"
 msgstr "Διαγραφή επιλεγμένου αντικειμένου"
 
-#: src/Graph.cc:3216
+#: src/Graph.cc:3224
 msgid "Object attributs "
 msgstr "Χαρακτηριστικά αντικειμένου "
 
-#: src/Graph.cc:4244 src/Graph.cc:6979 src/Graph.cc:7137
+#: src/Graph.cc:4252 src/Graph.cc:6987 src/Graph.cc:7145
 msgid "Frame"
 msgstr "Πλαίσιο"
 
-#: src/Graph.cc:4246 src/Graph.cc:6980
+#: src/Graph.cc:4254 src/Graph.cc:6988
 msgid "Pointer"
 msgstr "Δείκτης"
 
-#: src/Graph.cc:5390 src/Graph.cc:5604 src/Graph3d.cc:2238
+#: src/Graph.cc:5398 src/Graph.cc:5612 src/Graph3d.cc:2238
 msgid "Click "
 msgstr "Κλικ "
 
-#: src/Graph.cc:5807
+#: src/Graph.cc:5815
 msgid "Save figure"
 msgstr "Αποθήκευση σχήματος"
 
-#: src/Graph.cc:5877
+#: src/Graph.cc:5885
 msgid "Insert figure"
 msgstr "Προσθήκη σχήματος"
 
-#: src/Graph.cc:5947
+#: src/Graph.cc:5955
 msgid "Parameter minimal value"
 msgstr "Ελάχιστη τιμή παραμέτρου"
 
-#: src/Graph.cc:5950
+#: src/Graph.cc:5958
 msgid "Parameter maximal value"
 msgstr "Μέγιστη τιμή παραμέτρου"
 
-#: src/Graph.cc:5953
+#: src/Graph.cc:5961
 msgid "Parameter current value"
 msgstr "Τρέχουσα τιμή παραμέτρου"
 
-#: src/Graph.cc:5955
+#: src/Graph.cc:5963
 msgid "Parameter step value"
 msgstr "Τιμή παραμετρικού βήματος"
 
-#: src/Graph.cc:5961
+#: src/Graph.cc:5969
 msgid "Parameter variable name"
 msgstr "Όνομα της μεταβλητής της παραμέτρου"
 
-#: src/Graph.cc:5964
+#: src/Graph.cc:5972
 msgid "Numeric or formal parameter"
 msgstr "Αριθμητική ή συμβολική παράμετρος"
 
-#: src/Graph.cc:5975
+#: src/Graph.cc:5983
 msgid "Parameter definition"
 msgstr "Ορισμός παραμέτρου"
 
-#: src/Graph.cc:6075
+#: src/Graph.cc:6083
 msgid "Draw slopefield"
 msgstr "Σχεδιασμός του πεδίου κλίσεων"
 
-#: src/Graph.cc:6078
+#: src/Graph.cc:6086
 msgid "Autonomous 2d systems."
 msgstr ""
 
-#: src/Graph.cc:6081
+#: src/Graph.cc:6089
 msgid "Normalize slopefield"
 msgstr "Κανονικοποίηση του πεδίου κλίσεων"
 
-#: src/Graph.cc:6082
+#: src/Graph.cc:6090
 msgid "F(x,y)="
 msgstr "F(x,y)="
 
-#: src/Graph.cc:6084
+#: src/Graph.cc:6092
 msgid "Implicit expression"
 msgstr "Πεπλεγμένη παράσταση"
 
-#: src/Graph.cc:6085
+#: src/Graph.cc:6093
 msgid "dy/dt(t,y)="
 msgstr "dy/dt(t,y)"
 
-#: src/Graph.cc:6087
+#: src/Graph.cc:6095
 msgid ""
 "Expression of dy/dt in terms of y and t, e.g. sin(t*y). For autonomous 2d "
 "system,change time variable to x and enter d[x,y]/dt in terms of [x,y], e.g. "
 "[[1,2],[3,4]]*[x,y]"
 msgstr ""
 
-#: src/Graph.cc:6088
+#: src/Graph.cc:6096
 msgid "rho(t)="
 msgstr "rho(t)="
 
-#: src/Graph.cc:6090
+#: src/Graph.cc:6098
 msgid "Expression of modulus rho wrt to angle t (e.g sin(t))"
 msgstr "Παράσταση του modulus rho αναφορικά με την γωνια t, (π.χ. sin(t))"
 
-#: src/Graph.cc:6091
+#: src/Graph.cc:6099
 msgid "x(t)="
 msgstr "x(t)="
 
-#: src/Graph.cc:6093
+#: src/Graph.cc:6101
 msgid "Expression of x wrt to t (e.g sin(t))"
 msgstr "Παράσταση του x αναφορικά με το t (π.χ. sin(t))"
 
-#: src/Graph.cc:6094
+#: src/Graph.cc:6102
 msgid "y(t)="
 msgstr "y(t)="
 
-#: src/Graph.cc:6096
+#: src/Graph.cc:6104
 msgid "Expression of y wrt to t (e.g cos(t))"
 msgstr "Παράσταση του y αναφορικά με το t (π.χ. cos(t))"
 
-#: src/Graph.cc:6097
+#: src/Graph.cc:6105
 msgid "x="
 msgstr ""
 
-#: src/Graph.cc:6099
+#: src/Graph.cc:6107
 msgid "Expression of x wrt to u and v (e.g. u+v)"
 msgstr "Παράσταση του x αναφορικά με τα u και v (π.χ. u+v)"
 
-#: src/Graph.cc:6100 src/Graph.cc:6103
+#: src/Graph.cc:6108 src/Graph.cc:6111
 msgid "y="
 msgstr ""
 
-#: src/Graph.cc:6102
+#: src/Graph.cc:6110
 msgid "Expression of y wrt to u and v (e.g exp(u)-v)"
 msgstr "Παράσταση του y αναφορικά με τα u και v (π.χ. exp(u)-v)"
 
-#: src/Graph.cc:6105
+#: src/Graph.cc:6113
 msgid "Expression of z wrt to u and v (e.g u-v)"
 msgstr "Παράσταση του y αναφορικά με τα u και v (π.χ. u-v)"
 
-#: src/Graph.cc:6108
-msgid "Independant variable name (e.g t)"
+#: src/Graph.cc:6116
+#, fuzzy
+msgid "Independent variable name (e.g t)"
 msgstr "Όνομα ανεξάρτητης μεταβλητής (π.χ. t)"
 
-#: src/Graph.cc:6111
-msgid "First independant variable name (e.g u)"
+#: src/Graph.cc:6119
+#, fuzzy
+msgid "First independent variable name (e.g u)"
 msgstr "Όνομα 1ης ανεξάρτητης μεταβλητής (πχ. u)"
 
-#: src/Graph.cc:6114
-msgid "Second independant variable name (e.g v)"
+#: src/Graph.cc:6122
+#, fuzzy
+msgid "Second independent variable name (e.g v)"
 msgstr "Όνομα 2ης ανεξάρτητης μεταβλητής (πχ. v)"
 
-#: src/Graph.cc:6117
-msgid "First independant variable name (e.g x)"
+#: src/Graph.cc:6125
+#, fuzzy
+msgid "First independent variable name (e.g x)"
 msgstr "Όνομα 1ης ανεξάρτητης μεταβλητής (πχ. x)"
 
-#: src/Graph.cc:6121
+#: src/Graph.cc:6129
 msgid "Time var"
 msgstr "Χρονική μεταβλητή"
 
-#: src/Graph.cc:6123
+#: src/Graph.cc:6131
 msgid "Time variable name"
 msgstr "Όνομα χρονικής μεταβλητής"
 
-#: src/Graph.cc:6126
+#: src/Graph.cc:6134
 msgid "Function variable name"
 msgstr "Όνομα μεταβλητής της συνάρτησης"
 
-#: src/Graph.cc:6127
+#: src/Graph.cc:6135
 msgid "tmin"
 msgstr ""
 
-#: src/Graph.cc:6130
+#: src/Graph.cc:6138
 msgid "tstep"
 msgstr ""
 
-#: src/Graph.cc:6133
+#: src/Graph.cc:6141
 msgid "tmax"
 msgstr ""
 
-#: src/Graph.cc:6136
+#: src/Graph.cc:6144
 msgid "umin"
 msgstr ""
 
-#: src/Graph.cc:6139
+#: src/Graph.cc:6147
 msgid "ustep"
 msgstr ""
 
-#: src/Graph.cc:6142
+#: src/Graph.cc:6150
 msgid "umax"
 msgstr ""
 
-#: src/Graph.cc:6145
+#: src/Graph.cc:6153
 msgid "vmin"
 msgstr ""
 
-#: src/Graph.cc:6148
+#: src/Graph.cc:6156
 msgid "vstep"
 msgstr ""
 
-#: src/Graph.cc:6151
+#: src/Graph.cc:6159
 msgid "vmax"
 msgstr ""
 
-#: src/Graph.cc:6184
+#: src/Graph.cc:6192
 msgid "Polar plot"
 msgstr "Πολικό γράφημα"
 
-#: src/Graph.cc:6187
+#: src/Graph.cc:6195
 msgid "Parametric plot"
 msgstr "Παραμετρικό γράφημα"
 
-#: src/Graph.cc:6190
+#: src/Graph.cc:6198
 msgid "Field/Odeplot"
 msgstr "Πεδίο κλίσεων / Γράφημα Συνήθους Δ.Ε."
 
-#: src/Graph.cc:6193
+#: src/Graph.cc:6201
 msgid "Implicitplot"
 msgstr "Γράφημα πεπλεγμένης συναρτησης"
 
-#: src/Graph.cc:6354
+#: src/Graph.cc:6362
 msgid "Click first in a commandline"
 msgstr "Κάντε πρώτα κλικ σε γραμμή εντολών"
 
-#: src/Graph.cc:6458 src/Graph.cc:6472
+#: src/Graph.cc:6466 src/Graph.cc:6480
 msgid "Point_on_ode_curve"
 msgstr "Σημείο_στην_καπμύλη_ΣΔΕ"
 
-#: src/Graph.cc:6459
+#: src/Graph.cc:6467
 msgid "Click initials conditions in graphic window. Change mode when finished."
 msgstr ""
 "Κάντε κλικ για τις αρχικές συνθήκες στο παράθυρο γραφήματος. Αλλαξτε τρόπο "
 "λειτουργίας όταν τελειώσετε."
 
-#: src/Graph.cc:6535
+#: src/Graph.cc:6543
 msgid "Shade area under a curve"
 msgstr "Σκιαγράφηση περιοχής κάτω από την καμπύλη"
 
-#: src/Graph.cc:6715
+#: src/Graph.cc:6723
 msgid "Real number?"
 msgstr "Πραγματικός αριθμός?"
 
-#: src/Graph.cc:6749
+#: src/Graph.cc:6757
 msgid "Center,Point_on_circle,Point_in_plane"
 msgstr "Κέντρο,Σημείο_στον_κύκλο,Σημείο_στο_επιπεδο"
 
-#: src/Graph.cc:6749
+#: src/Graph.cc:6757
 msgid "Center,Point_on_circle"
 msgstr "Κέντρο,Σημείο_στον_κύκλο"
 
-#: src/Graph.cc:6753 src/Graph.cc:6757
+#: src/Graph.cc:6761 src/Graph.cc:6765
 msgid "Curve1,Curve2"
 msgstr "Καπμύλη1,Καμπύλη2"
 
-#: src/Graph.cc:6761
+#: src/Graph.cc:6769
 msgid "Curve1,Curve2,Point"
 msgstr "Καπμύλη1,Καμπύλη2,Σημείο"
 
-#: src/Graph.cc:6765
+#: src/Graph.cc:6773
 msgid "Curve,Point"
 msgstr "Καμπύλη,Σημείο"
 
-#: src/Graph.cc:6769 src/Graph.cc:6773 src/Graph.cc:6777 src/Graph.cc:6781
-#: src/Graph.cc:6876 src/Graph.cc:6880 src/Graph.cc:6904
+#: src/Graph.cc:6777 src/Graph.cc:6781 src/Graph.cc:6785 src/Graph.cc:6789
+#: src/Graph.cc:6884 src/Graph.cc:6888 src/Graph.cc:6912
 msgid "Point1,Point2"
 msgstr "Σημείο1,Σημείο2"
 
-#: src/Graph.cc:6785 src/Graph.cc:6788
+#: src/Graph.cc:6793 src/Graph.cc:6796
 msgid "Object1,Object2,Position"
 msgstr "Αντικείμενο1,Αντικείμενο2,Θέση"
 
-#: src/Graph.cc:6792 src/Graph.cc:6795
+#: src/Graph.cc:6800 src/Graph.cc:6803
 msgid "Angle_vertex,Direction1,Direction2,Position"
 msgstr "Κορυφή_γωνίας,Διεύθυνση1,Διεύθυνση2,Θέση"
 
-#: src/Graph.cc:6799 src/Graph.cc:6803 src/Graph.cc:6807 src/Graph.cc:6811
-#: src/Graph.cc:6815 src/Graph.cc:6819
+#: src/Graph.cc:6807 src/Graph.cc:6811 src/Graph.cc:6815 src/Graph.cc:6819
+#: src/Graph.cc:6823 src/Graph.cc:6827
 msgid "Object,Position"
 msgstr "Αντικείμενο,Θέση"
 
-#: src/Graph.cc:6823
+#: src/Graph.cc:6831
 msgid "Symmetry_center_axis,Object"
 msgstr "Κέντρο_συμμετρίας_άξονας,Αντικείμενο"
 
-#: src/Graph.cc:6827 src/Graph.cc:6843
+#: src/Graph.cc:6835 src/Graph.cc:6851
 msgid "Center,Ratio,Object"
 msgstr "Κέντρο,Συντελεστής,Αντικείμενο"
 
-#: src/Graph.cc:6831
+#: src/Graph.cc:6839
 msgid "Curve,Object"
 msgstr "Καμπύλη,Αντικείμενο"
 
-#: src/Graph.cc:6835
+#: src/Graph.cc:6843
 msgid "Circle,Object"
 msgstr "Κύκλος,Αντικείμενο"
 
-#: src/Graph.cc:6839
+#: src/Graph.cc:6847
 msgid "Center,Angle,Object"
 msgstr "Κέντρο,Γωνία,Αντικείμενο"
 
-#: src/Graph.cc:6847
+#: src/Graph.cc:6855
 msgid "Vector,Object"
 msgstr "Διάνυσμα,Αντικείμενο"
 
-#: src/Graph.cc:6851
+#: src/Graph.cc:6859
 msgid "Center,Ratio,Angle,Object"
 msgstr "Κέντρο,Συντελεστής,Γωνία,Αντικείμενο"
 
-#: src/Graph.cc:6855
+#: src/Graph.cc:6863
 msgid "Number of vertices?"
 msgstr "Αριθμός κορυφών;"
 
-#: src/Graph.cc:6862
+#: src/Graph.cc:6870
 msgid "Point"
 msgstr "Σημείο"
 
-#: src/Graph.cc:6872 src/Graph.cc:6908 src/Graph.cc:6912 src/Graph.cc:6916
-#: src/Graph.cc:6932
+#: src/Graph.cc:6880 src/Graph.cc:6916 src/Graph.cc:6920 src/Graph.cc:6924
+#: src/Graph.cc:6940
 msgid "Point1,Point2,Point3"
 msgstr "Σημείο1,Σημείο2,Σημείο3"
 
-#: src/Graph.cc:6884 src/Graph.cc:6888
+#: src/Graph.cc:6892 src/Graph.cc:6896
 msgid "Point,Line"
 msgstr "Σημείο,Ευθεία"
 
-#: src/Graph.cc:6892 src/Graph.cc:6896
+#: src/Graph.cc:6900 src/Graph.cc:6904
 msgid "Sommet_angle,Point2,Point3"
 msgstr "Κορυφή_γωνίας,Σημείο1,Σημείο2"
 
-#: src/Graph.cc:6900
+#: src/Graph.cc:6908
 msgid "Point1,Point2,Point3,Point4"
 msgstr "Σημείο1,Σημείο2,Σημείο3,Σημείο4"
 
-#: src/Graph.cc:6904
+#: src/Graph.cc:6912
 msgid "Point1,Point2,Point_in_plane"
 msgstr "Σημείο1,Σημείο2,Σημείο_στο_επίπεδο"
 
-#: src/Graph.cc:6920
+#: src/Graph.cc:6928
 msgid "Focus1,Focus2,Point_on_ellipse"
 msgstr "Εστία1,Εστία2,Σημείο_στην_έλλειψη"
 
-#: src/Graph.cc:6924
+#: src/Graph.cc:6932
 msgid "Focus,Point_or_line"
 msgstr "Εστία, Σημείο_ή_ευθεία"
 
-#: src/Graph.cc:6928
+#: src/Graph.cc:6936
 msgid "Focus1,Focus2,Point_on_hyperbola"
 msgstr "Εστία1,Εστία2,Σημείο_στην_υπερβολή"
 
-#: src/Graph.cc:6936
+#: src/Graph.cc:6944
 msgid "Center,Point_on_sphere"
 msgstr "Κέντρο,Σημείο_στην_σφαίρα"
 
-#: src/Graph.cc:6940
+#: src/Graph.cc:6948
 msgid "Fig"
 msgstr "Σχήμα"
 
-#: src/Graph.cc:6941
+#: src/Graph.cc:6949
 msgid "Save figure as text"
 msgstr "Αποθήκευση σχήματος"
 
-#: src/Graph.cc:6947
+#: src/Graph.cc:6955
 #, fuzzy
 msgid "Latex preview"
 msgstr "προεπισκόπηση latex"
 
-#: src/Graph.cc:6948
+#: src/Graph.cc:6956
 #, fuzzy
 msgid "Latex printer"
 msgstr "εκτύπωση(latex)"
 
-#: src/Graph.cc:6952
+#: src/Graph.cc:6960
 msgid "Add parameter"
 msgstr "Προσθήκη παραμέτρου"
 
-#: src/Graph.cc:6953
+#: src/Graph.cc:6961
 msgid "Add numerical value"
 msgstr "Προσθήκη αριθμητικής τιμής"
 
-#: src/Graph.cc:6954
+#: src/Graph.cc:6962
 msgid "Add new entry"
 msgstr "Προσθήκη νέας καταχώρησης"
 
-#: src/Graph.cc:6955
+#: src/Graph.cc:6963
 msgid "Add an object trace"
 msgstr "Προσθήκη ίχνηλάτησης αντικειμένου"
 
-#: src/Graph.cc:6956
+#: src/Graph.cc:6964
 msgid "Change selection attribut"
 msgstr "Αλλαγή επιλογής χαρακτηριστικών"
 
-#: src/Graph.cc:6963
+#: src/Graph.cc:6971
 msgid "Focus"
 msgstr "Εστία"
 
-#: src/Graph.cc:6968
+#: src/Graph.cc:6976
 msgid "Recurrent sequence (2-d)"
 msgstr "2-Δ αναδρομική ακολουθία"
 
-#: src/Graph.cc:6970
+#: src/Graph.cc:6978
 msgid "Parametric"
 msgstr "Παραμετρική συνάρτηση"
 
-#: src/Graph.cc:6971
+#: src/Graph.cc:6979
 msgid "Polar (2-d)"
 msgstr "2-Δ πολική"
 
-#: src/Graph.cc:6972
+#: src/Graph.cc:6980
 msgid "Implicit"
 msgstr "Πεπλεγμένη"
 
-#: src/Graph.cc:6973
+#: src/Graph.cc:6981
 msgid "Slopefield Ode (2-d)"
 msgstr "2-Δ πεδίο κλίσεων - ΣΔΕ"
 
-#: src/Graph.cc:6981
+#: src/Graph.cc:6989
 msgid "point"
 msgstr "Σημείο"
 
-#: src/Graph.cc:6982
+#: src/Graph.cc:6990
 msgid "Lines"
 msgstr "Γραμμές"
 
-#: src/Graph.cc:6984
+#: src/Graph.cc:6992
 msgid "vector"
 msgstr "διάνυσμα"
 
-#: src/Graph.cc:6987
+#: src/Graph.cc:6995
 msgid "parallel"
 msgstr "παράλληλος"
 
-#: src/Graph.cc:6988
+#: src/Graph.cc:6996
 msgid "perpendicular"
 msgstr "κάθετος"
 
-#: src/Graph.cc:6989
+#: src/Graph.cc:6997
 msgid "perpen_bisector"
 msgstr "μεσοκάθετος"
 
-#: src/Graph.cc:6990
+#: src/Graph.cc:6998
 msgid "median_line"
 msgstr "διάμεσος"
 
-#: src/Graph.cc:6991
+#: src/Graph.cc:6999
 msgid "bisector"
 msgstr "διχοτόμος"
 
-#: src/Graph.cc:6993
+#: src/Graph.cc:7001
 msgid "Polygons"
 msgstr "Πολύγωνα"
 
-#: src/Graph.cc:6994
+#: src/Graph.cc:7002
 msgid "triangle"
 msgstr "τρίγωνο"
 
-#: src/Graph.cc:6995
+#: src/Graph.cc:7003
 msgid "equilateral_triangle"
 msgstr "ισόπλευρο_τρίγωνο"
 
-#: src/Graph.cc:6996
+#: src/Graph.cc:7004
 msgid "square"
 msgstr "τετράγωνο"
 
-#: src/Graph.cc:6997
+#: src/Graph.cc:7005
 msgid "quadrilateral"
 msgstr "τετράπλευρο"
 
-#: src/Graph.cc:7000
+#: src/Graph.cc:7008
 msgid "Circles"
 msgstr "Κύκλοι"
 
-#: src/Graph.cc:7002
+#: src/Graph.cc:7010
 msgid "incircle"
 msgstr "εγγεγραμμένος"
 
-#: src/Graph.cc:7003
+#: src/Graph.cc:7011
 msgid "excircle"
 msgstr "παραγεγραμμένος"
 
-#: src/Graph.cc:7004
+#: src/Graph.cc:7012
 msgid "circumcircle"
 msgstr "περιγεγραμμένος"
 
-#: src/Graph.cc:7007
+#: src/Graph.cc:7015
 msgid "ellipse"
 msgstr "έλλειψη"
 
-#: src/Graph.cc:7008
+#: src/Graph.cc:7016
 msgid "hyperbola"
 msgstr "υπερβολή"
 
-#: src/Graph.cc:7009
+#: src/Graph.cc:7017
 msgid "parabola"
 msgstr ""
 
-#: src/Graph.cc:7010
+#: src/Graph.cc:7018
 msgid "plotode"
 msgstr ""
 
-#: src/Graph.cc:7012
+#: src/Graph.cc:7020
 msgid "Surfaces (3d)"
 msgstr "Επιφάνειες (3-Δ)"
 
-#: src/Graph.cc:7013
+#: src/Graph.cc:7021
 msgid "plane"
 msgstr "επίπεδο"
 
-#: src/Graph.cc:7014
+#: src/Graph.cc:7022
 msgid "sphere"
 msgstr "σφαίρα"
 
-#: src/Graph.cc:7016
+#: src/Graph.cc:7024
 msgid "Measures"
 msgstr "Μετρήσεις"
 
-#: src/Graph.cc:7017
+#: src/Graph.cc:7025
 msgid "distanceat"
 msgstr "απόσταση"
 
-#: src/Graph.cc:7018
+#: src/Graph.cc:7026
 msgid "angleat"
 msgstr "γωνία"
 
-#: src/Graph.cc:7019
+#: src/Graph.cc:7027
 msgid "areaat"
 msgstr "εμβαδόν"
 
-#: src/Graph.cc:7020
+#: src/Graph.cc:7028
 msgid "perimeterat"
 msgstr "περίμετρος"
 
-#: src/Graph.cc:7021
+#: src/Graph.cc:7029
 msgid "slopeat"
 msgstr "κλίση"
 
-#: src/Graph.cc:7022
+#: src/Graph.cc:7030
 msgid "distanceatraw"
 msgstr "απόσταση (μόνο αριθμός)"
 
-#: src/Graph.cc:7023
+#: src/Graph.cc:7031
 msgid "angleatraw"
 msgstr "γωνία (μόνο αριθμός)"
 
-#: src/Graph.cc:7024
+#: src/Graph.cc:7032
 msgid "areaatraw"
 msgstr "εμβαδόν (μόνο αριθμός)"
 
-#: src/Graph.cc:7025
+#: src/Graph.cc:7033
 msgid "perimeteratraw"
 msgstr "περίμετρος (μόνο αριθμός)"
 
-#: src/Graph.cc:7026
+#: src/Graph.cc:7034
 msgid "slopeatraw"
 msgstr "κλίση (μόνο αριθμός)"
 
-#: src/Graph.cc:7028
+#: src/Graph.cc:7036
 msgid "Transformations"
 msgstr "Μετασχηματισμοί"
 
-#: src/Graph.cc:7029
+#: src/Graph.cc:7037
 msgid "reflection"
 msgstr "συμμετρία"
 
-#: src/Graph.cc:7030
+#: src/Graph.cc:7038
 msgid "rotation"
 msgstr "περιστροφή"
 
-#: src/Graph.cc:7031
+#: src/Graph.cc:7039
 msgid "translation"
 msgstr "μετάθεση"
 
-#: src/Graph.cc:7032
+#: src/Graph.cc:7040
 msgid "projection"
 msgstr "προβολή"
 
-#: src/Graph.cc:7033
+#: src/Graph.cc:7041
 msgid "homothety"
 msgstr "ομοιοθεσία"
 
-#: src/Graph.cc:7034
+#: src/Graph.cc:7042
 msgid "similarity"
 msgstr "ομοιότητa"
 
-#: src/Graph.cc:7035
+#: src/Graph.cc:7043
 msgid "inversion"
 msgstr "αντιστροφή"
 
-#: src/Graph.cc:7038
+#: src/Graph.cc:7046
 msgid "Intersections"
 msgstr "Τομές"
 
-#: src/Graph.cc:7039
+#: src/Graph.cc:7047
 msgid "inter_unique (1 point)"
 msgstr "μοναδική τομή (1 σημείο)"
 
-#: src/Graph.cc:7040
+#: src/Graph.cc:7048
 msgid "inter (close to a point)"
 msgstr "τομή (κοντά σε ένα σημείο)"
 
-#: src/Graph.cc:7041
+#: src/Graph.cc:7049
 msgid "inter (list of points)"
 msgstr "τομή (λίστα σημείων)"
 
-#: src/Graph.cc:7043
+#: src/Graph.cc:7051
 msgid "tangent"
 msgstr "Εφαπτομένη"
 
-#: src/Graph.cc:7139
+#: src/Graph.cc:7147
 msgid "Set mode for mouse constructions"
 msgstr ""
 "Επιλογή τρόπου λειτουργίας (του ποντικιού) για κατασκευές με το ποντίκι"
 
-#: src/Graph.cc:7153
+#: src/Graph.cc:7161
 msgid "Color used for next mouse drawings"
 msgstr "Χρώμα που χρησιμοποιείται για τους επόμενους σχεδιασμούς του ποντικιού"
 
-#: src/Graph.cc:7159
+#: src/Graph.cc:7167
 msgid "Line style used for next mouse drawings"
 msgstr ""
 "Στυλ γραμμής που χρησιμοποιείται για τους επόμενους σχεδιασμούς του ποντικιού"
 
-#: src/Graph.cc:7164
+#: src/Graph.cc:7172
 msgid "Check for step evaluation"
 msgstr "Τσεκαρισμένο αναπαράγει την γεωμ. κατασκευή βήμα-βήμα"
 
-#: src/Graph.cc:7169
+#: src/Graph.cc:7177
 msgid "Check for landscape"
 msgstr "Επιλέξτε για οριζόντια διάταξη"
 
-#: src/Graph.cc:7174
+#: src/Graph.cc:7182
 msgid "Check if mouse clicks in approx mode"
 msgstr ""
 "Όταν είναι τσεκαρισμένο (συνιστώμενος τρόπος λειτουργίας) οι υπολογισμοί "
 "γίνονται προσεγγιστικά"
 
-#: src/Graph.cc:7179
+#: src/Graph.cc:7187
 msgid "Save current figure commands independently of the session"
 msgstr "Αποθήκευση τρεχουσών εντολών σχήματος ανεξάρτητα απο την συνεδρία"
 
-#: src/Graph.cc:7301
+#: src/Graph.cc:7309
 msgid "Export to LaTeX"
 msgstr "Εξαγωγή στο LaTeX"
 
-#: src/Graph.cc:7573 src/Graph.cc:7887
+#: src/Graph.cc:7581 src/Graph.cc:7895
 msgid "fw"
 msgstr ""
 
-#: src/Graph.cc:7575 src/Graph.cc:7892
+#: src/Graph.cc:7583 src/Graph.cc:7900
 msgid "bw"
 msgstr ""
 
-#: src/Graph.cc:7577 src/Graph.cc:7897
+#: src/Graph.cc:7585 src/Graph.cc:7905
 msgid "tr"
 msgstr ""
 
-#: src/Graph.cc:7579 src/Graph.cc:7902
+#: src/Graph.cc:7587 src/Graph.cc:7910
 msgid "tl"
 msgstr ""
 
-#: src/Graph.cc:7581 src/Graph.cc:7907
+#: src/Graph.cc:7589 src/Graph.cc:7915
 msgid "ss"
 msgstr ""
 
-#: src/Graph.cc:7583 src/Graph.cc:7912
+#: src/Graph.cc:7591 src/Graph.cc:7920
 msgid "ju"
 msgstr ""
 
-#: src/Graph.cc:7585 src/Graph.cc:7917
+#: src/Graph.cc:7593 src/Graph.cc:7925
 msgid "pe"
 msgstr ""
 
-#: src/Graph.cc:7594 src/Graph.cc:7922
+#: src/Graph.cc:7602 src/Graph.cc:7930
 msgid "ci"
 msgstr ""
 
-#: src/Graph.cc:7596 src/Graph.cc:7927
+#: src/Graph.cc:7604 src/Graph.cc:7935
 msgid "di"
 msgstr ""
 
-#: src/Graph.cc:7598 src/Graph.cc:7932
+#: src/Graph.cc:7606 src/Graph.cc:7940
 msgid "fr"
 msgstr ""
 
-#: src/Graph.cc:7600 src/Graph.cc:7937
+#: src/Graph.cc:7608 src/Graph.cc:7945
 msgid "ft"
 msgstr ""
 
-#: src/Graph.cc:7602 src/Graph.cc:7952
+#: src/Graph.cc:7610 src/Graph.cc:7960
 msgid "cl"
 msgstr ""
 
-#: src/Graph.cc:7604 src/Graph.cc:7942
+#: src/Graph.cc:7612 src/Graph.cc:7950
 msgid "ec"
 msgstr ""
 
-#: src/Graph.cc:7606 src/Graph.cc:7947
+#: src/Graph.cc:7614 src/Graph.cc:7955
 msgid "sg"
 msgstr ""
 
-#: src/Graph.cc:7652 src/Graph.cc:7678
+#: src/Graph.cc:7660 src/Graph.cc:7686
 msgid "Not registered\n"
 msgstr "Δεν έχει καταχωρηθεί\n"
 
-#: src/Graph.cc:7834
+#: src/Graph.cc:7842
 msgid "Mesh"
 msgstr ""
 
-#: src/Graph.cc:7835
+#: src/Graph.cc:7843
 msgid "None"
 msgstr "Κανένα"
 
-#: src/Graph.cc:7836
+#: src/Graph.cc:7844
 msgid "Square"
 msgstr "Τετράγωνο"
 
-#: src/Graph.cc:7837
+#: src/Graph.cc:7845
 msgid "Triangle"
 msgstr "Τρίγωνο"
 
-#: src/Graph.cc:7842
+#: src/Graph.cc:7850
 msgid "Right"
 msgstr "Δεξιά"
 
-#: src/Graph.cc:7843
+#: src/Graph.cc:7851
 msgid "Left"
 msgstr "Αριστερά"
 
-#: src/Graph.cc:7844
+#: src/Graph.cc:7852
 msgid "Up"
 msgstr "Επάνω"
 
-#: src/Graph.cc:7845
+#: src/Graph.cc:7853
 msgid "Down"
 msgstr "Κάτω"
 
-#: src/Graph.cc:7846
+#: src/Graph.cc:7854
 msgid "ShowPosition"
 msgstr "ΕμφάνισηΘέσης"
 
-#: src/Graph.cc:7847
+#: src/Graph.cc:7855
 msgid "HidePosition"
 msgstr "ΚρύψιμοΘέσης"
 
-#: src/Graph.cc:7850
+#: src/Graph.cc:7858
 msgid "EPS/PNG and preview"
 msgstr "EPS-PNG και προεπισκόπηση"
 
-#: src/Graph.cc:7855
+#: src/Graph.cc:7863
 msgid "Color"
 msgstr "Χρώμα"
 
-#: src/Graph.cc:7888
+#: src/Graph.cc:7896
 msgid "Turtle n steps forward"
 msgstr "Χελώνα n βήματα μπροστά"
 
-#: src/Graph.cc:7893
+#: src/Graph.cc:7901
 msgid "Turtle n steps backward"
 msgstr "Χελώνα n βήματα πίσω"
 
-#: src/Graph.cc:7898
+#: src/Graph.cc:7906
 msgid "Turtle turns right n degrees"
 msgstr "Η χελώνα στρίβει προς τα δεξιά n μοίρες"
 
-#: src/Graph.cc:7903
+#: src/Graph.cc:7911
 msgid "Turtle turns left n degrees"
 msgstr "Χελώνα γυρίζει αριστερά n μοίρες"
 
-#: src/Graph.cc:7908
+#: src/Graph.cc:7916
 msgid "Turtle steps to the left from n steps"
 msgstr "Χελώνα κάνει βήμα αριστερά μετά από n βήματα"
 
-#: src/Graph.cc:7913
+#: src/Graph.cc:7921
 msgid "Turtle jumps n steps"
 msgstr "Χελώνα πηδάει n βήματα"
 
-#: src/Graph.cc:7918
+#: src/Graph.cc:7926
 msgid "Change pen color"
 msgstr "Άλλαξε το χρώμα του μολυβιού"
 
-#: src/Graph.cc:7923
+#: src/Graph.cc:7931
 msgid "Circle arc"
 msgstr "Κυκλικό τόξο"
 
-#: src/Graph.cc:7928
+#: src/Graph.cc:7936
 msgid "Filled circle arc"
 msgstr "Γεμισμένο κυκλικό τόξο"
 
-#: src/Graph.cc:7933
+#: src/Graph.cc:7941
 msgid "Filled rectangle"
 msgstr "Γεμισμένο ορθογώνιο"
 
-#: src/Graph.cc:7938
+#: src/Graph.cc:7946
 msgid "Filled triangle"
 msgstr "Γεμισμένο τρίγωνο"
 
-#: src/Graph.cc:7943
+#: src/Graph.cc:7951
 msgid "Write to the right of the turtle"
 msgstr "Γράψε στα δεξιά της χελώνας"
 
-#: src/Graph.cc:7948
+#: src/Graph.cc:7956
 msgid "Sign picture"
 msgstr "Υπογραφή εικόνας"
 
-#: src/Graph.cc:7953
+#: src/Graph.cc:7961
 msgid "Clear all"
 msgstr "Εκκαθάριση όλων"
 
-#: src/Graph.cc:7962
+#: src/Graph.cc:7970
 msgid "Turtle menu"
 msgstr "Μενού χελώνας"
 

@@ -5376,7 +5376,7 @@ namespace giac {
     swap(C,G);
   }
 
-  // first occurence in v: i<0 not found, i>=0 means v[i]==idx
+  // first occurrence in v: i<0 not found, i>=0 means v[i]==idx
   int find(const vector<index_m> & v,const index_m & idx){
     unsigned debut=0,fin=unsigned(v.size()); // search in [debut,fin[
     if (v.empty() || i_lex_is_strictly_greater(v[0],idx))
@@ -6018,7 +6018,7 @@ namespace giac {
       if (debug_infolevel>6)
 	res.dbgprint();
     }
-#if !defined GIAC_HAS_STO_38 && !defined FXCG // CAS38_DISABLED
+#if !defined GIAC_HAS_STO_38 && !defined FXCG && !defined KHICAS // CAS38_DISABLED
     if (
 #ifdef GIAC_64VARS
 	1 || 
@@ -7254,7 +7254,7 @@ namespace giac {
     vectpoly rescocoa;
     if (!env.moduloon && with_cocoa && cocoa_greduce(vectpoly(1,p),eqp,order,rescocoa))
       return r2e(rescocoa.front(),l,contextptr);
-    // FIXME: get constant term, substract one to get the correct constant
+    // FIXME: get constant term, subtract one to get the correct constant
     // gen C(p.constant_term());
     // eq=eq-C+plus_one;
     // p=*eq._POLYptr;
@@ -7366,7 +7366,7 @@ namespace giac {
       return gensizeerr("Bad second argument, expecting a Groebner basis");
     change_monomial_order(eqp,order);
     reverse(eqp.begin(),eqp.end());
-#if !defined CAS38_DISABLED && !defined FXCG
+#if !defined CAS38_DISABLED && !defined FXCG && !defined KHICAS
     vecteur red_in_(gen2vecteur(v[0])),deno(red_in_.size());
     for (int i=0;i<int(red_in_.size());++i){
       gen eq(e2r(red_in_[i],l,contextptr));

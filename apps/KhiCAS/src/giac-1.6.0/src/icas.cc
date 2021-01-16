@@ -224,7 +224,7 @@ void texmacs_next_input () {
 void ifstream_output(istream & tmpif){
   flush_stdout();
   putchar(TEXMACS_DATA_BEGIN);
-#if 1 // changes by L. Marohnić
+#if 0 // changes by L. Marohnić
   printf("scheme:(padded-centered \"%gex\" \"%gex\" (document (image (tuple (raw-data \"",
          TEXMACS_IMAGE_PADDING_ABOVE,TEXMACS_IMAGE_PADDING_BELOW);
   char c;
@@ -232,7 +232,7 @@ void ifstream_output(istream & tmpif){
     tmpif.get(c);
     putchar(c);
   }
-  printf("\") \"ps\") \"%g%%\" \"\" \"\" \"\")))",TEXMACS_IMAGE_SCALE);
+  printf("\") \"eps\") \"%g%%\" \"\" \"\" \"\")))",TEXMACS_IMAGE_SCALE);
 #else
   printf("ps:");
   char c;
@@ -254,13 +254,13 @@ void texmacs_graph_output(const giac::gen & g,giac::gen & gg,std::string & figfi
 #if 1 // changes by L. Marohnić
   char buf[L_tmpnam];
   bool has_temp_file=(tmpnam(buf)!=NULL);
-  string tmpname(has_temp_file?buf:"casgraph"),eps_ext=".eps",pdf_ext=".pdf";
-  if (!xcas::fltk_view(g,gg,tmpname+eps_ext,figfilename,file_type,contextptr)){
+  string tmpname(has_temp_file?buf:"casgraph"),ext=".eps",extc="-cleaned.eps";
+  if (!xcas::fltk_view(g,gg,tmpname+ext,figfilename,file_type,contextptr)){
     putchar(TEXMACS_DATA_BEGIN);
     printf("verbatim:Plot cancelled or unable to plot\n");
     putchar(TEXMACS_DATA_END);
     flush_stdout();
-    return;
+      return;
   }
   if (0  && figfilename.empty()){
     putchar(TEXMACS_DATA_BEGIN);
@@ -270,28 +270,27 @@ void texmacs_graph_output(const giac::gen & g,giac::gen & gg,std::string & figfi
       if (gg.type==giac::_STRNG)
         printf("verbatim:%s\n",gg._STRNGptr->c_str());
       else 
-        printf("scheme:(equation* (document %s))",giac::gen2scm(gg,giac::context0).c_str());
+        printf("scheme:(document (math (with \"math-display\" \"true\" %s)))",giac::gen2scm(gg,giac::context0).c_str());
     }
     putchar(TEXMACS_DATA_END);
     flush_stdout();
   }
   else {
-    bool cropped=false;
+    bool cleaned=false;
     if (system(NULL)) {
-      int ret;
-      string c1="epstopdf ",c2="pdfcrop ",c3="pdftops ",quiet=" >/dev/null 2>&1";
-      ret=system(("cat "+tmpname+eps_ext+" | epstopdf --filter 2>/dev/null | pdfcrop - "+tmpname+pdf_ext+quiet).c_str());
-      ret=system(("pdftops "+tmpname+pdf_ext+" "+tmpname+eps_ext+quiet).c_str());
-      cropped=true;
+      int status;
+      status=system(("eps2eps "+tmpname+ext+" "+tmpname+extc).c_str());
+      if (status!=-1 && WEXITSTATUS(status)==0)
+        cleaned=true;
     }
-    ifstream tmpif((tmpname+eps_ext).c_str());
+    ifstream tmpif((tmpname+(cleaned?extc:ext)).c_str());
     ifstream_output(tmpif); // send PS to TeXmacs
     // remove temporary files:
     bool remove_fail=false;
-    if (remove((tmpname+eps_ext).c_str())!=0)
+    if (remove((tmpname+ext).c_str())!=0)
       remove_fail=true;
-    if (cropped) {
-      if (remove((tmpname+pdf_ext).c_str())!=0)
+    if (cleaned) {
+      if (remove((tmpname+extc).c_str())!=0)
         remove_fail=true;
     }
     if (remove_fail)
@@ -361,7 +360,7 @@ void texmacs_output(const giac::gen & g,giac::gen & gg,bool reading_file,int no,
   if (gg.type==giac::_STRNG)
     printf("verbatim:%s\n",gg._STRNGptr->c_str());
   else 
-    printf("scheme:(equation* (document %s))",giac::gen2scm(gg,giac::context0).c_str());
+    printf("scheme:(document (math (with \"math-display\" \"true\" %s)))",giac::gen2scm(gg,giac::context0).c_str());
 #else
   if (reading_file){
     putchar(TEXMACS_DATA_BEGIN);

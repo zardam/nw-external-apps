@@ -79,6 +79,19 @@ using namespace std;
 namespace giac {
 #endif // ndef NO_NAMESPACE_GIAC
 
+  longlong memory_usage(){
+#if defined HAVE_SYS_RESOURCE_H && !defined NSPIRE && !defined NSPIRE_NEWLIB
+    struct rusage r_usage;
+    getrusage(RUSAGE_SELF,&r_usage);
+#ifdef __APPLE__
+    return r_usage.ru_maxrss;
+#else
+    return r_usage.ru_maxrss*1000;
+#endif
+#endif
+    return -1;
+  }
+
   //  vecteur trim(const vecteur & p,environment * env);
 
 #ifdef HAVE_LIBCOCOA
@@ -443,7 +456,7 @@ namespace giac {
 #define BIGENDIAN
 #endif
 
-#if !defined CAS38_DISABLED && !defined FXCG
+#if !defined CAS38_DISABLED && !defined FXCG && !defined KHICAS
   //#define GBASIS_SELECT_TOTAL_DEGREE
 #if GROEBNER_VARS!=15 && !defined BIGENDIAN // double revlex ordering is not compatible with indices swapping
 #define GBASIS_SWAP 
@@ -2637,7 +2650,7 @@ namespace giac {
 	c=0;
 	C=0;
       }
-      // extract from heap all terms having m as monomials, substract from c
+      // extract from heap all terms having m as monomials, subtract from c
       while (!H.empty() && H.front().u==m){
 	std::pop_heap(H.begin(),H.end(),key);
 	heap_t<tdeg_t> & current=H.back(); // was root node of the heap
@@ -3856,7 +3869,7 @@ namespace giac {
       }
       if (R)
 	R->coord.push_back(T_unsigned<modint,tdeg_t>(1,m));
-      // extract from heap all terms having m as monomials, substract from c
+      // extract from heap all terms having m as monomials, subtract from c
       while (!H.empty() && H.front().u==m){
 	std::pop_heap(H.begin(),H.end(),key);
 	heap_t<tdeg_t> & current=H.back(); // was root node of the heap
@@ -4000,7 +4013,7 @@ namespace giac {
       }
       if (R)
 	R->coord.push_back(T_unsigned<modint,tdeg_t>(1,m));
-      // extract from heap all terms having m as monomials, substract from c
+      // extract from heap all terms having m as monomials, subtract from c
       while (!H.empty() && H_[H.front()].u==m){
 	std::pop_heap(H.begin(),H.end(),keyheap);
 	heap_t<tdeg_t> & current=H_[H.back()]; // was root node of the heap
@@ -10649,7 +10662,7 @@ namespace giac {
       }
       //CERR << m << '\n';
       R.push_back(m);
-      // extract from heap all terms having m as monomials, substract from c
+      // extract from heap all terms having m as monomials, subtract from c
       while (!H.empty() && H_[H.front()].u==m){
 	heap_t<tdeg_t> & current=H_[H.front()]; // was root node of the heap
 	const zpolymod<tdeg_t> & gcurrent = g[G[current.i]];
@@ -11526,19 +11539,6 @@ template<class modint_t,class modint_u>
 		 const order_t & o_):Bptr(Bptr_),resptr(resptr_),rightshiftptr(rightshiftptr_),leftshiftptr(leftshiftptr_),o(o_){}
   };
 
-  longlong memory_usage(){
-#if defined HAVE_SYS_RESOURCE_H && !defined NSPIRE && !defined NSPIRE_NEWLIB
-    struct rusage r_usage;
-    getrusage(RUSAGE_SELF,&r_usage);
-#ifdef __APPLE__
-    return r_usage.ru_maxrss;
-#else
-    return r_usage.ru_maxrss*1000;
-#endif
-#endif
-    return -1;
-  }
-
    // #define GIAC_CACHE2ND 1; // cache 2nd pair reduction, slower
 
   template<class tdeg_t>
@@ -12039,7 +12039,7 @@ template<class modint_t,class modint_u>
     // If several pairs share the same right term, 
     // reduce the right term without leading monomial once
     // reduce corresponding left terms without leading monomial 
-    // substract
+    // subtract
     f4buchbergerv.resize(Bs);
     zinfo_t<tdeg_t> info_tmp;
     unsigned nonzero = unsigned(Bs);
@@ -14604,7 +14604,7 @@ Let {f1, ..., fr} be a set of polynomials. The Gebauer-Moller Criteria are as fo
 	    int epsp=P[i].type==_ZINT?mpz_sizeinbase(*P[i]._ZINTptr,10):8-int(std::ceil(2*std::log10(terms)));
 	    if (epsp>termsmin)
 	      epsp=termsmin;
-	    *logptr(contextptr) << gettext("Running a probabilistic check for the reconstructed Groebner basis. If successfull, error probability is less than ") << eps << gettext(" and is estimated to be less than 10^-") << epsp << gettext(". Use proba_epsilon:=0 to certify (this takes more time).") << '\n';
+	    *logptr(contextptr) << gettext("Running a probabilistic check for the reconstructed Groebner basis. If successful, error probability is less than ") << eps << gettext(" and is estimated to be less than 10^-") << epsp << gettext(". Use proba_epsilon:=0 to certify (this takes more time).") << '\n';
 	  }
 	  G.clear();
 	  if (eps<1.01e-10){
@@ -14772,7 +14772,7 @@ Let {f1, ..., fr} be a set of polynomials. The Gebauer-Moller Criteria are as fo
 	    int epsp=mpz_sizeinbase(*P[i]._ZINTptr,10)-int(std::ceil(2*std::log10(terms)));
 	    if (epsp>termsmin)
 	      epsp=termsmin;
-	    *logptr(contextptr) << gettext("Running a probabilistic check for the reconstructed Groebner basis. If successfull, error probability is less than ") << eps << gettext(" and is estimated to be less than 10^-") << epsp << gettext(". Use proba_epsilon:=0 to certify (this takes more time).") << '\n';
+	    *logptr(contextptr) << gettext("Running a probabilistic check for the reconstructed Groebner basis. If successful, error probability is less than ") << eps << gettext(" and is estimated to be less than 10^-") << epsp << gettext(". Use proba_epsilon:=0 to certify (this takes more time).") << '\n';
 	  }
 	  G.clear();
 	  if (eps<6e-8 && !is_gbasis(W[i],eps*1.677e7,modularcheck)){

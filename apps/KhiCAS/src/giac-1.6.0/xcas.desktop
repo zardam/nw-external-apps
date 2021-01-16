@@ -1,6 +1,7 @@
 [Desktop Entry]
 Version=1.0
-Encoding=UTF-8
+Keywords=computer algebra system;CAS;
+Keywords[fr]=calcul formel;CAS;
 Name=Xcas
 GenericName=Computer Algebra System
 GenericName[de]=Computeralgebrasystem

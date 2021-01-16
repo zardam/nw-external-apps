@@ -1056,7 +1056,7 @@ gen _export_graph(const gen &g,GIAC_CONTEXT) {
     }
     if (!has_suffix(filename,".dot") && !has_suffix(filename,".gv"))
         filename=filename+".dot";
-    return 0;//G.write_dot(filename)?1:0;
+    return G.write_dot(filename)?1:0;
 }
 static const char _export_graph_s[]="export_graph";
 static define_unary_function_eval(__export_graph,&_export_graph,_export_graph_s);
@@ -4645,7 +4645,16 @@ gen _graph_diameter(const gen &g,GIAC_CONTEXT) {
         return gt_err(_GT_ERR_NOT_A_GRAPH);
     if (G.is_null())
         return gt_err(_GT_ERR_GRAPH_IS_NULL);
-    if (!G.is_connected())
+    bool isdir=G.is_directed();
+    bool isconn;
+    if (!isdir)
+        isconn=G.is_connected();
+    else {
+        graphe::ivectors components;
+        G.strongly_connected_components(components);
+        isconn=components.size()==1;
+    }
+    if (!isconn)
         return graphe::plusinf();
     matrice D;
     G.allpairs_distance(D);
@@ -5888,8 +5897,6 @@ gen _line_graph(const gen &g,GIAC_CONTEXT) {
     graphe G(contextptr),L(contextptr);
     if (!G.read_gen(g))
         gt_err(_GT_ERR_NOT_A_GRAPH);
-    if (G.is_directed())
-        return gt_err(_GT_ERR_UNDIRECTED_GRAPH_REQUIRED);
     graphe::ipairs E;
     G.line_graph(L,E);
     return L.to_gen();

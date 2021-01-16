@@ -2582,7 +2582,7 @@ namespace xcas {
       nxt_button = new Fl_Button(x+w/3,y,w/12,L);
       nxt_button->labelsize(labelsize());
       nxt_button->label(gettext("nxt"));
-      nxt_button->tooltip(gettext("Find next occurence (defined by Edit->Search)"));
+      nxt_button->tooltip(gettext("Find next occurrence (defined by Edit->Search)"));
       nxt_button->callback((Fl_Callback *) cb_Editeur_Next);
       if (parent()==window()){
 	exec_button = new Save_Focus_Button(x+w/3-w/12,y,w/12,L);
