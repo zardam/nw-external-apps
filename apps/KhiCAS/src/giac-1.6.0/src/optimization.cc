@@ -2836,7 +2836,7 @@ gen _nlpsolve(const gen &g,GIAC_CONTEXT) {
         }
     }
     if (constr.empty()) {
-        *logptr(contextptr) << "Error: no contraints detected\n";
+        *logptr(contextptr) << "Error: no constraints detected\n";
         return gensizeerr(contextptr);
     }
     bool feasible=true;

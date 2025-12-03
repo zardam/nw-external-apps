@@ -61,6 +61,14 @@
 #include <unistd.h>
 #endif
 
+#ifndef DBL_MIN
+#define DBL_MIN (-1e307)
+#endif
+
+#ifndef DBL_MAX
+#define DBL_MAX (1e307)
+#endif
+
 using namespace std;
 using namespace giac;
 
@@ -4818,7 +4826,7 @@ namespace xcas {
 	    }
 	    else {
 	      fl_arc(deltax+round(i0-i1),deltay+round(j0-j1),round(2*i1),round(2*j1),anglei*180/M_PI,anglef*180/M_PI);
-	      if (v.size()>=4){ // if cercle has the optionnal 5th arg
+	      if (v.size()>=4){ // if cercle has the optional 5th arg
 		if (v[3]==2)
 		  petite_fleche(i0+i1*std::cos(anglem),j0-j1*std::sin(anglem),-i1*std::sin(anglem),-j1*std::cos(anglem),deltax,deltay,width);
 		else {
@@ -6105,19 +6113,19 @@ namespace xcas {
       fcnzuv->tooltip(gettext("Expression of z wrt to u and v (e.g u-v)"));
       varnamet=new Fl_Input(dx/2,2+dy/lignes,dx/2-4,dy/lignes-4,gettext("Var"));
       varnamet->value("t");
-      varnamet->tooltip(gettext("Independant variable name (e.g t)"));
+      varnamet->tooltip(gettext("Independent variable name (e.g t)"));
       varnameu=new Fl_Input(dx/4,2+dy/lignes,dx/4-4,dy/lignes-4,gettext("1st var"));
       varnameu->value("u");
-      varnameu->tooltip(gettext("First independant variable name (e.g u)"));
+      varnameu->tooltip(gettext("First independent variable name (e.g u)"));
       varnamev=new Fl_Input(3*dx/4,2+dy/lignes,dx/4-4,dy/lignes-4,gettext("2nd var"));
       varnamev->value("v");
-      varnamev->tooltip(gettext("Second independant variable name (e.g v)"));
+      varnamev->tooltip(gettext("Second independent variable name (e.g v)"));
       varnamex=new Fl_Input(dx/4,2+dy/lignes,dx/4-4,dy/lignes-4,gettext("1st var"));
       varnamex->value("x");
-      varnamex->tooltip(gettext("First independant variable name (e.g x)"));
+      varnamex->tooltip(gettext("First independent variable name (e.g x)"));
       varnamey=new Fl_Input(3*dx/4,2+dy/lignes,dx/4-4,dy/lignes-4,gettext("2nd var"));
       varnamey->value("y");
-      varnamey->tooltip(gettext("Second independant variable name (e.g y)"));
+      varnamey->tooltip(gettext("Second independent variable name (e.g y)"));
       varnametfield=new Fl_Input(dx/4,2+dy/lignes,dx/4-4,dy/lignes-4,gettext("Time var"));
       varnametfield->value("t");
       varnametfield->tooltip(gettext("Time variable name"));

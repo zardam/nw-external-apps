@@ -7,21 +7,30 @@ using namespace std;
 
 __attribute__((noinline)) int main_(int argc,char ** argv){
   lcd_init(lcd_type()); // clrscr();
-#ifdef MICROPY_LIB
-  mp_stack_ctrl_init();
-  char * heap=micropy_init();
+#if 0 // def MICROPY_LIB 
+  // mp_stack_ctrl_init();
+  char * heap=micropy_init(64e3,512e3);
   if (!heap)
     return 1;
 #endif
   vx_var=identificateur("x");
   giac::context c;
-#if 1
   xcas::console_main(&c);
-#ifdef MICROPY_LIB
+#if 0 // def MICROPY_LIB
   mp_deinit(); free(heap);
 #endif
   return 0;
-#else
+}
+
+int main(int argc,char ** argv){
+#ifdef MICROPY_LIB
+  mp_stack_ctrl_init();
+#endif
+  main_(argc,argv);
+}
+
+// old code
+#if 0
   // identificateur x("x");
   // COUT << _factor(pow(x,4,&c)-1,&c) << endl;
   COUT << "Enter expression to eval, 0 to quit, ?command for help " << endl;
@@ -47,18 +56,10 @@ __attribute__((noinline)) int main_(int argc,char ** argv){
     COUT << g << endl;
 #endif
   }
-#endif
-#ifdef MICROPY_LIB
+#if 0 // def MICROPY_LIB
   mp_deinit();
   if (heap) free(heap);
 #endif
   return 0;
-}
-
-int main(int argc,char ** argv){
-#ifdef MICROPY_LIB
-  mp_stack_ctrl_init();
 #endif
-  main_(argc,argv);
-}
 
